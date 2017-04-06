@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CUIS</string>
+    <string name="title_activity_page_one">Datos INEGI</string>
+    <string name="title_activity_page_two">Domicilio</string>
+    <string name="title_activity_page_thre">Domicilio parte 2</string>
+</resources>
