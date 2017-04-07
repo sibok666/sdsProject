@@ -1,0 +1,3164 @@
+001,0001,Acajete
+001,0003,La Cardenista (Colonia Lázaro Cárdenas)
+001,0004,La Magdalena Tetela Morelos
+001,0006,San Agustín Tlaxco
+001,0007,San Antonio Tlacamilco
+001,0008,San Bartolo Pinal
+001,0010,San Javier
+001,0011,San Jerónimo Ocotitlán
+001,0016,Santa María Nenetzintla
+001,0017,San Juan Tepulco
+001,0024,Apango de Zaragoza
+001,0026,La Providencia
+001,0033,Tlacamilco
+001,0049,San José Sección Quinta
+001,0051,Santa Cruz Buenos Aires
+002,0001,San José Acateno
+002,0005,Arroyo Blanco
+002,0011,La Cantina
+002,0013,Cojolites
+002,0020,Dos Caminos
+002,0025,Jiliapan
+002,0030,El Ocotillo
+002,0032,La Palma
+002,0033,Palmartepec (Cerro de Palmartepec)
+002,0034,Palo Gacho
+002,0047,Tierra Nueva (Ejido de San José Acateno)
+002,0068,Coapal Chico
+002,0070,Ejido Palo Gacho
+002,0076,Ejido Insurgentes Socialistas
+002,0082,Ejido Copalillo (Topila Palo Gacho)
+002,0083,Ampliación Tilapa Ejido
+002,0085,Tzontecomapa
+002,0095,La Nueva Esperanza (Plácido Ríos)
+003,0001,Acatlán de Osorio
+003,0002,Amatitlán de Azueta
+003,0004,Colonia Allende
+003,0006,Hermenegildo Galeana
+003,0007,La Huerta
+003,0008,Ilamacingo
+003,0009,El Maguey
+003,0010,Las Nieves
+003,0011,Nuevos Horizontes
+003,0012,San Bernardo
+003,0013,San Cristóbal
+003,0014,San Francisco Rancho Nuevo
+003,0015,San Vicente Boquerón
+003,0016,Tecomate
+003,0017,Tetelcingo
+003,0018,Tianguistengo
+003,0019,La Trinidad (Los Hobos)
+003,0020,La Noria Chica
+003,0022,Garzones (Santa Gertrudis)
+003,0023,Juan R. Rojas (Los Cocos)
+003,0026,Peña Colorada
+003,0027,Barrio Santiago Ilamacingo
+003,0031,San Miguel San Bernardo
+003,0037,Barrio de Guadalupe
+003,0051,Rancho Nuevo
+003,0054,San Isidro Ilamacingo
+003,0055,Axuxtla
+003,0080,Tres Cruces
+003,0096,Los Cuartos
+003,0119,Independencia
+003,0123,La Normal
+003,0137,Santa Anita
+004,0001,Acatzingo de Hidalgo
+004,0002,Actipan de Morelos (Santa María Actipan)
+004,0003,Carmen Serdán
+004,0004,Guadalupe Morelos
+004,0005,Hernández
+004,0006,Nicolás Bravo
+004,0007,Progreso de Juárez
+004,0008,San Sebastián Teteles
+004,0009,San Sebastián Villanueva
+004,0029,Virreyes de Juárez
+004,0054,Apipilolco (Los Álamos)
+004,0062,La Coyotera
+005,0001,Acteopan
+005,0002,Santa María Atzitzintla
+005,0003,San Felipe Toctla
+006,0001,Ahuacatlán
+006,0002,San Jerónimo Coaltepec
+006,0003,San Marcos Eloxochitlán
+006,0004,San Francisco Ixquihuacan
+006,0005,Tlacotepec (San Mateo)
+006,0006,Tlayehualancingo
+006,0007,Tonalapa (Santa Bárbara)
+006,0008,Xochicuautla
+006,0009,Analco
+006,0010,Pochálcatl
+006,0012,Agua Fría
+006,0013,Atempa
+006,0014,Ixtlahuaca
+006,0018,Rancho Nuevo
+006,0019,Camino de San Marcos (Palenque)
+006,0020,Tlapoxtecoya
+006,0021,Zitlala
+006,0028,Cuacuilco
+006,0030,Tepantzingo
+006,0031,Tlacomulco
+006,0032,Tlalacal
+007,0001,Ahuatlán
+007,0003,Guadalupe
+007,0004,San Isidro Mimilulco (Mimilulco)
+007,0005,Patlanoaya (San Salvador Patlanoaya)
+007,0006,San José El Rodeo (El Rodeo)
+007,0008,San Lucas Tejaluca
+008,0001,Ahuazotepec
+008,0002,Ahuacatla
+008,0003,La Estación de Ahuazotepec
+008,0004,Beristáin
+008,0005,San Antonio Buenavista
+008,0006,Laguna Seca
+008,0007,La Mesa Chica (Las Milpillas)
+008,0008,Tenejaque
+008,0009,Tejamaniles
+008,0011,San José Ayotla
+008,0012,San Miguel Ayotla
+008,0014,Santa Félix
+008,0015,Loma Amolo
+008,0016,Temaxcales
+008,0020,Segunda Sección
+008,0021,Ejido Mesa Chica
+008,0022,La Laguna
+008,0024,La Ermita
+009,0001,Ahuehuetitla
+009,0002,Guadalupe Alchipini
+009,0005,El Peñón (San Vicente El Peñón)
+010,0001,Ciudad de Ajalpan
+010,0002,San Sebastián Alcomunga
+010,0003,San José Buena Vista
+010,0004,Buenavista
+010,0005,Cinco de Mayo
+010,0006,Cinco Señores
+010,0008,Cuautotolapan (San José)
+010,0009,Chichicapa
+010,0011,Mazatianquixco
+010,0012,Nativitas (Santa María)
+010,0014,El Mirador
+010,0015,Huitzmaloc
+010,0016,Tecpantzacoalco
+010,0017,Tequexco
+010,0019,Vista Hermosa Zayulapa
+010,0020,Xala
+010,0022,La Escondida
+010,0023,Achichinalco
+010,0024,Ocotempa
+010,0025,Cuaxuxpa
+010,0026,Xochitzinga
+010,0027,Loma Bonita
+010,0031,Tepetlampa
+010,0032,Zacayucan
+010,0033,Macuilcuautitla
+010,0034,Tlacxitla
+010,0035,La Joya
+010,0036,Boca del Monte
+010,0037,Cuautzintlica
+010,0038,Moyotepec
+010,0039,Rancho Nuevo
+010,0040,San Isidro El Mirador
+010,0042,San Isidro Labrador (Teopuxco)
+010,0045,Coxolico
+010,0046,Cuabcapula
+010,0047,Cuahuichotla
+010,0050,Esperanza
+010,0052,Macuilquila
+010,0053,Mexcaltochintla
+010,0054,Piscuautla
+010,0055,Playa Vicente
+010,0058,Sotoltepec
+010,0059,Tepepa
+010,0061,Tepepa de Zaragoza
+010,0064,Tlazolapa
+010,0065,Zacatecochco
+010,0066,Zacatlamanic
+010,0078,Tierra Blanca
+010,0081,Ahuatepec
+010,0093,Las Palmas (San Miguel)
+010,0095,Tepantitla
+010,0096,Bella Vista
+010,0097,Cruz Chichiltzi
+011,0001,Acaxtlahuacán de Albino Zertuche
+012,0001,Aljojuca
+012,0002,Jalapasco El Grande
+012,0003,San Antonio Jalapasco
+012,0004,San Antonio Las Cuchillas
+012,0005,San Miguel Tecuitlapa
+013,0001,Altepexi
+013,0009,Texcalco
+013,0015,Tres Cruces
+014,0001,Amixtlán
+014,0003,Cuautotola
+014,0004,El Ocotal
+014,0005,Mirasol
+014,0015,Santa Cruz
+015,0001,Amozoc de Mota
+015,0004,Concepción Capulac (La Ex-Hacienda)
+015,0013,San Jacinto
+015,0016,San José La Laguna
+015,0031,Casa Blanca
+015,0055,Conjunto Campestre Haras
+015,0059,San Pedro
+015,0062,San Martín
+015,0066,Ampliación San Juan 3Ra. Sección
+015,0068,Ignacio Zaragoza
+015,0079,La Venta
+015,0087,#N/A
+016,0001,Aquixtla
+016,0002,Atecoxco
+016,0003,Atexcac
+016,0004,Ayocuantla
+016,0005,Cuautieco
+016,0006,Coayuca
+016,0007,Cuautolanico
+016,0008,Chaucingo
+016,0009,Chichicaxtla
+016,0010,Chignahuacingo
+016,0011,Ecapactla
+016,0012,Ilotepec
+016,0013,La Loma
+016,0014,San Alfonso
+016,0015,El Terrero
+016,0016,Tlacomulco
+016,0017,Tlacuitlapa
+016,0018,Tlachiapa
+016,0019,Tlaltempa
+016,0020,Pachuquilla
+017,0001,Atempan
+017,0002,Atzalán
+017,0003,Cala Norte
+017,0004,Cala Sur
+017,0005,Las Canoas
+017,0007,San Nicolás (Animazco)
+017,0008,Tacopan
+017,0009,Tezhuatepec
+017,0010,Tezompan
+017,0011,Tanhuixco
+017,0012,Apatauyan
+017,0014,El Cuatro
+017,0015,Las delicias
+017,0016,Huexoteno
+017,0018,Potrero Nuevo
+017,0019,San Ambrosio
+018,0001,San Martín Atexcal
+018,0003,Santiago Nopala
+018,0004,San Francisco Resurgimiento
+018,0005,San Lucas Teteletitlán
+018,0006,Santa Catarina Tehuixtla
+018,0007,Santo Tomás Otlaltepec
+018,0008,San Nicolás Tepoxtitlán (Nepoxtitlán)
+018,0009,Agua El Gabriel
+018,0019,Colonia Solidaridad
+019,0001,Atlixco
+019,0008,Almazantla
+019,0024,Emiliano Zapata Los Molinos
+019,0025,Emiliano Zapata Nexatengo
+019,0030,Guadalupe Huexocuapan
+019,0032,San Isidro Huilotepec
+019,0033,San Agustín Huixaxtla
+019,0034,San Agustín Ixtahuixtla
+019,0035,La Joya
+019,0036,Juan Uvera
+019,0038,San Félix Almazán
+019,0044,Mártir de Chinameca
+019,0048,Otilio Montaño (La Concepción)
+019,0052,La Sabana (San Juan La Sabana)
+019,0055,San Agustín Los Molinos
+019,0057,San Esteban Zoapiltepec
+019,0058,San Felipe Xonacayucan
+019,0059,Ex-Hacienda San Félix
+019,0060,San Félix Hidalgo
+019,0063,San Isidro
+019,0064,San Jerónimo Caleras
+019,0065,San Jerónimo Coyula
+019,0068,San Juan Ocotepec
+019,0069,Colonia Agrícola de Ocotepec (Colonia San José)
+019,0070,San Juan Portezuelo
+019,0071,San Juan Tejaluca
+019,0076,San Pedro Benito Juárez
+019,0079,Santa Ana Yancuitlalpan (Chilhuacán)
+019,0082,Santa Lucía Cosamaloapan
+019,0085,Santo Domingo Atoyatempan
+019,0088,Santa Cruz Tehuixpango
+019,0090,Tizayuca Primera Sección
+019,0093,Tolometla de Benito Juárez
+019,0101,San Juan de Los Laureles
+019,0117,San José El Recreo
+019,0119,Francisco Villa
+019,0139,Diez de Abril
+019,0145,Ex-Hacienda San Agustín
+019,0158,Las Huertas de Jesús Primera Sección
+019,0181,Las Huertas de Jesús Cuarta Sección
+019,0197,San Francisco Primo de Verdad
+019,0205,Zazala
+019,0212,Loma de San Juan Tejaluca
+019,0216,El León
+019,0218,Santa Elena Axocopan
+019,0241,El Encanto del Cerril
+019,0242,Tenería
+020,0001,Atoyatempan
+020,0031,#N/A
+021,0001,Atzala
+022,0001,Santiago Atzitzihuacán
+022,0002,San Francisco Xochiteopan
+022,0003,San Juan Amecac
+022,0004,San Juan Tejupa
+022,0005,San Mateo Coatepec
+022,0006,San Miguel Aguacomulican
+022,0007,San Pedro Ixhuatepec
+022,0008,Emiliano Zapata (Colonia Agrarista)
+022,0011,El Potrero
+022,0025,San Juan Amecac (La Zanja)
+023,0001,Atzitzintla
+023,0002,San Juan Huiloapan
+023,0003,Paso Carretas
+023,0004,Plan del Capulín
+023,0005,San Manuel de La Sierra
+023,0007,Santa Cruz Cuyachapa
+023,0008,Santa Cruz Texmalaquilla
+023,0009,Toluca
+023,0010,Guadalupe Xochiloma
+023,0011,San José El despacho (despacho Aserradero)
+024,0001,Axutla
+024,0003,Huehuepiaxtla
+024,0004,Tlaxixinca
+025,0001,Ayotoxco de Guerrero
+025,0003,Buena Vista
+025,0008,Cuauhtémoc (Tlacuilolostoc)
+025,0014,Nanacatepec
+025,0015,Gachupinate (Rancho Nuevo)
+025,0016,San Antonio Metzonapa
+025,0022,Uruapan
+025,0025,La Lagunilla
+025,0029,San Francisco Atecacalax
+025,0032,Copales
+025,0045,La Unión
+025,0065,El Nuevo Roble
+026,0001,San Andrés Calpan
+026,0002,San Lucas Atzala
+026,0003,San Mateo Ozolco
+026,0004,Pueblo Nuevo
+026,0009,San Bartolo
+026,0011,El Palmar (La Ocotera Seca)
+027,0001,Caltepec
+027,0002,Acatepec
+027,0003,San Juan Acatitlán
+027,0004,Actipan (San Isidro)
+027,0005,Atecoxco
+027,0006,San Luis Atolotitlán (Atolotitlán)
+027,0008,Coatepec
+027,0013,Plan de San Miguel
+027,0014,San Simón Tlacuilotepec
+027,0016,Zotolín
+027,0033,Sabino Farol
+028,0001,Camocuautla
+028,0002,San Bernardino
+028,0003,Tapayula
+029,0001,Caxhuacan
+029,0002,Cucuchuchut
+029,0008,Capín Y Paltam
+030,0001,Coatepec
+031,0001,Coatzingo
+031,0006,Zaragoza
+031,0015,La Matanza
+031,0020,Coatzingo (San José)
+032,0001,Santa María Cohetzala
+032,0003,El Platanar (San José El Platanar)
+032,0004,Santa Mónica
+033,0001,Cohuecan
+033,0002,San Andrés Ahuatelco
+033,0003,San Felipe Cuapexco
+033,0004,Los Reyes Teolco
+033,0005,San Francisco Tepango
+034,0001,Santa María Coronango
+034,0002,San Antonio Mihuacán
+034,0003,San Francisco Ocotlán (Ocotlán)
+034,0016,Chamizal
+034,0019,#N/A
+034,0020,Curitiba
+034,0021,San José
+034,0023,#N/A
+034,0024,#N/A
+035,0001,Coxcatlán
+035,0002,Calipan
+035,0003,Chichiltepec
+035,0004,Guadalupe Victoria (Pueblo Nuevo)
+035,0005,Ocotlamanic
+035,0006,Pala
+035,0007,Potrero
+035,0008,San José Tilapa
+035,0009,San Rafael
+035,0010,Tecoltepec
+035,0011,Tepeyoloc
+035,0012,Tequexpalco
+035,0014,Vigastepec
+035,0015,Xacalco
+035,0017,Calpuhuacan
+035,0033,La Mariquilla
+036,0001,Santa María Coyomeapan
+036,0002,Ahuatepec
+036,0003,Ahuatla
+036,0004,Atempa
+036,0005,Aticpac
+036,0006,Cuitzala
+036,0007,Chimalhuaca
+036,0008,Matlahuacala
+036,0009,San Juan Cuautla
+036,0010,Tecuantiopa
+036,0011,Tepepa de Zaragoza
+036,0012,Tepoxtla
+036,0013,Tequitlale
+036,0014,Tequixtepec de Juárez
+036,0015,Xaltilica
+036,0016,Xocotla
+036,0017,Xochiapa
+036,0018,Xochitlalpa
+036,0019,Ixtacxochitla
+036,0020,Zayoyojca
+036,0021,Bella Vista
+036,0022,Ixtláhuac
+036,0023,Huilulco
+036,0024,Caxalli
+036,0025,Morelos
+036,0027,Tlixco
+036,0028,Yerba Santa
+036,0029,Xomapa
+036,0030,Yohuajca
+036,0031,Huitzílatl
+036,0036,Segunda Sección
+036,0037,Yehualtepec
+036,0038,Cuarta Sección
+036,0039,Loma Bonita
+036,0040,San Gabriel Vista Hermosa
+036,0041,San Marcos Tlaltlalkilotl
+036,0042,San Miguel
+036,0043,San Pedro Tepeyac
+037,0001,San Vicente Coyotepec
+037,0002,Nativitas Cuautempan
+037,0003,San Mateo Zoyamazalco
+038,0001,Cuapiaxtla de Madero
+038,0002,Lázaro Cárdenas
+038,0003,Miguel Negrete
+038,0031,Jazmín [Báscula Pública]
+038,0033,Ejido El Moral
+039,0001,San Esteban Cuautempan
+039,0003,Hueytentan
+039,0004,Ixtolco de Morelos
+039,0005,Tecapagco
+039,0006,Tenepanigia (Santa Elena)
+039,0007,Tlapacholoya
+039,0008,Totocuautla
+039,0009,Totomoxtla
+039,0011,San José Río Bravo
+039,0012,Papalotla
+039,0013,Ahuatlán
+039,0014,Cerro Verde (Ejecatepeco)
+039,0016,Taltzontipan
+039,0017,Tepizila (Primera Sección)
+039,0019,Vista Hermosa
+040,0001,Cuautinchán
+040,0002,Almoloya (San Jerónimo Almoloya)
+040,0003,Alpatláhuac (San Pedro Alpatláhuac)
+040,0007,José María Morelos
+040,0009,Santa Cruz Alpuyeca
+040,0011,Concepción Pardiñas
+040,0012,Torija (San Baltazar Torija)
+040,0037,Buenavista
+040,0045,San José (Colonia del Piojo)
+041,0001,San Juan Cuautlancingo
+041,0004,La Trinidad Chautenco
+041,0005,Fuerte de Guadalupe
+041,0008,Sanctorum
+041,0009,San Jacinto
+041,0012,San Lorenzo Almecatla
+041,0013,Barrio de Nuevo León
+041,0017,Rancho Guadalupe
+041,0018,Ampliación Fuerte de Guadalupe
+041,0019,San Diego Los Sauces
+041,0021,Guadalupe
+041,0022,15 de Septiembre
+041,0025,#N/A
+041,0027,San Jacinto
+041,0029,Galaxias Almecatla
+041,0031,#N/A
+041,0032,#N/A
+041,0033,#N/A
+041,0034,#N/A
+042,0001,San Pedro Cuayuca
+042,0003,Cañada Chica
+042,0004,Cerro Gordo
+042,0005,#N/A
+042,0006,Débora Carrizal
+042,0009,Santa Cruz Organal
+042,0012,Tlacotepec
+042,0014,La Junta
+043,0001,Ciudad de Cuetzalan
+043,0002,Acaxiloco
+043,0003,Alahuacapan
+043,0004,Ayotzinapan
+043,0005,Cuauhtamazaco
+043,0006,Cuauhtapanaloyan
+043,0007,Cuichat
+043,0008,Chichicazapan
+043,0009,Equimita
+043,0010,La Galera
+043,0011,Ixtahuata
+043,0012,Limonco
+043,0013,Nectepec
+043,0014,Pahpatapán
+043,0015,Pepexta
+043,0016,Pinahuista
+043,0019,Tacuapan
+043,0020,Taxipéhuatl
+043,0021,Tenextepec
+043,0022,Tepango
+043,0023,Tepetitán Zacatipan
+043,0024,Tepetzintán
+043,0025,Texochico
+043,0026,Tzicuilan
+043,0027,Tzinacapan
+043,0028,Vista Hermosa
+043,0029,Xalcuahuta
+043,0031,Xalpantzingo
+043,0033,Xaltipan
+043,0034,Xiloxochico de Rafael Ávila Camacho
+043,0036,Xocoyolo
+043,0037,Santiago Yancuitlalpan
+043,0038,Yohualichan
+043,0039,Zacatipan
+043,0040,Tepetzalan (Tzoquita)
+043,0041,Octimaxal Sur
+043,0043,Atexolahua
+043,0046,Santa Cruz Tatempa
+043,0047,Tenango
+043,0049,Xochical
+043,0050,Tzanatco
+043,0051,La Gloria
+043,0052,Cohuatichan
+043,0053,Ahuateno
+043,0055,Xaltzinta
+043,0057,Caxaltepec
+043,0058,Atmolón
+043,0059,Pesmapán
+043,0061,Sesectahuacal
+043,0064,Quezapa
+043,0067,Chicueyaco
+043,0068,Tuzamapan Xiloxochico
+043,0069,Xiutecuapan
+043,0071,Cacatecuauta
+043,0072,Olopioco
+043,0073,Huaxtitán
+043,0076,Cozamalomila
+043,0078,Tecoltepec
+043,0079,Tonalix
+043,0083,Tepetzingo
+043,0084,Santioapan
+043,0085,Kapola
+043,0087,Tatahuictaltipan
+043,0090,Tencuix
+043,0091,Tepetzalan de Miguel Hidalgo
+043,0092,Reyeshogpan de Hidalgo (El Mirador)
+043,0093,Cuamono
+043,0094,Las Vigas
+043,0100,Nahuiogpan
+043,0110,Zuapilaco
+043,0112,Tzoncomala
+043,0113,Limontitán
+043,0114,Tecuahuta
+043,0115,Pahuatahu
+043,0128,Las Hamacas
+043,0129,Macuilacaco
+043,0133,Coapan
+043,0134,Cuahutamanca
+043,0138,La Providencia
+043,0146,Tepetitán Reyeshogpan de Hidalgo
+043,0147,Tetsijtsilín
+043,0155,Xocota
+043,0156,Pagmaco
+043,0158,Tenango Zacatipan
+043,0159,Cahuayogco
+043,0161,Xalticpac
+043,0163,Atemolón
+043,0169,Cerro de Nectepec
+043,0176,Atequiza
+043,0177,Tixapan
+043,0180,Tazalolpan
+043,0185,Tajkuilol
+043,0188,Tecazo
+043,0191,Tzojiaco
+043,0203,Tenanikán
+043,0205,Xilcuahuta
+043,0208,Cuatro Caminos
+043,0212,Xiloxúchitl
+043,0213,Ziltepec
+043,0216,Tecolapa
+043,0217,Tepetitan Chico
+044,0001,Cuyoaco
+044,0002,Allende (Colonia Ignacio Allende)
+044,0003,Buenavista Guerrero
+044,0008,Emiliano Zapata (Chilapa)
+044,0009,Francisco I. Madero
+044,0010,La Gloria
+044,0011,Guadalupe Victoria
+044,0014,Independencia
+044,0016,Morelos
+044,0020,San Andrés Payuca
+044,0030,Santiago Xonacatlán
+044,0031,Temextla
+044,0032,Texcal
+044,0036,La Trinidad Pochinto
+044,0041,El Valle
+044,0044,El Calvario
+045,0001,Ciudad Serdán
+045,0002,Ahuatepec del Camino
+045,0003,Álvaro Obregón
+045,0004,San Juan Arcos Ojo de Agua
+045,0005,San Pedro Concepción Candelaria (Candelaria)
+045,0006,San Isidro Canoas Altas
+045,0007,Concepción Oviedo (Rancho Viejo)
+045,0008,Dolores Buenpaís
+045,0010,Jesús María
+045,0011,Jesús Nazareno (Rancho Nuevo)
+045,0012,Maravillas
+045,0013,Las Palmas
+045,0014,Los Ricardos
+045,0015,Guadalupe Sabinal
+045,0016,San Diego Texmelucan
+045,0017,San Francisco Cuautlancingo (El Barrio)
+045,0018,San Martín Ojo de Agua
+045,0019,San Miguel Ocotenco
+045,0020,Santa Inés Borbolla
+045,0021,Santa María Techachalco
+045,0022,San Antonio Tecajetes
+045,0023,San Blas Tecolotepec (Gaviotas)
+045,0024,San Pedro Temamatla
+045,0025,El Veladero (Santa Cruz Veladero)
+045,0089,Villa San Andrés
+046,0001,Chapulco
+046,0002,Aquiles Serdán
+046,0003,Puente Colorado
+046,0006,Chapulco
+047,0001,Ciudad de Chiautla de Tapia
+047,0021,Cañada Grande
+047,0024,Cascalote de Bravo
+047,0026,Centeocala
+047,0033,Cruz Verde
+047,0040,Chiauzumba
+047,0061,La Palma
+047,0066,Pilcaya (San Juan Pilcaya)
+047,0073,Quetzotla (San Miguel)
+047,0078,San Juan de Los Ríos (San Juan del Río)
+047,0079,San Miguel Ejido (Ejido San Miguel)
+047,0082,Santa Ana Tecolapa
+047,0095,Tepoxmatla
+047,0099,Tlancualpican
+047,0182,San Miguel Chicotitlán
+047,0196,La Ciénega (San Miguel La Ciénega)
+048,0001,San Lorenzo Chiautzingo
+048,0003,San Agustín Atzompa
+048,0004,San Juan Tetla
+048,0005,San Nicolás Zecalacoayan
+048,0006,San Antonio Tlatenco
+049,0001,Chiconcuautla
+049,0003,Axocopactla
+049,0004,Cosamaloapan
+049,0005,Cuetzalingo
+049,0006,Huautla
+049,0008,Ixtaczoquitla
+049,0009,Macuilacatla
+049,0010,Palzoquitla
+049,0011,Tlalhuapan
+049,0012,Tlaltenango
+049,0013,Tlaxco (Santiago Tlaxco)
+049,0014,San Lorenzo Tlaxipehuala
+049,0015,Toxtla
+049,0016,Zacatepec
+049,0017,Zempoala
+049,0018,Benito Juárez
+050,0001,Chichiquila
+050,0002,Acalocotla
+050,0003,Jesús María Acatla
+050,0004,Amaxochitla
+050,0005,Atlaxco
+050,0006,San Martín Comalapa
+050,0008,Dos Ríos
+050,0009,Colonia Guadalupe
+050,0010,Huaxcaleca
+050,0011,Nenehuaca
+050,0012,Ojo de Agua
+050,0013,El Progreso
+050,0014,La Providencia
+050,0015,Rancho Nuevo
+050,0016,San José Acatla
+050,0019,Tepehuacan
+050,0020,Tizapa
+050,0021,El Triunfo
+050,0022,La Unión
+050,0023,Vista Hermosa
+050,0024,Xochihuixtla
+050,0025,Xopanapa
+050,0026,Xochimilco
+050,0027,El Palmar
+050,0028,San Diego del Palmar
+050,0029,Las Trincheras
+050,0030,San Luis Esperanza
+050,0032,Barrio del Carmen
+050,0033,Cinco de Mayo
+050,0034,El Mirador
+050,0035,El Rosario
+050,0036,San Antonio
+050,0040,Santiago
+050,0042,Ermita
+050,0043,Loma Bonita
+050,0046,Xochimilco
+050,0049,Pueblo Nuevo La Candelaria (El Plan)
+050,0050,San José
+050,0052,Loma de Las Flores
+050,0053,Santa Cecilia
+051,0001,Chietla
+051,0002,Ahuehuetzingo
+051,0003,Atencingo
+051,0004,Buenavista de Benito Juárez
+051,0005,El Capire
+051,0007,San Antonio Coayuca
+051,0008,Cofradía
+051,0010,Don Roque
+051,0012,Escape de Lagunillas
+051,0014,Ex-Hacienda de Jaltepec
+051,0015,Lagunillas de Rayón (Alchichica)
+051,0016,Santa Cruz El Mirador
+051,0017,San Isidro El Organal
+051,0018,Pueblo Nuevo de Porfirio Díaz
+051,0019,San Isidro La Sábila
+051,0021,San Miguel La Toma
+051,0024,La Soledad
+051,0025,San Miguel Tecolacio
+051,0026,Temaxcalapa de Gabino Barreda
+051,0027,San Nicolás Tenexcalco
+051,0028,Tzompahuacán
+051,0029,Viborillas de Hidalgo
+051,0030,San José Chietla
+051,0044,San José Los Laureles
+051,0053,La Palma (El Trinquete)
+051,0064,El Cascalote (Lázaro Cárdenas)
+052,0001,Chigmecatitlán
+053,0001,Ciudad de Chignahuapan
+053,0002,Acoculco (Alamedilla)
+053,0003,Acolihuia
+053,0004,Ajolotla
+053,0005,Atlamaxac
+053,0006,Calapa
+053,0008,Cañada de Piedras
+053,0009,Capulaquito
+053,0011,Ciénega Larga
+053,0012,Coacoyunga
+053,0013,San José Corral Blanco
+053,0014,Cruz Colorada
+053,0015,Cuautelolulco
+053,0016,La Gloria (Segunda Sección)
+053,0017,Ixtlahuaca (Palancingo)
+053,0018,Loma Alta
+053,0019,Llano Grande (El Aserradero)
+053,0020,Llano Verde
+053,0021,El Manzanito
+053,0022,Matlahuacala
+053,0023,Matlahuacales de Aquiles Serdán
+053,0024,Las Mesas
+053,0025,Michac
+053,0027,Ocojala
+053,0028,El Paredón
+053,0029,Jonuco Pedernales
+053,0030,Pueblo Nuevo (Peñuelas)
+053,0031,Piedra Ancha
+053,0032,Potrerillos
+053,0033,Los Reyes
+053,0034,Rinconada
+053,0035,Río Chico
+053,0036,San Antonio Matlahuacales
+053,0038,San Francisco Terrerillos
+053,0039,San Isidro Coliuca
+053,0041,San Luis del Valle
+053,0043,Sebastopol
+053,0044,Tecoloquillo
+053,0045,Tecoyuca
+053,0046,Tenancingo
+053,0047,Tenextla
+053,0048,Teotlalcingo
+053,0051,Tres Cabezas
+053,0052,Tzitla
+053,0053,Villa Cuauhtémoc
+053,0054,Nuevo San Claudio (Carretero)
+053,0055,San José Atzintlimeya
+053,0058,General Rafael Ávila Camacho (Teopan)
+053,0070,La Alcantarilla
+053,0077,Buenos Aires (Presa San Francisco)
+053,0079,El Capulín
+053,0080,Cerro de La Virgen
+053,0088,Ejido de Atlamaxac (Estados Unidos)
+053,0090,La Gloria (Primera Sección)
+053,0092,Ixtlahuaca Barrio
+053,0093,El Lobón
+053,0105,Paxtla
+053,0106,Los Ranchos (Rinconada)
+053,0110,Río Blanco (Sebastopol)
+053,0114,San Miguel Pedernales
+053,0128,Venta Ahumada
+053,0137,Llanetillo
+053,0140,El Rodeo
+053,0150,Lázaro Cárdenas (Tzitla)
+053,0162,El Sifón
+053,0166,Zotoltepec
+053,0183,El Fresno
+053,0189,La Quinta
+053,0196,La Yerba
+053,0200,Teotlalpan
+054,0001,Chignautla
+054,0002,Coahuixco
+054,0004,San Isidro
+054,0005,Sosa
+054,0006,Yopi
+054,0007,La Aguardientera
+054,0008,Los Humeros
+054,0009,Los Parajes (Zompanateno)
+054,0010,Analco
+054,0011,Los Aserraderos
+054,0014,Coatzala
+054,0018,Tenextepec
+054,0019,Tepepan
+054,0020,Talzintán
+054,0026,Huapaltepec (Zacatamánix)
+054,0027,Tezohuatepec (Tezotepec)
+054,0028,Crutzitzin
+054,0030,Chignautla
+054,0031,Ateta
+054,0032,Tequimila
+054,0034,Sección Tercera de Chignautla
+054,0035,Calicanto
+054,0036,Unidad Los Cables
+055,0001,Chila
+055,0002,Las Sidras
+055,0004,Francisco Ibarra Ramos
+055,0007,San José Chapultepec
+055,0009,La Trinidad
+056,0001,Chila de La Sal
+056,0002,San Pedro Ocotlán
+057,0001,Honey
+057,0002,Amapoloa
+057,0003,Buena Vista
+057,0004,La Cumbre del Manzano
+057,0005,Chila de Juárez
+057,0006,Huehuetlilla
+057,0007,La Magdalena
+057,0009,Rincón de Chila
+057,0010,Tonalixco
+058,0001,Rafael J. García
+058,0002,Acocomotla
+058,0003,Alto Lucero
+058,0004,El Carmen
+058,0005,San José Chicalotla
+058,0006,Emiliano Zapata (San Isidro)
+058,0007,Francisco I. Madero
+058,0008,Ignacio Zaragoza
+058,0009,La Luz
+058,0010,San José Manzanitos
+058,0012,La Providencia
+058,0013,San Antonio
+058,0014,San Juan del Valle
+058,0015,San Miguel Calixitla (Miguel Hidalgo)
+058,0016,La Trinidad
+058,0020,Cozalapa
+058,0028,Vicente Guerrero
+058,0029,Xaltepec
+058,0037,Teteltitla
+058,0038,Barrio del Corazón de Jesús Tercera Sección
+059,0001,Chinantla
+059,0002,Amatepetlán
+059,0003,Buenavista (San Miguel)
+059,0004,Cuatecontla
+059,0005,Cuicatlán
+059,0006,Tehuixtla (San Francisco)
+060,0001,Domingo Arenas
+060,0013,Cháhuac
+061,0001,Eloxochitlán
+061,0002,Atexacapa
+061,0003,Atiocuabtitla
+061,0004,Campo Nuevo Uno
+061,0005,Itzcuintonalco
+061,0006,El Mirador
+061,0007,Papaloapan
+061,0008,Tepepan
+061,0009,Tepetzala
+061,0010,Tlacotépetl
+061,0011,Xonotipan de Juárez
+061,0013,Zacacoapan
+061,0014,Chiapa
+061,0015,Loma Bonita
+061,0016,Tuxtla
+061,0017,Cañada Rica
+061,0018,El Tepeyac
+061,0019,Tetziquitla
+061,0021,Macuiltepec
+061,0022,Amatitla
+061,0023,Atlalaquia
+061,0024,Campo Nuevo Dos
+061,0026,Cuabtlajapa
+061,0034,Tepeticpac
+061,0040,El Crucero
+061,0042,Laguna Seca
+061,0043,Ojo de Agua
+061,0047,Mochichino
+061,0049,Buena Vista
+062,0001,San Juan Epatlán
+062,0002,Emiliano Zapata
+062,0003,Santa Ana Necoxtla
+062,0004,San Mateo Oxtotla
+062,0005,Xayultepec
+062,0007,Tepeacatzingo
+062,0008,San Miguel El Pedregal
+062,0021,Las Tres Cruces
+062,0025,San Sebastián
+063,0001,Esperanza
+063,0002,Ahuatepec de La Presa (Ahuatepec)
+063,0003,Boca del Monte
+063,0004,Benito Juárez (Chicalote)
+063,0005,Guadalupe Piletas (Puente Negro)
+063,0006,Guadalupe Potreros
+063,0007,Otilio Montaño
+063,0008,San Antonio de Abajo
+063,0009,San José Cuyachapa
+063,0011,Santa Catarina Los Reyes
+063,0014,San José Esperanza
+063,0015,San Manuel La Puerta
+064,0001,Metlaltoyuca
+064,0003,Las Balsas
+064,0005,La Ceiba
+064,0006,Cerco de Piedra
+064,0007,El Cerro Altamirano
+064,0008,La Esperanza
+064,0011,La Guadalupe
+064,0012,Huitzilac
+064,0013,Jaltocan
+064,0014,El Laberinto
+064,0016,La Máquina
+064,0017,La Mina
+064,0018,Moctezuma (Guayabal)
+064,0019,Los Naranjos
+064,0020,El Ojital
+064,0021,La Pahua
+064,0023,Palma Real de Adentro
+064,0024,Paso del Arroyo
+064,0025,Plan de Arroyo
+064,0026,Los Planes
+064,0027,Salsipuedes
+064,0029,El Tecomate
+064,0030,Tixtepec
+064,0033,El Serranito (El Llano)
+064,0036,Benito Juárez
+064,0037,Coyolito (El Coyol)
+064,0144,Río Verde
+064,0151,Mártires de Rancho Nuevo
+065,0001,San Pablo de Las Tunas
+065,0002,Candelaria Portezuelo
+065,0003,San Antonio Portezuelo
+065,0006,Santa Úrsula Chiconquiac
+065,0007,Santiago Tenango
+065,0009,San José Buenavista
+065,0037,#N/A
+066,0001,Guadalupe
+066,0002,La Angostura (San Miguel)
+066,0003,Guadalupito
+066,0004,San Isidro Jehuital
+066,0005,El Limón (San Miguel)
+066,0006,Mixquitepec
+066,0007,La Providencia
+066,0008,San Antonio Chiltepec
+066,0009,Vista Hermosa
+066,0011,#N/A
+066,0014,Las Calaveras
+066,0018,Colonia Las Flores
+067,0001,Guadalupe Victoria
+067,0002,Canoítas (San Antonio Canoítas)
+067,0003,Guadalupe Buenavista (El Tecolote)
+067,0004,Hacienda Nueva (San Pedro El Águila)
+067,0006,Carmen Serdán
+067,0007,Maravillas
+067,0009,San Juan La Muralla
+067,0011,El Progreso
+067,0012,Quechulac (Santa Cruz)
+067,0013,San Luis Atexcac
+067,0014,San Rafael
+067,0060,La Sarh [Vivero]
+068,0001,Bienvenido
+068,0002,Coyay
+068,0003,Cuanixtepec
+068,0004,Francisco Osorno
+068,0005,Ignacio Ramírez
+068,0006,Lacanuy
+068,0007,Tampatapo
+068,0008,Cacatzala
+068,0009,Calpuhuán
+068,0013,La Pila
+068,0015,El Zecna
+068,0021,Agua Zarca
+068,0022,Coyoy
+068,0023,San Antonio Cuanixtepec
+068,0026,San Antonio Hermenegildo Galeana
+068,0031,El Plan
+068,0033,La China
+068,0034,La Fábrica
+069,0001,Huaquechula
+069,0002,Ahuatlán
+069,0003,Cacaloxúchitl
+069,0004,Champusco (Secundaria Técnica Número 4) [Escuela]
+069,0005,Huejotal (Santiago Huejotal)
+069,0006,San Juan Huiluco (Huiluco)
+069,0007,La Libertad (San Lorenzo Tajonar)
+069,0008,Mártir Cuauhtémoc (San José Cuauhtémoc)
+069,0009,Rancho Nuevo Michapita (Michapita)
+069,0010,Morelos Matlala
+069,0011,El Paraíso
+069,0012,El Progreso
+069,0013,San Antonio Cuautla
+069,0014,San Diego El Organal
+069,0015,San Juan Bautista
+069,0016,San Juan Vallarta
+069,0017,San Lucas Matlala
+069,0018,San Pedro Contla
+069,0019,Santa Ana Coatepec
+069,0020,Santa Cruz Yancuitlalpan
+069,0021,Santiago Tetla
+069,0022,Soledad Morelos
+069,0023,Soto Y Gama
+069,0024,Teacalco de Dorantes (San José Teacalco)
+069,0025,Tezonteopan de Bonilla
+069,0026,Tlapetlahuaya (San Bartolo Tlapetlahuaya)
+069,0027,Tronconal
+069,0028,La Venta
+069,0058,Emiliano Zapata (Colonia San Miguel)
+070,0001,Huatlatlauca
+070,0002,Ahuatempan (San Lucas Ahuatempan)
+070,0004,San Nicolás Atlalpan
+070,0005,Santa María Coacuacán
+070,0006,Copalcotitla
+070,0007,San Miguel Cosahuatla
+070,0008,Emiliano Zapata
+070,0009,Quetzalapa (San Baltazar Quetzalapa)
+070,0010,Tempexquixtla
+070,0011,Tepanacitla (Guadalupe Tepanacitla)
+070,0012,Tepetzitzintla
+070,0013,Tochmatzintla
+070,0014,San Pablo Zoyatitlanapan
+070,0018,Chimala
+071,0001,Huauchinango
+071,0002,Ahuacatlán
+071,0003,Alseseca
+071,0004,Ayohuixcuautla
+071,0006,Los Capulines
+071,0008,Las Colonias de Hidalgo
+071,0009,Cuacuila
+071,0010,Cuahueyatla
+071,0011,Cuautlita
+071,0012,Cuauxinca
+071,0013,Cuaxicala
+071,0014,Huilacapixtla
+071,0015,Ixhuacatla
+071,0016,Matlaluca
+071,0017,Mesa de Capulines
+071,0018,Michiuca
+071,0019,Nopala
+071,0020,Ozomatlán
+071,0021,Papatlatla
+071,0022,Papatlazolco
+071,0023,Patoltecoya
+071,0025,Puga
+071,0026,San Miguel Acuautla
+071,0027,Tenango de Las Flores
+071,0028,Tenohuatlán
+071,0029,Teopancingo
+071,0030,Tepehuaquila
+071,0031,Tepetzintla de Galeana
+071,0032,Texcapa
+071,0033,Tlacomulco
+071,0034,Tlalcoyunga
+071,0035,Tlalmaya
+071,0036,Totolapa (El Sifón)
+071,0037,Venta Grande
+071,0038,Xaltepec
+071,0039,Xilocuautla
+071,0040,Xopanapa
+071,0042,Ocpaco
+071,0043,El Mirador
+071,0044,Venta Chica
+071,0056,Los Girasoles
+071,0057,Tzahuinco
+071,0058,Chicuase
+071,0061,Colonia Pemex (Hueyatlagco)
+071,0064,Piedras Pintadas
+071,0065,Santa Catalina
+071,0066,Santiago (Buena Vista)
+071,0070,Tlachichila (Tecoxtenco)
+071,0074,Cacamotla
+071,0077,La Cumbre
+072,0001,Huehuetla
+072,0002,Cinco de Mayo
+072,0003,Chilocoyo del Carmen
+072,0004,Francisco I. Madero
+072,0005,Leacaman
+072,0006,Lipuntahuaca
+072,0007,Ozelonacaxtla
+072,0008,Putaxcat
+072,0009,Xonalpu
+072,0010,Putlunichuchut (Vista Hermosa)
+072,0012,Chilocoyo Guadalupe
+072,0013,Kuwik Chuchut
+072,0014,Huehuetla (Barrio Alto)
+072,0015,Huehuetla
+073,0001,Huehuetlán El Chico
+073,0002,Ayoxuxtla (Ayoxuxtla de Zapata)
+073,0010,San Miguel El Terrero
+073,0011,Tzicatlán
+074,0001,Huejotzingo
+074,0002,Santa María Atexcac
+074,0003,San Diego Buenavista
+074,0004,San Mateo Capultitlán
+074,0008,San Luis Coyotzingo
+074,0013,Santa María Nepopualco
+074,0015,Los Oroza
+074,0016,San Juan Pancoac
+074,0019,San José Munive
+074,0021,Santo Domingo Ciénega Honda
+074,0023,Santa María Tianguistenco
+074,0024,San Miguel Tianguizolco
+074,0025,San José Tlautla
+074,0029,Santa Ana Xalmimilulco
+074,0035,Gustavo Díaz Ordaz (La Cuenca)
+074,0039,Benito Juárez
+074,0064,Álvaro Obregón
+074,0066,Popocatépetl
+074,0082,Barrio Tercero
+074,0090,Los Tanques
+074,0092,Real de Huejotzingo
+074,0093,Los Encinos
+074,0094,Zacatepec
+074,0095,#N/A
+074,0108,Ex-Rancho La Niebla
+074,0115,Valle de San Miguel
+074,0116,#N/A
+075,0001,Hueyapan
+075,0002,Ahuatepec
+075,0004,La Aurora
+075,0005,Colostitán
+075,0007,Nexpan
+075,0008,Tanamacoyan
+075,0009,Tetelilla
+075,0010,Paso Real
+075,0015,Maloapan
+075,0027,Barrio Alto
+075,0030,Tepetitanapan
+075,0032,Talzintán
+075,0033,#N/A
+076,0001,Hueytamalco
+076,0002,Agua Zarca
+076,0003,Amatetel
+076,0004,El Anayal
+076,0008,Arroyo Blanco
+076,0009,Atehuetzin
+076,0011,Ayahualo
+076,0019,Colonia Morelos
+076,0020,Conta
+076,0021,Corral Viejo
+076,0028,San Ángel Cuauxocota
+076,0033,Dos Ríos Nuevo
+076,0035,El Edén
+076,0036,La Esperanza (Limonateno Chico)
+076,0038,La Garita
+076,0041,Limonateno (Limonateno Grande)
+076,0042,Limontitán Chico
+076,0043,Limontitán Grande
+076,0045,Loma Alta
+076,0046,Lomas de Arena
+076,0047,Llagostera
+076,0051,Las Margaritas
+076,0052,Mazolapa
+076,0053,Mecatépetl
+076,0056,El Mirador (Mirador Tenexapa)
+076,0057,El Mohón
+076,0060,Ejido Hueytamalco
+076,0062,Palmagtitán
+076,0064,Paxta
+076,0071,El Progreso
+076,0072,El Pueblillo
+076,0074,Rancho Viejo
+076,0076,El Reparo
+076,0081,San Carlos
+076,0090,Tacotalpa
+076,0091,Tacuba
+076,0093,Tepactipan
+076,0094,Tenexate (Ejido Tenexate)
+076,0096,Tenexapa de Azueta
+076,0097,Tepozoteco
+076,0098,Teteyahualco
+076,0100,Tilapa
+076,0102,Tlacuilolapa
+076,0103,Tonalmeyoco
+076,0108,Vega de Montecelli (El Aguilar)
+076,0114,Zompanico
+076,0115,Zompaquisoyan (Colihui)
+076,0127,La Llave
+076,0130,Montecelli
+076,0137,Solórzano
+076,0140,Vista Hermosa
+076,0148,Jabalinco
+076,0149,San Ignacio (San Ignacio del Progreso)
+076,0152,San Luis
+076,0154,Colonia La Virgen
+076,0159,San Luis
+076,0161,Las Palmas
+076,0162,La Cruz
+076,0167,Colonia del Valle
+076,0171,Loma Bonita
+076,0180,San Antonio
+076,0183,Hueytamalco (Papaloapan)
+076,0184,Manlio Fabio Altamirano
+076,0185,Xalteno
+076,0192,Unidad Habitacional El Paraíso
+077,0001,Hueytlalpan
+077,0002,La Palma
+077,0003,Zitlala
+077,0004,El Arenal
+077,0005,Chililix
+077,0006,El Crucero
+077,0007,La Cruz de Chaca
+077,0010,La Esperanza
+077,0012,La Tranca
+077,0019,Skansipi
+078,0001,Huitzilan
+078,0002,Chagchaloyan de Zapata
+078,0003,San Antonio Taltzintán
+078,0004,San Miguel Acateno
+078,0005,San Miguel del Progreso
+078,0006,Totutla
+078,0007,Xinachapan de Allende
+078,0008,Zoyotla
+078,0009,San José Aocotzota
+078,0015,El Paraíso
+078,0016,Tepetzintla
+078,0018,Chagchaloyan de Isidro Burgos
+078,0019,Acuitapilco
+078,0020,Cozoltepec
+078,0021,Pahuatitán
+078,0022,Pezmata (Papalocontitlán)
+078,0028,Xoloango
+078,0029,Cuarta Sección
+078,0030,Primera Sección
+078,0031,Quinta Sección
+078,0032,Segunda Sección
+078,0033,Tercera Sección
+079,0001,Santa Clara Huitziltepec
+079,0002,Dolores Hidalgo
+079,0003,Santa Ana Coapan
+080,0001,Atlequizayan
+080,0003,Ignacio Allende (Concepción)
+080,0005,Patiy
+081,0001,Ixcamilpa
+081,0003,Buenavista de Zapata
+081,0004,Cuatlaxtecoma
+081,0006,Linderos del Sur
+081,0009,El Organal
+081,0010,San Miguel Ahuelitlalpan
+081,0013,Tlanipatla
+081,0014,Toltecamila
+081,0023,El Frutillo
+082,0001,San Juan Ixcaquixtla
+082,0003,Cuatro Rayas
+082,0004,Barrio de Dolores
+082,0005,Pixtiopan
+082,0006,San Juan Nepomuceno (Rancho Chico)
+082,0007,Santa Cecilia Clavijero
+082,0008,La Soledad
+083,0001,Ixtacamaxtitlán
+083,0003,Ahuateno
+083,0004,Analco (Chancuagco)
+083,0005,Calpanería Atezquilla
+083,0006,Las Barrancas
+083,0007,La Caldera
+083,0008,Capuluapan de Las Aguas
+083,0009,Cristalaco
+083,0010,Cruz de León
+083,0012,Cuahuigtic
+083,0013,Atexquilla Cuapazola
+083,0014,Cuatexmola (Xonacatitla)
+083,0015,Guadalupe Victoria
+083,0016,Huixcolotla
+083,0017,Iliyucan
+083,0018,Loma Larga
+083,0019,La Mesa
+083,0020,Mexcaltepec
+083,0021,Minillas
+083,0022,El Mirador
+083,0024,Ocotla
+083,0025,Oyametepec
+083,0026,Lagunilla Pedernales
+083,0027,San Antonio de Los Pinos
+083,0028,Plan de La Flor
+083,0029,Santa María Zotoltepec
+083,0030,Tagcotepec
+083,0031,Tatempango
+083,0032,Tateno
+083,0034,Tecoltémic
+083,0036,Tepecuahuixco (El Llanete)
+083,0037,Tepexoxuca
+083,0038,Tentzoncuahuigtic
+083,0039,Texocuictic
+083,0040,Texocuixpan
+083,0041,Tiloxtoc
+083,0042,Tlacuela
+083,0043,Tlajomulco
+083,0044,Tlalmotolo
+083,0045,Tlaxcalancingo
+083,0046,Tonalapa
+083,0047,Tuligtic (San Miguel)
+083,0048,La Unión Ejido Mexcaltepec
+083,0049,Vista Hermosa de Lázaro Cárdenas
+083,0050,Xalcomulco
+083,0052,Xiuquenta
+083,0053,Xocoxiutla
+083,0054,Xonacatla
+083,0055,Xopanac
+083,0056,Zaragoza
+083,0057,Jalacingo (Jalacingo Texas)
+083,0058,Guadalupe
+083,0059,Minillas (La Garita)
+083,0062,Almeya
+083,0069,Capolictic
+083,0079,Cuxac (San Antonio)
+083,0087,La Joya
+083,0089,Zacatepec
+083,0092,Minatitlán
+083,0095,Octapa
+083,0110,San José Providencia
+083,0116,Solinco
+083,0117,Tateno Xoco
+083,0120,Tlanana (Atecoxco)
+083,0135,El Tres
+084,0001,Ixtepec
+084,0003,San Martín
+084,0004,Escatachuchut
+084,0005,Caxtamusín
+084,0007,Chamaxculit
+084,0008,Patiy
+084,0010,Takaltzáps
+084,0012,Ixtepec
+085,0001,Izúcar de Matamoros
+085,0002,Abelardo L. Rodríguez
+085,0003,El Aguacate
+085,0004,Agua Escondida (Santa Cruz Agua Escondida)
+085,0006,Los Amates
+085,0008,Ayutla (San Felipe Ayutla)
+085,0009,San José Las Bocas
+085,0010,San Pedro Calantla
+085,0012,Las Casitas
+085,0014,San Juan Colón
+085,0015,San Lucas Colucan
+085,0016,La Galarza
+085,0017,Guadalupe Las Chichihuas
+085,0018,Huaxtepec
+085,0020,Jaltianguis (San José Jaltianguis)
+085,0022,Matzaco
+085,0023,Mexquitepec
+085,0024,San Miguel Las Minas
+085,0025,San Manuel La Parota
+085,0027,San Sebastián Puctla
+085,0028,San Juan Raboso
+085,0029,San Carlos Buenavista
+085,0031,San Isidro
+085,0032,San Martín La Flor (La Flor Colorada)
+085,0033,San Nicolás Tolentino
+085,0039,Santa María Xuchapa
+085,0041,Vista Hermosa
+085,0075,El Cerrito
+085,0116,Dulces Nombres
+085,0120,Santo Niño de Atocha
+085,0124,#N/A
+086,0001,Jalpan
+086,0002,Acoyotitla
+086,0003,Agua Hedionda
+086,0004,Agua Linda
+086,0005,Pueblo América
+086,0006,Apapantilla
+086,0009,Emiliano Zapata
+086,0011,La Garza
+086,0012,Ejido de Jalpan (La Zona)
+086,0015,Nuevo Zoquiapan
+086,0017,Piedras Negras
+086,0018,El Pochote
+086,0019,El Progreso
+086,0021,Techalotla
+086,0023,Vista Hermosa
+086,0027,El Piñal
+086,0028,Nuevo Chalma
+086,0029,El Retiro
+086,0030,Villa Hermosa (Vista Hermosa)
+086,0031,La Reforma
+086,0033,Benito Juárez
+086,0039,La Gloria
+086,0059,Ejido Apapantilla
+086,0092,El Tambor
+086,0093,Grano de Oro
+086,0101,El Paraíso (La Mesa)
+086,0118,Ejido Munixkan
+086,0119,Jesús Cames Valdés
+086,0120,Linda Vista
+086,0121,Los Pinos (Emiliano Zapata)
+086,0126,Aquiles Córdoba Morán
+087,0001,Jolalpan
+087,0004,Huachinantla
+087,0005,Santiago Mitepec
+087,0006,El Salado
+087,0008,San Vicente
+087,0009,Teutla
+087,0010,Xochitepec
+087,0086,Guadalupe
+088,0001,Jonotla
+088,0002,Ecatlán (Santiago Ecatlán)
+088,0003,Paso del Jardín
+088,0004,San Antonio Rayón
+088,0005,Tecpantzingo
+088,0022,El Arenal
+089,0001,Jopala
+089,0002,Buenos Aires
+089,0003,Cuamaxalco
+089,0004,Chicontla
+089,0005,El Encinal
+089,0006,Patla
+089,0007,San Pedro Tlaolantongo
+089,0009,Tecuantla (Los Reyes)
+089,0012,Arroyo Hondo
+089,0014,Rancho Nuevo
+089,0032,Bugambilias (La Cruz)
+089,0033,Zataxcáhuatl
+089,0037,Cinco de Octubre
+089,0038,San Francisco
+090,0001,Cuanalá
+090,0003,#N/A
+090,0004,#N/A
+090,0005,Santa María Zacatepec
+090,0008,Macuiltepec
+091,0001,Nuevo Necaxa
+091,0004,Necaxaltépetl
+091,0014,Cuautlita (El Gamito)
+091,0015,Colonia Azteca
+091,0016,Loma Bonita
+092,0001,Atenayuca
+092,0002,Magdalena Alquizapán
+092,0003,Ánimas Guadalupe
+092,0004,Guadalupe Victoria
+092,0005,San Jerónimo Zoyatitlanapan
+092,0006,Zamarrilla de Álvaro Obregón
+093,0001,Saltillo
+093,0002,Agua de La Mina
+093,0003,Cuauhtémoc
+093,0004,Francisco I. Madero (El Sabinal)
+093,0005,González Ortega
+093,0006,Pocitos (San Miguel)
+093,0007,Tlanalapan
+093,0009,Vista Hermosa
+093,0011,La Ermita
+093,0012,Loma Bonita (Santa Cruz)
+094,0001,Ciudad de Libres
+094,0002,Ahuateno
+094,0003,Álvaro Obregón (San Francisco)
+094,0006,Ayehualaco (San Martín)
+094,0007,Bella Vista
+094,0008,La Cañada
+094,0011,Cuauhtzolco
+094,0012,Las Chapas
+094,0014,Guadalupe Victoria
+094,0015,Guerrero
+094,0017,San José Morelos
+094,0019,Nuevo México (El Sabinal)
+094,0021,Pedernales
+094,0022,Progreso
+094,0023,Rancho Viejo
+094,0028,San Carlos
+094,0029,San José La Libertad
+094,0030,San Martín
+094,0032,San Pedro
+094,0036,Tehuatzingo
+094,0038,Teoloyucan
+094,0039,Timimilco
+094,0042,La Noria González Covarrubias
+094,0062,San Jerónimo Palmaritos
+094,0105,Unidad Habitacional Villa Montana
+095,0001,La Magdalena Tlatlauquitepec
+096,0001,Mazapiltepec de Juárez
+096,0014,Estación de Rinconada
+096,0015,San Martín Rinconada
+096,0019,San Luis Sesma
+097,0001,San Francisco Mixtla
+097,0002,San Simón Coatepec
+098,0001,Molcaxac
+098,0002,Santa Cruz Huitziltepec
+098,0003,San Andrés Mimiahuapan
+098,0004,San José de Gracia
+098,0005,San Luis Tehuizotla
+099,0001,Morelos Cañada
+099,0003,Boca Nopal
+099,0004,Buena Vista
+099,0005,Cerro Gordo
+099,0006,San Miguel Cuesta Chica
+099,0007,Garcías
+099,0008,Guadalupe Fresnal
+099,0009,Llano Grande Ahuatepec
+099,0010,Llano Grande Ixtapa
+099,0011,Puerta Cañada
+099,0012,San Antonio Soledad
+099,0013,San José Ixtapa
+099,0015,Santa Cruz Soledad
+099,0016,Temaxcalapa
+099,0017,Tezuapan (San Isidro)
+099,0018,Lázaro Cárdenas
+099,0022,Barrio de Guadalupe
+099,0023,Barrio La Soledad
+099,0028,San Cayetano
+099,0041,El Calvario
+100,0001,Naupan
+100,0002,Copila
+100,0003,Cuahuihuitzotitla
+100,0004,Cueyatla
+100,0005,Chachahuantla
+100,0007,Iczotitla
+100,0008,Mextla
+100,0009,Tenextitla
+100,0010,Tlaxpanaloya
+100,0011,Achiautla (Xiagtla)
+100,0021,Metztla Arriba
+101,0001,Nauzontla
+101,0002,Cuahutapehual de Benito Juárez
+101,0003,San Rafael Axolota
+101,0004,Santa Lucía Atioyan
+101,0005,Tepanyehual
+101,0006,Talchichil
+101,0008,La Unión
+101,0010,Nauzontla Primera Sección
+102,0001,San Buenaventura Nealtican
+102,0008,Xaltepec
+102,0010,Tetimpa
+103,0001,Nicolás Bravo
+103,0003,Azumbilla
+103,0004,Santa Ana
+103,0027,Guadalupe
+104,0001,Nopalucan de La Granja
+104,0006,Juan de La Granja
+104,0007,Manuel Ávila Camacho (La Cima)
+104,0011,El Rincón Citlaltépetl
+104,0018,Santa Cruz del Bosque
+104,0019,Santa María Ixtiyucan
+104,0035,Eréndira
+104,0053,Colonia Obrera
+104,0057,La Joya
+104,0061,Moctezuma
+104,0066,Rafael Lara Grajales
+104,0068,Unidad Grajales Infonavit
+105,0001,Ocotepec
+105,0002,Guadalupe Victoria
+105,0003,El Mirador (San Francisco)
+105,0004,El Progreso
+105,0005,Tetemi
+105,0006,Tezoquiticpac
+105,0008,San Nicolás Contla
+105,0009,Taxtitlán (San Pedro)
+106,0001,Santa Clara Ocoyucan
+106,0002,Santiago Coltzingo
+106,0003,San Bernardino Chalchihuapan
+106,0004,Emilio Portes Gil
+106,0005,Francisco Sarabia
+106,0006,Santa María Malacatepec
+106,0007,La Pastoría
+106,0008,San Bernabé Temoxtitla
+106,0009,Santa Cruz Hidalgo (Santa Martha Hidalgo)
+106,0010,Santa Martha Hidalgo
+106,0011,San Hipólito Achiapa
+106,0012,San Isidro Petlácatl
+106,0019,Ixtecpatla
+106,0020,Tercera Sección de Santa Clara Ocoyucan
+106,0021,San Nicolás
+106,0029,La Cantera
+106,0031,Diez de Abril
+106,0042,#N/A
+107,0001,Olintla
+107,0002,Bibiano Hernández
+107,0003,Chipahuatlán
+107,0004,Dimas López
+107,0005,Ignacio Zaragoza
+107,0007,Sutic
+107,0008,Vicente Guerrero
+107,0011,Lkuyum Chuchut
+107,0013,Lacapan Camallagne
+107,0015,Santa Catarina
+107,0024,Caztín
+107,0027,Las Lajas
+107,0029,La Libertad
+107,0030,Pasuanca
+107,0031,Pumacachocochuchut
+107,0034,Scontamán
+107,0035,Sujat
+107,0036,Xpiyut
+107,0037,San Pedro
+108,0001,Oriental
+108,0003,Miravalles
+108,0005,San Antonio Virreyes
+108,0008,Santa Cruz Magdalena
+108,0025,Jesús Carranza
+108,0032,San José Zacatepec
+108,0035,Nuevo Centro de Población Tlachichuca
+108,0085,Patrimonio Ejidal
+108,0089,Bosques del Paraíso
+109,0001,Ciudad de Pahuatlán de Valle
+109,0002,Acalapa
+109,0004,Ahila
+109,0005,Ahuacatitla
+109,0006,Los Ángeles
+109,0007,Atla
+109,0008,Atlantongo
+109,0009,Cuauneutla de La Paz
+109,0010,Mamiquetla
+109,0011,Montellano
+109,0012,Naranjastitla
+109,0013,Paciotla
+109,0014,San Pablito
+109,0015,Tlalcruz de Libres
+109,0016,Xilepa
+109,0017,Xolotla
+109,0018,Zacapehuaya
+109,0019,Zoyatla de Guerrero
+109,0020,Xochimilco
+109,0021,Lindavista
+109,0022,Acahuales (El Aguacate)
+109,0024,Agua Negra
+109,0025,Almoloya
+109,0026,El Arenal
+109,0032,Agua del Machete
+110,0001,Palmar de Bravo
+110,0002,Bellavista de Victoria (San José Bellavista)
+110,0003,Contreras
+110,0004,Cuacnopalan
+110,0005,Cuesta Blanca
+110,0006,Cuesta Chica Piletas
+110,0007,Encrucijada Primera Sección
+110,0009,Guadalupe Piletas
+110,0010,San Isidro Monterrosas
+110,0011,Jesús Nazareno
+110,0013,La Purísima
+110,0014,Los Reyes Altamira
+110,0016,San Francisco Piletas
+110,0020,Santa Cruz Monterrosas
+110,0021,Santa Cruz Ocotlán
+110,0022,Tehuitzo
+110,0023,San Miguel Xaltepec
+110,0025,Amozoquillo Piletas
+110,0038,Santa Isabel Sabinal
+110,0044,Encrucijada Segunda Sección
+110,0068,Rancho de La Luz
+110,0086,Rancho de Vera
+110,0090,Los Vergeles
+110,0092,Palmarito
+110,0116,El Marqués
+111,0001,Pantepec
+111,0002,Acalmancillo
+111,0003,Agua Linda
+111,0004,Ameluca
+111,0006,Buena Vista
+111,0007,Ejido Cañada Colotla
+111,0008,Ejido Carrizal Viejo
+111,0009,Cayhuapan
+111,0010,Cebadillas
+111,0011,La Ceiba Chica
+111,0012,El Tablón (La Planada)
+111,0016,Ignacio Zaragoza
+111,0017,Ixtololoya
+111,0018,El Limonar
+111,0019,Mecapalapa
+111,0022,El Pacífico
+111,0024,El Pozo
+111,0025,Progreso de Allende (Rancho Nuevo)
+111,0026,San Antonio
+111,0027,Tenexco
+111,0028,El Terrero
+111,0029,Tejería
+111,0030,El Zapote
+111,0032,Ejido Agua Linda (Dos Arroyos)
+111,0033,Nuevo Carrizal
+111,0036,Cañada de Colotla
+111,0042,Las Palmas
+111,0068,Loma Bonita
+111,0075,Papatlar
+111,0080,Ejido Cerro del Tablón
+111,0088,Guadalupe
+111,0097,La Unión
+111,0102,Santa Cruz
+111,0105,Candelaria
+111,0111,#N/A
+112,0001,Petlalcingo
+112,0002,El Ídolo
+112,0003,El Limón
+112,0004,Mezquital (Sección Quinta El Mezquital)
+112,0005,El Rosario Micaltepec
+112,0007,San Antonio Tierra Colorada
+112,0008,San José Texcalapa
+112,0009,Santa Cruz de Bravo
+112,0010,Santa Gertrudis Salitrillo
+112,0012,Tepejillo
+112,0013,Texcalapa de Juárez
+112,0015,Barrio de Guadalupe Sección Tercera
+112,0017,Ejido San Antonio Tierra Colorada
+112,0028,Sección Sexta Guadalupe
+112,0029,San Isidro
+112,0030,Santa Cruz (Barrio de Santa Cruz)
+113,0001,Piaxtla
+113,0003,Atempa
+113,0006,Progreso
+113,0009,Tecuautitlán
+113,0011,San José Tetla
+113,0012,Tlaxcuapan
+113,0013,Yetla
+113,0014,Loma Bonita
+114,0001,Heróica Puebla de Zaragoza
+114,0125,San José El Aguacate
+114,0129,Los Ángeles Tetela
+114,0132,San Antonio Arenillas
+114,0133,San Andrés Azumiatla
+114,0136,Buenavista Tetela
+114,0138,Calderón (Crucero El Oasis)
+114,0162,Guadalupe Victoria Valsequillo
+114,0174,La Libertad Tecola
+114,0182,El Oasis Valsequillo
+114,0185,La Paz Tlaxcolpan
+114,0189,Resurgimiento Atotonilco
+114,0190,La Resurrección
+114,0194,San Sebastián de Aparicio
+114,0196,San Baltazar Tetela
+114,0206,San José El Rincón
+114,0211,San Miguel Canoa
+114,0216,Santa Cruz La Ixtla
+114,0217,Santa María Tzocuilac La Cantera
+114,0218,Santa María Xonacatepec
+114,0221,Santo Tomás Chautla
+114,0224,Santa María Guadalupe Tecola
+114,0231,San José Xacxamayo
+114,0232,San Pedro Zacachimalpa
+114,0322,San José Zetina
+114,0326,San Miguel Espejo
+114,0343,La Josefina
+114,0359,Santa Catarina
+114,0366,Artículo Primero Constitucional
+114,0367,San Juan Tepepa
+114,0368,18 de Marzo
+114,0380,El Rosario La Huerta
+114,0389,Sección Décima de San Miguel Canoa
+114,0390,Sección Sexta de San Miguel Canoa (Apantenco)
+114,0391,Riveras de Aparicio
+114,0398,Bosques de Amalucan Segunda Sección
+114,0399,Guadalupe
+114,0405,Conjunto Campestre Haras
+114,0414,El Capulo (La Quebradora)
+114,0417,San Miguel
+114,0418,San Miguelito
+114,0425,Tierra Colorada
+114,0430,Los Cerritos
+114,0431,Signoret
+114,0440,Santa Clara La Venta
+114,0452,Chichac
+114,0453,Cuazontetla
+114,0456,Encinos
+114,0460,Nanalcopa
+114,0464,Ampliación La Resurrección
+114,0466,San Marcos
+114,0470,Santo Tomás Chautla (Ixcobenta)
+114,0473,Tlapacoyan
+114,0474,6 de Junio
+114,0477,Lomas de Santa Catarina
+114,0478,Primero de Mayo
+114,0479,San José Aparicio
+114,0480,Santa Catarina
+114,0481,La Providencia
+114,0482,Villla Batabia
+114,0483,Apantenco
+114,0488,Galaxia La Calera
+114,0489,Insurgentes
+114,0490,Jorge Obispo
+114,0492,Santa Elena
+114,0497,#N/A
+114,0499,Tlacaele
+114,0500,#N/A
+114,0501,#N/A
+114,0506,#N/A
+114,0507,#N/A
+114,0512,#N/A
+114,0513,#N/A
+115,0001,Quecholac
+115,0003,La Compañía
+115,0005,Francisco I. Madero
+115,0006,#N/A
+115,0007,Guadalupe Enríquez
+115,0009,Palmarito Tochapan
+115,0010,Progreso de Madero
+115,0011,San Bartolomé Coscomaya
+115,0015,San Simón de Bravo
+115,0018,San José Tuzuapan
+115,0019,Santa Catarina Villanueva
+115,0026,Ejido Palmarito
+115,0034,San Cayetano
+115,0040,Villa del Alto (Colonia Nueva)
+115,0065,San José Tuzuapan
+116,0001,Quimixtlán
+116,0002,Ahuacapan
+116,0003,Ahuatla
+116,0004,Alta Luz
+116,0005,Analco
+116,0006,Barrio de San Juan
+116,0007,Buenavista
+116,0008,Santa Cruz Caballito
+116,0009,Guadalupe Camojapa
+116,0010,Canoajapan (San José)
+116,0011,Jesús María Comalapa
+116,0012,Cuxapa
+116,0013,Chimalecan
+116,0014,Malacahuacan
+116,0015,Nexquexcan
+116,0016,Patlanalan
+116,0017,El Carmen Petlahuacán
+116,0018,Quiliayo
+116,0019,Rincón de Los Reyes
+116,0021,Tepatzin
+116,0023,Tlamanca
+116,0024,Tlamoloaxtla
+116,0025,Tlanepantla
+116,0026,Tototzin
+116,0027,Tozihuic
+116,0028,El Triunfo
+116,0029,Villa Nueva
+116,0030,Xacaxomulco
+116,0031,San Martín El Caballito
+116,0033,La Concepción
+116,0034,San Isidro Reynosa
+116,0036,Alto Lucero
+116,0037,Barrio Nuevo
+116,0038,Conhuitzila
+116,0039,Duraznillo
+116,0040,Limontitla
+116,0042,Palma Sola
+116,0044,Rincón de Patlanalán
+116,0047,Villa Hermosa (San José)
+116,0053,Magueyitos
+116,0057,El Mirador Guadalupano
+116,0058,Papalotla
+116,0059,Huehuetla
+116,0060,El Magueyal
+116,0061,Colonia La Concepción
+116,0063,Rincón Progreso
+116,0064,Cruz Verde
+116,0066,Peña Blanca
+116,0069,Tlahuitompa
+117,0001,Ciudad de Rafael Lara Grajales
+117,0003,Máximo Serdán
+118,0001,Los Reyes de Juárez
+118,0002,Benito Juárez
+118,0003,Buenavista de Juárez
+118,0007,Santiago Acozac
+118,0015,San Juan Acozac
+119,0001,San Andrés Cholula
+119,0009,San Luis Tehuiloyocan
+119,0013,San Bernardino Tlaxcalancingo
+119,0034,San Rafael Comac
+119,0037,Tonantzintla (Santa María Tonantzintla)
+120,0001,San Antonio Cañada
+120,0002,Colonia Cuitlaxtepec
+120,0003,San Esteban Necoxcalco
+120,0004,Colonia La Lobera
+120,0008,Colonia San Salvador
+120,0009,San Antonio Cañada
+120,0010,San Antonio Cañada Primera Sección
+121,0001,Tochimiltzingo
+121,0002,Guadalupe Amolocayan
+121,0003,San Bartolomé Chimalhuacán
+121,0004,La Soledad Tepehuaxtitla
+122,0001,San Felipe Teotlalcingo
+122,0002,San Juan Tlale
+122,0003,San Matías Atzala
+123,0001,San Felipe Tepatlán
+123,0002,África
+123,0003,Altica
+123,0004,La Guadalupana
+123,0005,Jojupango (San Miguel Jojupango)
+123,0007,Pachoc
+123,0008,San Martín del Progreso (La Punta)
+123,0009,Xochimilco
+123,0010,Xochicugtla
+124,0001,San Gabriel Chilac
+124,0003,San Juan Atzingo
+124,0005,San Gabriel Chilac
+125,0001,San Gregorio Atzompa
+125,0002,Chipilo de Francisco Javier Mina (Chipilo)
+126,0001,San Jerónimo Tecuanipan
+126,0002,San Miguel Papaxtla
+126,0003,Los Reyes Tlanechicolpan
+127,0001,San Jerónimo Xayacatlán
+127,0002,Gabino Barreda
+127,0003,Santo Domingo Tonahuixtla
+127,0005,Barranca Salada
+127,0006,Cañada San Miguel
+127,0007,Cañada Estaca
+127,0008,Sección Cañada Sandía
+127,0012,El Cuajilote
+128,0001,San José Chiapa
+128,0006,San Isidro Ovando (La Ambición)
+128,0007,San José Morelos (Los Ocotes)
+128,0008,San José Ozumba
+128,0011,Nuevo Vicencio
+128,0017,La Purísima
+128,0048,San Juan Bautista
+129,0001,San José Miahuatlán
+129,0002,San Jerónimo Axochitlán
+129,0003,San José Axuxco
+129,0004,San Mateo Tlacoxcalco
+129,0005,San Pedro Tetitlán
+130,0001,San Juan Atenco
+130,0002,Santa Cruz Coyotepec
+130,0003,San José Guerrero
+130,0004,Tres Cruces Ocotepec
+131,0001,San Juan Atzompa
+132,0001,San Martín Texmelucan de Labastida
+132,0004,San Buenaventura Tecaltzingo
+132,0008,San Francisco Tepeyecac
+132,0009,San Jerónimo Tianguismanalco
+132,0010,San Juan Tuxco
+132,0013,San Rafael Tlanalapan
+132,0015,Santa María Moyotzingo
+132,0020,Unidad Petrolera (Unidad Habitacional Pemex)
+132,0030,Colonia San Vicente (El Ameyal)
+132,0031,San Miguel Lardizábal (Colonia Altamirano)
+132,0032,Los Ángeles
+132,0036,Llano Las Piedras
+132,0040,El Moral
+132,0044,#N/A
+132,0045,La Loma
+132,0046,Los Pinos
+132,0048,San Baltazar Temaxcalac (El Pollo Gordo)
+132,0049,Santa Cruz de Los Ángeles
+132,0052,San José Los Arcos
+132,0058,San Baltazar (San Mateo Ayecac)
+132,0062,Lomas de San Antonio
+132,0064,Colonia Santa Cruz
+132,0065,La Loma
+132,0066,Llano de Tlahizco
+132,0070,Yeloxochitlán
+132,0072,La Joya
+132,0073,#N/A
+133,0001,San Martín Totoltepec
+133,0003,Las Cruces
+134,0001,San Matías Tlalancaleca
+134,0002,Juárez Coronaco
+134,0003,Santa María Huepalcalco
+134,0004,San Antonio Chiautla de Arenas
+134,0005,Ex-Hacienda Molino de Guadalupe (San Félix)
+134,0006,San Francisco Tláloc
+134,0007,Palmillas
+134,0008,Los Bancos
+134,0011,Cañada de Huepalcalco
+134,0012,Las Nieves
+134,0017,San Fernando El Ocotal
+134,0034,Ampliación Vista Hermosa (Tlacomul)
+134,0038,San Miguel del Molino
+134,0047,San Matías Tlalancaleca
+135,0001,San Miguel Ixitlán
+136,0001,San Miguel Xoxtla
+137,0001,San Nicolás Buenos Aires
+137,0002,Benito Juárez (Mata Redonda)
+137,0003,Buenavista (San José Buenavista)
+137,0004,Emilio Portes Gil
+137,0005,San Francisco La Mata
+137,0006,Miguel Hidalgo
+137,0007,Pozo Guerra
+137,0009,Venustiano Carranza
+138,0001,San Nicolás de Los Ranchos
+138,0002,Santiago Xalitzintla
+138,0003,San Pedro Yancuitlalpan
+139,0001,San Pablo Anicano
+139,0002,Francisco González Bocanegra
+139,0003,Mixquitlixco
+139,0005,San Rafael (La Palma)
+139,0006,San Miguel Tulapa
+139,0007,Pedregoso
+140,0001,Cholula de Rivadavia
+140,0007,San Francisco Coapa
+140,0014,Santiago Momoxpan
+140,0020,Santa María Acuexcomac
+140,0027,San Gregorio Zacapechpan
+140,0051,Santa Julia
+140,0054,#N/A
+140,0055,#N/A
+141,0001,San Pedro Yeloixtlahuaca
+141,0003,San Juan Llano Grande
+141,0004,San Cristóbal
+141,0005,San Isidro Labrador
+141,0006,San José Agua Zarca
+141,0007,San José Álamo
+141,0008,Cruz Verde (Tercera Sección Cruz Verde)
+141,0009,Santa Cruz Mirador
+142,0001,San Salvador El Seco
+142,0002,San Francisco Aljibes
+142,0003,Santa María Coatepec
+142,0008,Guadalupe Victoria
+142,0013,Paso Puente Santa Ana
+142,0020,San José Barroso
+142,0029,San Francisco Aljibes
+142,0102,San Miguel
+143,0001,San Salvador El Verde
+143,0006,La Ladrillera
+143,0008,Analco de Ponciano Arriaga (Santa Cruz Analco)
+143,0009,San Andrés Hueyacatitla
+143,0010,San Gregorio Aztotoacan
+143,0011,San Lucas El Grande
+143,0014,San Simón Atzitzintla
+143,0016,Tlacotepec de José Manzo
+143,0019,Guadalupe La Encinera
+143,0030,Tierra Bendita
+143,0033,Acamique
+143,0036,El Potrero
+143,0049,Unidad 13 de Septiembre
+144,0001,San Salvador Huixcolotla
+144,0003,Dolores
+144,0021,San Salvador Hiuxcolotla (San Judas Tadeo)
+144,0027,Central de Abastos Huixcolotla
+144,0039,#N/A
+145,0001,Tlacotepec de Porfirio Díaz
+145,0002,Buena Vista de Cuauhtémoc
+145,0003,Cuaxuchpa
+145,0004,La Cumbre
+145,0005,Libres
+145,0006,San Martín Mazateopan
+145,0007,Mazatzongo de Guerrero
+145,0008,Naranjastitla de Victoria
+145,0009,Ovatero Y Atexaca
+145,0011,San José Petlapa
+145,0013,Tentziantla (San Marcos)
+145,0014,Teololulco
+145,0015,Tepetla
+145,0016,Tlacxitla
+145,0017,El Mirador
+145,0018,Villa del Río
+145,0019,Vista Hermosa
+145,0020,Zacatepec de Bravo
+145,0021,Zacatilihuic
+145,0022,Ojo de Agua
+145,0023,La Guacamaya
+145,0024,Tepexilotla
+145,0025,Playa Nueva
+145,0038,Cruztitla
+145,0047,Papalocuautla
+145,0048,Peña Alta
+145,0051,Tecolotepec
+145,0053,Yovalastoc
+145,0054,Xalatiopa
+145,0060,Ocotzocuabtla
+145,0063,El Carpintero
+145,0064,Xonoátl
+145,0069,La Palma
+145,0073,Tlacotepec de Díaz
+146,0001,Santa Catarina Tlaltempan
+147,0001,Santa Inés Ahuatempan
+147,0003,La Concepción
+147,0004,San Juan Nepomuceno
+147,0005,Tierra Nueva
+147,0014,Las Minas
+148,0001,Santa Isabel Cholula
+148,0002,San Martín Tlamapa
+148,0003,San Pablo Ahuatempa
+148,0004,Santa Ana Acozautla
+148,0005,Colonia Tlamapa
+148,0007,El Mirador
+149,0001,Santiago Miahuatlán
+149,0002,El Carmen
+149,0003,San José Las Minas
+149,0004,San José Monte Chiquito
+149,0005,La Calavera
+149,0006,San Isidro Vista Hermosa
+149,0009,Benito Juárez
+149,0016,Villa Alegría
+150,0001,Santo Domingo Huehuetlán
+150,0002,San Agustín Ahuehuetla
+150,0004,San Juan Coatetelco
+150,0005,Colonia Agrícola Hidalgo
+150,0006,San Nicolás Huajuapan
+150,0007,Santa Ana Otzolotepec
+150,0008,San Martín Atempan
+150,0009,San Miguel Atlapulco
+150,0010,Santa Martha Yancuitlalpan
+150,0018,Ixtlahuacán
+150,0020,Analco
+151,0001,Santo Tomás Hueyotlipan
+151,0002,San Miguel Zacaola
+152,0001,Soltepec
+152,0003,Doctor Rafael Serrano
+152,0004,La Ermita
+152,0005,Libertad Álvaro Obregón
+152,0008,San Mateo Soltepec
+152,0009,Vista Hermosa
+152,0015,Colonia Benito Juárez
+153,0001,Tecali de Herrera
+153,0002,Ahuatepec
+153,0003,Concepción Cuautla
+153,0004,Guadalupe
+153,0005,La Magdalena Cuaxixtla
+153,0006,San Buenaventura Tetlananca
+153,0007,San Luis Ajajalpan
+153,0008,Santa Cruz Ajajalpan
+153,0011,La Trinidad Tianguismanalco
+153,0013,Aquiles Serdán
+153,0018,La Esperanza
+153,0019,Las Loberas
+153,0022,Tecorral
+153,0023,Zoyatepec
+154,0001,Tecamachalco
+154,0003,Francisco Villa
+154,0005,La Laguna
+154,0006,Lomas de Romero
+154,0007,Lomas de Santa Cruz
+154,0011,La Purísima de Hidalgo (La Purísima)
+154,0013,San Antonio La Portilla
+154,0014,San Antonio Tecolco
+154,0015,San Baltazar
+154,0018,San José Machorro
+154,0019,San José La Portilla
+154,0021,San Mateo Tlaixpan
+154,0026,Santa Rosa
+154,0027,Santiago Alseseca
+154,0028,La Soledad
+154,0029,Veracrucito
+154,0031,Xochimilco
+154,0032,Colonia Cuauhtémoc
+154,0033,José María Pino Suárez
+154,0034,Rubén Jaramillo
+154,0036,El Salado
+154,0044,Barrio La Providencia
+154,0047,Rancho El Laurel (El Laurel)
+154,0057,Colonia del Cuije
+154,0059,Ranchería Los Silvas
+154,0092,San Gregorio Tlacomulco
+155,0001,Tecomatlán
+155,0003,Independencia
+155,0005,Mixquiapan
+155,0006,Olomatlán
+155,0007,Quicayán
+155,0009,San Miguel de Lozano
+155,0010,El Tempexquixtle
+155,0011,Tezoquipan
+155,0012,La Unión
+156,0001,Tehuacán
+156,0002,Rancho Cabras (San Salvador Otzolotepec)
+156,0009,Magdalena Cuayucatepec
+156,0012,San Marcos Necoxtla
+156,0014,San Cristóbal Tepeteopan
+156,0018,San Pablo Tepetzingo
+156,0022,Santa Ana Teloxtoc
+156,0023,Santa Catarina Otzolotepec
+156,0024,Santa Cruz Acapa
+156,0030,El Progreso
+156,0038,El Encinal
+156,0048,Plan de Fierro
+156,0100,Colonia Guadalupe
+156,0171,Cristo Rey
+156,0179,Los Olivos
+156,0184,San Miguel
+156,0209,Jardines de La Guadalupana
+156,0215,San Andrés Arrealco
+156,0216,Colonia 18 de Marzo
+156,0225,El Rosario
+156,0242,#N/A
+157,0001,Tehuitzingo
+157,0002,Atopoltitlán (Santa Cruz Atopoltitlán)
+157,0004,Boqueroncito (Santa Cruz)
+157,0005,San José (Las Calaveras)
+157,0006,Guadalupe Allende (El Pitayo)
+157,0007,Los Hornos de Zaragoza
+157,0008,La Noria Hidalgo
+157,0010,San Francisco de Asís
+157,0014,San Pedro La Junta
+157,0015,San Vicente Ferrer
+157,0016,Tecolutla
+157,0017,Santa Cruz Tejalpa
+157,0018,Tlachinola
+157,0019,Tuzantlán (Mariano Escobedo)
+157,0022,Cuaulutla
+158,0001,Tenampulco
+158,0004,Colonia Morelos
+158,0007,El Chacal
+158,0010,El Jicarillo
+158,0012,La Lima
+158,0013,Paso del Palmar
+158,0014,Poza Verde
+158,0015,Saltillo
+158,0017,Santa Lucía
+158,0019,Tenampulco Viejo
+158,0020,Tenexapa de Allende
+158,0021,El Zapotal
+158,0022,El Zapote
+158,0023,Salsipuedes (Cerro de La Campana)
+158,0024,Arroyo Blanco
+158,0025,Cerro de La Campana
+158,0045,Lázaro Cárdenas (San Diego)
+158,0048,La Sabana
+158,0052,La Nueva Junta Arroyo Zarco
+159,0001,Teopantlán
+159,0002,San Francisco Jalapexco
+159,0003,San Sebastián Tenango
+159,0004,El Zapote
+160,0001,Teotlalco
+160,0002,Achichipico
+160,0004,Contla
+160,0005,San Miguel
+160,0006,Santa Cruz
+160,0007,Tlaucingo
+160,0008,Tlayehualco
+161,0001,Tepanco de López
+161,0002,Francisco I. Madero
+161,0003,José María Pino Suárez
+161,0004,San Andrés Cacaloapan
+161,0005,San Bartolo Teontepec
+161,0006,San Luis Temalacayuca
+161,0076,Miguel Hidalgo
+162,0001,Tepango de Rodríguez
+162,0002,Caltuchoco (Las Láminas)
+163,0001,Tepatlaxco de Hidalgo
+164,0001,Tepeaca
+164,0002,Álvaro Obregón (Santa María Gorozpe)
+164,0003,Guadalupe Calderón
+164,0006,Los Reyes de Ocampo
+164,0007,San Bartolomé Hueyapan
+164,0008,San Cristóbal Los Nava
+164,0009,San Cristóbal Hidalgo
+164,0010,San Felipe Tenextepec
+164,0011,San Francisco Buenavista
+164,0012,San Hipólito Xochiltenango
+164,0013,San José Carpinteros
+164,0015,San Lorenzo Joya de Rodríguez
+164,0016,San Mateo Parra
+164,0018,San Nicolás Tolentino
+164,0019,San Nicolás Zoyapetlayoca
+164,0020,San Pablo Actipan
+164,0021,San Pedro La Joya
+164,0024,Santiago Acatlán
+164,0025,Tlayoatla Joya de Rodríguez
+164,0026,Vicente Guerrero
+164,0027,Zahuatlán de Morelos (San José)
+164,0045,Microondas
+164,0053,San Miguel
+164,0065,Santa María Oxtotipan
+165,0001,San Felipe Tepemaxalco
+165,0002,San Juan Catzoc
+165,0003,San Miguel Xicotzingo
+166,0001,Tepeojuma
+166,0002,San Francisco El Astillero
+166,0006,La Magdalena
+166,0007,San Agustín Las Petacas
+166,0008,El Rodeo (Santa María El Rodeo)
+166,0009,San Pedro Teyuca
+166,0010,Santa María Xoyatla
+166,0011,Ignacio Zaragoza
+166,0015,El Pedregal
+166,0021,El Paraíso
+167,0001,Tepetzintla
+167,0002,Chachayoquila
+167,0003,Chicometepec (San Simón)
+167,0004,Omitlán
+167,0005,Xochitlaxco (San Baltazar)
+167,0006,Tonalixco
+167,0007,Tlaquimpa
+167,0008,Tempextla
+167,0009,Tenantitla
+167,0010,Tlamanca de Hernández
+167,0011,Xicalahuatla
+167,0017,Ejido El Milagro
+167,0022,Koako
+168,0001,Tepexco
+168,0002,Calmeca (San Juan Calmeca)
+168,0005,Fraccionamiento El Chaparral
+168,0010,San Mateo
+169,0001,Tepexi de Rodríguez
+169,0002,Agua de La Luna
+169,0003,Agua Santa Ana
+169,0004,Almolonga (Todos Santos)
+169,0005,Cañada Coyote
+169,0007,Chapultepec (Santo Domingo)
+169,0008,Las Flores
+169,0009,Huajoyuca (Huajoyuca de Palacios)
+169,0010,Huejonapan (San Antonio)
+169,0011,Mariscala
+169,0012,Moralillo
+169,0013,El Progreso (San Antonio)
+169,0014,San Felipe Otlaltepec
+169,0015,San Miguel Ipaltepec
+169,0016,San Pablo Ameyaltepec
+169,0018,Tula
+169,0019,Las Yeguas (San Isidro)
+169,0020,Zacatepec
+169,0021,Colonia Morelos (Pie de Vaca)
+169,0022,Loma San Francisco
+169,0025,Loma Cajón
+169,0033,Cañada Xóchitl Sección Segunda
+169,0057,El Ranchito (Barrio de San Pedro 1Ra. Sección)
+170,0001,Tepeyahualco
+170,0004,Chichicuautla
+170,0005,El Fuerte de La Unión
+170,0006,Guadalupe Sarabia
+170,0007,Itzoteno (San Miguel)
+170,0008,Jalapasco de Barrientos
+170,0009,Mancuernas (El Triunfo)
+170,0015,San José Alchichica
+170,0017,Juan Sarabia Pizarro (San Nicolás)
+170,0020,Techachalco
+170,0021,Tetipanapa
+170,0022,Tezontepec
+170,0023,Xaltipanapa
+170,0029,Laguna de Alchichica
+171,0001,Tepeyahualco de Cuauhtémoc
+171,0002,Huacaltzingo
+172,0001,Ciudad de Tetela de Ocampo
+172,0003,Benito Juárez
+172,0004,La Cañada
+172,0005,Capuluaque
+172,0006,Cuapancingo
+172,0007,Cuxateno
+172,0008,Chalahuico
+172,0010,La Lagunilla
+172,0011,Ometépetl
+172,0012,Oroctipan
+172,0013,Rancho Viejo
+172,0014,San José
+172,0015,San Nicolás (Cuarta Sección)
+172,0016,La Soledad
+172,0018,Taxcantla
+172,0019,Taxco
+172,0020,Tecuanta
+172,0021,Tecuicuilco
+172,0022,Tetelco
+172,0024,Tonalapa
+172,0025,Tototzinapan
+172,0026,Xaltatempa de Lucas
+172,0027,Xilitetitla
+172,0028,Xochititán
+172,0029,Xonocuautla
+172,0030,Zitlalcuautla
+172,0031,Zontecomapan
+172,0032,Zoyatitla
+172,0033,Jalacingo
+172,0034,Tepexácatl
+172,0036,Xalpuente
+172,0037,Zacatepec (Los Nogales)
+172,0038,Talican
+172,0039,Muyuapan
+172,0040,Las Chapas
+172,0042,Ocoyohualulco
+172,0043,Matixco
+172,0044,Zacaloma
+172,0045,Talcozamán
+172,0046,Carreragco
+172,0047,Atenti Oriente
+172,0048,Acatlán
+172,0049,Alvaresco
+172,0052,Buenavista
+172,0056,Nanahuacingo
+172,0057,Las Besanas
+172,0058,Los Patios
+172,0059,Puente Seco
+172,0060,El Puerto
+172,0061,Rancho Alegre
+172,0062,San Nicolás (Tercera Sección)
+172,0070,Cagcapola
+172,0072,Cuautacomulco
+172,0074,San Martín (El Llano)
+172,0076,Tateno
+172,0077,Tepetzala
+172,0078,San Vicente
+172,0081,Barranca Fría
+172,0084,Cuacualachaco
+173,0001,Tételes de Ávila Castillo
+173,0002,Coacalco
+173,0004,Texcalaco
+173,0006,Chalahuico
+173,0007,La Colonia
+174,0001,Teziutlán
+174,0004,Atoluca
+174,0006,Coyopol
+174,0010,Huehueymico
+174,0011,Ixtahuiata (La Legua)
+174,0012,Ixticpan
+174,0013,Ixtlahuaca
+174,0014,Mexcalcuautla
+174,0015,San Diego
+174,0016,San Juan Acateno
+174,0017,San Juan Tezongo
+174,0019,San Sebastián
+174,0022,Xoloateno
+174,0024,Aire Libre (La Mina)
+174,0031,San Miguel Capulines
+174,0034,La Cantera (Tehuatlán)
+174,0035,Cuaxoxpan
+174,0037,Maxtaco
+174,0045,Sección 23
+174,0051,Loma Bonita
+174,0057,San Sebastián (Sección Tercera)
+175,0001,Tianguismanalco
+175,0002,San Francisco Buenavista
+175,0003,San Baltazar Atlimeyaya
+175,0004,San Martín Tlapala
+175,0005,San Pedro Atlixco
+175,0008,Santo Domingo Tenantitla
+175,0013,El Lindero
+175,0015,Rodriguistla
+175,0017,Ingeniero Cuauhtémoc Cárdenas Segunda Sección
+175,0018,La Villa Tercera Sección
+175,0023,#N/A
+176,0001,Tilapa
+176,0002,Agua Dulce
+176,0003,Cuexpala (San Bartolo Cuexpala)
+176,0004,Casa Blanca (Cuyotliapa)
+176,0005,derramadero
+176,0006,San Félix Rijo
+176,0007,Zolonquiapa
+177,0001,Tlacotepec de Benito Juárez
+177,0002,Colonia José Huerta (Sección 17)
+177,0004,Guadalupe Victoria
+177,0005,Los Marías
+177,0006,Pazoltepec
+177,0007,Pericotepec
+177,0008,de Rojas
+177,0010,San José Buenavista
+177,0011,San José Tlacuitlapan
+177,0012,San Juan Zacabasco
+177,0014,Palmillas (La Columna)
+177,0015,San Lucas El Viejo
+177,0016,San Marcos Tlacoyalco
+177,0017,San Martín Esperilla
+177,0018,San Francisco Esperilla
+177,0019,Santa María La Alta
+177,0020,Santo Nombre
+177,0021,Tecaltzingo
+177,0022,Tepazolco
+177,0023,Tepetlacolco
+177,0024,Tlacuitlapan (La Estación Y Los Carrasco)
+177,0025,Ignacio Zaragoza
+177,0026,La Virgen
+177,0028,Tecoxtle
+177,0042,Piedra Hincada de La Soledad
+177,0043,Benito Juárez
+177,0049,Palo Verde
+177,0057,Tlacotepec de Benito Juárez
+177,0058,El Gavilán
+177,0059,San Marcos Tlacoyalco
+177,0065,Reforma
+177,0067,La Tepetatera
+178,0001,Tlacuilotepec
+178,0002,Agua Blanca
+178,0003,La Campana
+178,0005,Cuautepec
+178,0006,La Cueva
+178,0007,Itzatlán
+178,0008,El Jericó
+178,0009,La Lagunilla
+178,0010,El Muñeco (Cristo Rey)
+178,0011,Palo Blanco
+178,0012,Papaloctipan
+178,0013,El Rincón
+178,0014,El Saltillo
+178,0015,San Andrés
+178,0016,San Antonio Acatlán
+178,0017,San Pedro Petlacotla
+178,0018,Santa María
+178,0020,Tacubaya
+178,0021,Tanchitla (Buenavista)
+178,0022,Temaxcalapa
+178,0023,El Temaxcal
+178,0024,Teteloloya
+178,0025,San Juan Tihuacán
+178,0026,Tlapehualita
+178,0027,Tliltepec
+178,0028,Hula
+178,0029,El Zacatal
+178,0030,Plan de Ayala
+178,0033,La Loma de La Colmena
+178,0034,El Encinal
+178,0035,La Joya
+178,0049,La Esperanza
+178,0052,Nuevo Tenancingo
+178,0069,La Joya
+178,0072,San José
+179,0001,Tlachichuca
+179,0002,Agua Escondida El Salitrero (La Jícara)
+179,0003,Álamos Tepetitlán
+179,0004,Colonia Agrícola Bella Vista (San Vicente)
+179,0005,Santa Cruz Buena Vista La Capilla
+179,0006,Emancipación Quetzalapa
+179,0007,Guadalupe Libertad (Río Valiente)
+179,0008,José María Morelos
+179,0009,Lázaro Cárdenas
+179,0010,Manuel Edgardo Ávalos (San Isidro)
+179,0011,Miguel Hidalgo Y Costilla
+179,0012,Oyamecalco El Cajón
+179,0013,Paso Nacional
+179,0014,Puerto Nacional
+179,0015,Rafael Ávila Camacho
+179,0018,San Francisco Independencia (Santa María Aserradero)
+179,0019,San José La Capilla
+179,0020,San José Llano Grande (Máquina Vieja)
+179,0021,San Miguel Zoapan
+179,0022,Santa Cecilia Tepetitlán
+179,0023,Santa Inés Varela La Luz
+179,0024,Santa María El Aserradero (Peones Acasillados)
+179,0034,Santa María Oyamecalco (Los Ranchos)
+179,0041,Santa Rosa
+179,0052,La Colonia de San Pedro
+179,0068,El Tepeyac
+179,0070,Los Hornos
+180,0001,Santa Rita Tlahuapan
+180,0005,Guadalupe Zaragoza
+180,0006,Guadalupito Las Dalias
+180,0007,Ignacio López Rayón (El Gavillero)
+180,0008,Ignacio Manuel Altamirano
+180,0009,La Preciosita
+180,0010,San Francisco La Unión (San Vicente)
+180,0011,San Juan Cuauhtémoc
+180,0012,San Martinito
+180,0013,San Miguel Tianguistenco
+180,0014,San Pedro Matamoros
+180,0015,San Rafael Ixtapalucan
+180,0016,Santa Cruz Moxolahuac
+180,0017,Santa Cruz Otlatla
+180,0018,Santa María Texmelucan
+180,0019,Santiago Coltzingo
+180,0027,Nuevo Tlahuapan
+180,0029,El Pipirín
+180,0037,La Cantera
+181,0001,Tlaltenango
+182,0001,Tlanepantla
+182,0010,Santa Isabel Tlanepantla (La Piedad)
+183,0001,Tlaola
+183,0002,Amanalco
+183,0004,Capultitla
+183,0005,Caxapotla
+183,0006,Cocolongo
+183,0008,Coxolitla
+183,0009,Cuamila
+183,0010,Cutzontipa
+183,0011,Chicahuaxtla
+183,0012,La Gallera
+183,0013,Nuevo Hidalgo
+183,0014,Huixtla
+183,0016,San José
+183,0017,Tlacocugtla
+183,0018,Tlaltepango
+183,0019,Tlapitzalapa
+183,0020,Tlatlapanala
+183,0021,Tzitzicazapa
+183,0022,Xaltepuxtla
+183,0023,Xochinanacatlán
+183,0024,Yetla
+183,0030,Tlatzohuiloya
+183,0033,Nexapa Ahila
+183,0034,Plan de Cuamila
+183,0060,Santa Cruz
+184,0001,Tlapacoya
+184,0002,Ahuacatlaya
+184,0003,La Cruz
+184,0004,Cuatepalcatla
+184,0006,San Antonio Tlilapa
+184,0007,San Miguel Tlilapa
+184,0008,Tlamaya Chico
+184,0009,Tlamaya Grande
+184,0011,Zintlapal
+184,0012,Zoquiapa
+184,0013,Benito Juárez (Xicalango)
+184,0020,San Andrés Buenavista
+184,0023,La Cumbre
+185,0001,Tlapanalá
+185,0002,Santo Domingo Ayotlicha
+185,0003,Rancho de Aztla
+185,0004,Santa Catarina Coatepec
+185,0005,San Luis Chalma
+185,0006,Tepapayeca
+185,0007,Rancho de Tepetzingo
+185,0008,Colonia Las Palmas
+185,0025,Los Tepetates
+186,0001,Ciudad de Tlatlauquitepec
+186,0002,Acamalota
+186,0003,Ahuatamimilol
+186,0004,Ajocotzingo
+186,0006,Calatepec
+186,0007,Coatectzin
+186,0009,Cuacualaxtla
+186,0010,Cuautlamingo
+186,0011,San José Chagchaltzin
+186,0012,Chicuaco
+186,0013,Chililistipan
+186,0014,El Duraznillo
+186,0015,Eloxochitán
+186,0016,Gómez Oriente
+186,0017,Huaxtla
+186,0018,El Carmen Ilita
+186,0019,Jiliapa
+186,0020,Jilotepec
+186,0021,Gómez Sur (Llano de Toluca)
+186,0022,Mazatepec
+186,0023,Ocota
+186,0024,Ocotlán de Betancourt
+186,0025,Oyameles
+186,0026,Pezmatlán
+186,0027,Plan de Guadalupe
+186,0028,El Progreso
+186,0029,Tamalayo
+186,0030,Tanhuixco del Carmen
+186,0031,Tehuagco
+186,0032,Tepantzol
+186,0033,Tepehicán
+186,0034,Tepeteno de Iturbide
+186,0035,Tatauzoquico
+186,0036,Tochimpa
+186,0037,Tzinacantepec
+186,0038,Tzincuilapan
+186,0039,La Unión
+186,0040,Xonocuautla
+186,0041,Yoloctzin
+186,0043,Xomiaco
+186,0045,Atalpa
+186,0046,El Mirador
+186,0050,Loma de La Yerba
+186,0052,Ixmatlaco
+186,0053,Teziutanapa
+186,0054,Gómez Poniente
+186,0056,Acocogta
+186,0057,Almoloni
+186,0058,Chinampa
+186,0061,Ilita
+186,0062,Jalacinguito
+186,0063,Macuilquila
+186,0065,San Agustín Chagchaltzin
+186,0066,San Antonio
+186,0069,Tepetzintla
+186,0070,Túnel Dos
+186,0078,Xaltenango
+186,0079,La Cumbre
+186,0081,Buena Vista
+186,0082,El Canal
+186,0083,Xalteta
+186,0085,Las Mesas
+186,0086,El Pozo
+186,0088,La Palma (Máquinas)
+186,0095,Pablogco
+186,0100,Salvadorco
+186,0101,La Cumbre
+186,0103,Atioyan
+186,0104,Coatectzin Oriente
+187,0001,Tlaxco
+187,0002,Acalman
+187,0003,El Álamo
+187,0005,Atlalpan
+187,0006,Buena Vista
+187,0009,Cuaxtla
+187,0013,Loma Bonita
+187,0018,Ocopetatitla
+187,0020,Chipotla
+187,0032,Dos Caminos
+188,0001,Tochimilco
+188,0002,San Antonio Alpanocan
+188,0003,Santa Cruz Cuautomatitla
+188,0004,Guadalupe Cuilotepec (Santa Catarina Cuilotepec)
+188,0005,San Francisco Huilango
+188,0006,La Magdalena Yancuitlalpan
+188,0007,Tecuanipa (San Miguel Tecuanipa)
+188,0008,Santa Catalina Tepanapa
+188,0009,Santiago Tochimizolco
+188,0010,San Lucas Tulcingo
+188,0011,San Martín Zacatempa
+188,0013,Jerusalén
+188,0015,Los Amates
+188,0026,Guadalupe
+189,0001,Tochtepec
+189,0002,Chipiltepec
+189,0007,San Bartolomé Tepetlacaltechco
+189,0009,San Lorenzo Ometepec
+189,0010,San Martín Caltenco
+189,0011,Santa Cecilia
+189,0016,San José Buenavista
+189,0043,San Felipe La Nopalera
+189,0052,Ejido Veracrucito (San Felipe La Nopalera)
+189,0070,Rancho Bautista
+190,0001,Totoltepec de Guerrero
+190,0002,Santa Cruz Nuevo
+191,0001,Tulcingo de Valle
+191,0002,Atzompa
+191,0003,Guadalupe Tulcingo
+191,0004,Guadalupe Victoria
+191,0005,San Miguel Tlaltepexi
+191,0006,Xixingo de Los Reyes
+191,0007,Zaragoza de La Luz
+191,0008,Aguacatitlán
+191,0009,Francisco Villa
+192,0001,Tuzamapan de Galeana
+192,0002,Huitziltepec
+192,0003,La Junta Poza Larga
+192,0004,Morelos
+192,0005,Reyes de Vallarta
+192,0006,Ricardo Flores Magón
+192,0007,Tetelilla de Islas
+192,0008,El Zorrillo
+192,0009,El Tuti
+192,0011,El Jayal
+192,0015,Las Tuzas
+193,0001,Tzicatlacoyan
+193,0002,San Miguel Acuexcomac
+193,0004,Santa Cruz El Calvario
+193,0005,San Isidro Chiapa
+193,0006,San Antonio Juárez
+193,0007,San Francisco Lagunillas
+193,0008,San Bernardino Tepenene
+193,0009,San José Texaluca
+193,0010,San Martín Teteles
+194,0001,Venustiano Carranza
+194,0002,El Ajengibre
+194,0012,Coronel Tito Hernández (María Andrea)
+194,0016,Villa Lázaro Cárdenas (La Uno)
+194,0017,General Ignacio Zaragoza
+194,0020,El Lindero
+194,0025,La Morena
+194,0026,Nuevo Cabellal
+194,0027,El Ojite
+194,0042,San Rafael
+194,0049,Tumbadero Escobal
+194,0050,Vicente Guerrero
+194,0059,San Bartolo del Escobal
+194,0060,San José
+194,0070,Las Palmitas
+194,0076,La Libertad
+194,0078,Villa de Guadalupe
+194,0082,Estrella Roja
+194,0084,Jesús García
+194,0180,San Diego
+195,0001,Santa María del Monte
+195,0002,San Pedro Ahuatlampa
+195,0003,Alhuaca
+195,0004,Caporalco Buenos Aires
+195,0006,Ciénega Grande de Fátima
+195,0007,Duraznotla
+195,0008,Cuajca
+195,0009,San José Cuamanco
+195,0010,Las Praderas
+195,0011,Rancho Nuevo
+195,0012,San Bernardino Lagunas
+195,0013,San Luis del Pino
+195,0014,Telpatlán
+195,0015,Teotlalco de Hidalgo
+195,0016,Tepetzitzintla
+195,0017,Yahualutzingo
+195,0018,Antiguo Caporalco
+195,0019,Cuatro Caminos
+195,0020,Tulimanca
+195,0022,Campo Chico
+195,0023,Capultitla
+195,0026,Tecolotla
+195,0038,La Barranca (Tepanzola)
+195,0043,Loma Manzana
+195,0047,Tepetate (Ahuaxotla)
+195,0049,Axuxumica
+195,0051,Llano Grande Dos
+195,0053,Xopanapa
+195,0056,Coxcatepachapa
+195,0058,Ojo de Agua
+195,0059,Llano Grande Uno
+195,0064,San José Los Pinos
+196,0001,Xayacatlán de Bravo
+196,0010,El Amate
+197,0001,Xicotepec de Juárez
+197,0002,Ahuaxintitla
+197,0003,Atequexquitla
+197,0004,Gilberto Camacho
+197,0005,Ixtepec
+197,0006,Jalapilla
+197,0007,El Jonote
+197,0008,Los Limones
+197,0010,Mecatlán de Las Flores
+197,0011,Monte Grande de Zaragoza
+197,0012,Nactanca Grande
+197,0014,San Antonio Ocopetlatlán
+197,0015,Las Pilas
+197,0016,Rancho Nuevo
+197,0017,San Agustín Atlihuácan
+197,0018,San Isidro
+197,0019,San Lorenzo
+197,0020,San Pedro Itztla
+197,0021,Santa Cruz Grande
+197,0022,Santa Rita
+197,0024,Tepapatlaxco
+197,0025,El Tepetate
+197,0026,Tlapehuala
+197,0027,Tlaxcalantongo
+197,0029,Villa Ávila Camacho (La Ceiba)
+197,0030,El Cajón
+197,0037,San Antonio
+197,0038,Santa Cruz Chica
+197,0041,Tierra Negra
+197,0048,Ejido de Nactanca
+197,0049,Ejido de Rancho Nuevo (El Ojite)
+197,0053,El Porvenir Ejido
+197,0055,La Herradura
+197,0058,Finca Puebla (Casa Blanca)
+197,0071,Dos Caminos
+197,0083,Duraznotla
+197,0094,Villa de Las Flores
+197,0095,Los Arroyos
+197,0098,Lomas Verdes
+197,0101,Cerro del Tepeyac
+197,0104,Buenavista
+197,0106,Morelos
+197,0113,Tranca de Fierro
+197,0114,Unidad deportiva (Ocotzotal)
+198,0001,Xicotlán
+198,0002,Coacalco
+199,0001,San Juan Xiutetelco
+199,0002,Alto Lucero
+199,0003,Atecax
+199,0004,Las Chapas
+199,0005,Barrio Chiquito
+199,0006,Maxtaloya
+199,0007,San Andrés Coyotitlán
+199,0008,San Andrés
+199,0009,San Francisco
+199,0010,San Isidro
+199,0011,San José
+199,0012,San Salvador (Naranjillo)
+199,0013,Santiago
+199,0014,Tomaquilapa
+199,0016,Xaltipan
+199,0017,San Antonio
+199,0018,El Aguaje Atoluca
+199,0023,Loma Bonita
+199,0024,La Palma
+199,0025,La Reforma
+199,0027,San Martín
+199,0029,Vista Hermosa
+199,0035,El Zapote
+199,0036,La Ventana
+199,0037,La Cantera
+199,0038,La Posta
+199,0039,El Milagro
+199,0041,Chalma
+199,0042,Linda Vista (Los Apolinares)
+199,0043,Xaltipan
+199,0046,La Ciénega
+199,0048,Sección Segunda Xiutetelco
+199,0050,El Progreso
+199,0051,Xaltipan (Sección Décima)
+200,0001,Cinco de Mayo
+200,0002,Atzalán
+200,0003,Cuauximaloyan
+200,0004,Ixehuaco
+200,0005,La Manzanilla
+200,0006,Yautetelco
+200,0027,Cuauhtecomaco
+200,0028,Cuautamanis
+200,0029,San José
+200,0033,Ignacio Zaragoza
+200,0034,Primera Sección
+200,0035,Segunda Sección
+201,0001,Xochiltepec
+201,0002,Ayotla
+201,0003,Altavista
+202,0001,Xochitlán de Vicente Suárez
+202,0002,Amatitán
+202,0003,Huahuaxtla
+202,0004,Huapalegcan
+202,0005,Pahuata
+202,0006,San Francisco Ocotepec (Ocotepec de Cárdenas)
+202,0007,Tzontecomata (Cuaxuchpan)
+202,0008,Xaltipac
+202,0009,Xicalxochico
+202,0010,Zoatecpan
+202,0011,Chicuasencuautla
+202,0019,Xocoyolapan (Santa Isabel)
+202,0024,Xochitlán de Romero Rubio (Tatempan)
+202,0025,Tecorralican
+203,0001,Xochitlán
+203,0005,San Jerónimo Alfaro
+204,0001,Yaonáhuac
+204,0003,Ahuata
+204,0004,Atotocoyan
+204,0006,Ocotepec
+204,0007,Talcozamán
+204,0009,Teteltipan
+204,0010,Tatempan
+204,0012,Contzitzintán
+204,0013,Atemeya
+204,0015,Tepantiloyan
+204,0021,Acocogta Poctan
+204,0025,#N/A
+205,0001,Yehualtepec
+205,0003,Ocotlán de Venustiano Carranza
+205,0004,Rancho Chico
+205,0006,San Gabriel Tetzoyocan
+205,0007,San Miguel Zozutla
+205,0009,San Mateo Tlacomulco
+205,0013,Llano Grande
+205,0015,Colonia Benito Juárez
+205,0017,San Pedro El Chico
+205,0027,El Zorrillal (San Isidro)
+205,0033,San Gabriel Tetzoyocan
+206,0001,Zacapala
+206,0003,Buenavista (Xocotitla)
+206,0004,Guadalupe Hidalgo
+206,0007,El Negrito
+206,0014,El Rosario Xochitiopan
+206,0017,San Mateo Mimiapan
+206,0018,San Miguel de Allende
+206,0022,El Timbre
+206,0024,La Victoria
+206,0026,Rancho Nuevo Los Navarros
+206,0034,Xintete (Santa Cruz Pedernales)
+207,0001,Zacapoaxtla
+207,0002,Ahuacatlán
+207,0003,Atacpan
+207,0004,Calcahualco
+207,0005,Comaltepec
+207,0006,Cuacuilco
+207,0007,Francisco I. Madero
+207,0008,Gonzalo Bautista
+207,0009,Ixtacapan
+207,0010,Jilotepec
+207,0011,La Libertad
+207,0012,Las Lomas
+207,0013,El Molino
+207,0014,Nexpanateno
+207,0015,Nexticapan
+207,0016,El Progreso
+207,0017,San Juan Tahitic
+207,0018,Tatoxcac
+207,0019,Tatzecuala
+207,0020,Texocoyohuac
+207,0021,Xalacapan
+207,0022,Santa Cruz Xaltetela
+207,0023,Xalticpac
+207,0024,Xochitepec
+207,0025,San Francisco Zacapexpan
+207,0026,Héroes del Cinco de Mayo
+207,0027,Mazapa
+207,0028,Independencia (Xiuteno)
+207,0029,Cohuatzalpan
+207,0031,Colos
+207,0033,Insurgentes
+207,0034,Los Cristales (Talican)
+207,0035,Xilita
+207,0042,Jardín de Los Volcanes
+207,0043,San Carlos
+207,0045,Los Manzanos
+207,0050,Moragco
+207,0055,Ahuatepec
+207,0056,Tepoxac
+208,0001,Zacatlán
+208,0002,Ajajalpan (Cuamanala)
+208,0003,Atotonilco
+208,0004,Atzingo (La Cumbre)
+208,0006,Ayotla
+208,0007,Camotepec
+208,0008,Cruztitla
+208,0009,Cuacuila
+208,0013,La Estrella
+208,0014,Hueyapan
+208,0015,Jicolapa
+208,0016,Jilotzingo
+208,0017,Las Lajas (Segunda Sección)
+208,0018,Maquixtla
+208,0019,Matlahuacala
+208,0020,Metepec Segunda Sección
+208,0021,Metlaxixtla
+208,0022,Nanacamila
+208,0023,Otlatlán
+208,0024,Palos Caídos
+208,0026,Poxcuatzingo
+208,0027,San Bartolo
+208,0028,San Pedro Atmatla
+208,0029,San Miguel Tenango
+208,0030,Tepeixco
+208,0031,Tepoxcuautla
+208,0032,Tetelancingo
+208,0034,Tlalixtlipa
+208,0035,Tlatempa
+208,0036,Tomatlán
+208,0037,Tulimán
+208,0038,San Cristóbal Xochimilpa
+208,0039,Xonotla
+208,0040,Xoxonacatla
+208,0041,Yehuala
+208,0042,Zoquitla
+208,0043,Huilotepec
+208,0045,San Isidro Atotonilco
+208,0046,Atexca
+208,0048,San Joaquín Tomatlán (San Isidro Tomatlán)
+208,0052,Atenco
+208,0053,Ayehualulco Segunda Sección (El Tecajete)
+208,0054,Canautla
+208,0058,Cuautilulco Ejido (El Vivero)
+208,0060,Dos Cerritos
+208,0067,Jicolapa Ejido
+208,0069,Las Lajas Primera Sección
+208,0070,La Loma
+208,0072,Metepec Primera Sección
+208,0074,Rancho Nuevo (Nanacamila)
+208,0078,San Lorenzo Tepeixco
+208,0079,Santa Cruz Buenavista
+208,0080,Santa Inés Jilotzingo
+208,0082,Tlaltempa Buenavista
+208,0095,Papaxtla
+208,0112,Santa Martha
+208,0117,Eloxochitlán (Zacatzingo)
+208,0121,Huauchinancingo
+208,0122,Tepetla
+208,0131,Tinixtioca
+208,0132,Eloxochitlán
+209,0001,Zapotitlán Salinas
+209,0003,Estanzuela
+209,0004,Barrio Hidalgo
+209,0005,Guadalupe La Meza
+209,0006,San Pedro Netitlán
+209,0007,Los Reyes Metzontla
+209,0008,San Antonio Texcala
+209,0009,San Juan Raya
+209,0010,Colonia San Martín
+209,0011,San Pedro Atzumba
+209,0014,Xochiltepec (San Francisco)
+209,0016,El Manantial
+209,0017,Ejido Guadalupe
+209,0018,Zaragoza
+209,0019,San José Dixiñado
+209,0035,San Pablo Netitlán
+209,0074,El Arenal
+210,0001,Zapotitlán de Méndez
+210,0002,Nanacatlán
+210,0003,Tuxtla
+210,0004,Zapotitlán de Méndez
+211,0001,Zaragoza
+211,0002,Acuaco
+211,0003,Las Trancas
+211,0004,San José Buenavista
+211,0005,Morelos
+211,0007,El Retiro
+211,0009,Xalehuala
+211,0010,Porvenir
+212,0001,Santiago Zautla
+212,0002,Acatzacata
+212,0003,Apantzingo
+212,0004,Buena Vista
+212,0005,Contla
+212,0006,Cruz Blanca
+212,0008,Chilapa de Vicente Guerrero
+212,0010,Emilio Carranza (Santa Cruz)
+212,0011,Guadalupe Hidalgo
+212,0012,Huitzitzilapan
+212,0013,Ixtactenango
+212,0014,Jalcomulco
+212,0016,El Mirador
+212,0017,Santa Inés Morelos
+212,0018,Ocotzingo
+212,0019,Oxpantla
+212,0021,Rosa de Castilla
+212,0022,San Francisco del Progreso
+212,0023,San Isidro
+212,0024,San Miguel Tenextatiloyan
+212,0025,Tagcotepec
+212,0026,Tenampulco
+212,0027,El Tepeyac
+212,0028,Tlamanca
+212,0029,San Andrés Yahuitlalpan
+212,0030,Zayolapan
+212,0031,Juan Francisco Lucas
+212,0034,Chinampa
+212,0035,Cuacal
+212,0039,Ocopipila
+212,0044,Xopanaco
+212,0050,Cuacuilcingo
+212,0051,San Miguel Tenextatiloyan Primera Sección
+212,0052,Tihuapán
+212,0053,Tlayecapan (Segunda Sección)
+212,0055,El Puerto (Reforma)
+213,0001,Zihuateutla
+213,0002,Azcatlán
+213,0003,Cacahuatlán
+213,0004,Cerro Verde
+213,0006,Cuatechalotla
+213,0007,Cuaunepixca (La Cumbre)
+213,0008,Ernesto Hernández (Tlacoyuco)
+213,0009,La Laguna
+213,0010,Lagunillas
+213,0011,Mazacoatlán
+213,0012,Nanacatepec
+213,0013,Ocomantla
+213,0014,Tecpatlán
+213,0015,Telolotla
+213,0016,Tenanguito
+213,0017,La Unión
+213,0027,La Florida
+213,0030,Loma Bonita
+213,0039,Los Pinos
+213,0045,Los Manguitos
+213,0115,El Dorado
+213,0132,La Tranca de Fierro
+214,0001,San Sebastián Zinacatepec
+214,0005,Colonia del Carmen
+215,0001,Zongozotla
+215,0004,Zongozotla
+215,0006,#N/A
+216,0001,Zoquiapan
+216,0002,Amatlán
+216,0003,San Antonio Buenavista
+216,0008,El Arenal
+216,0011,Zacatilihuic
+216,0014,Calacuahutla
+217,0001,Zoquitlán
+217,0002,Acatepec (San Antonio)
+217,0003,Cacaloc
+217,0004,Coyolapa
+217,0005,Ízhuapa
+217,0007,Oztopulco
+217,0008,Tepexilotla
+217,0009,Xaltepec
+217,0010,Xitlama
+217,0012,Metzontla
+217,0021,Atola
+217,0023,Atzompa
+217,0026,Cobictic
+217,0028,Cotzinga
+217,0029,Cuapnepantla
+217,0030,Chiltepec
+217,0031,Chalchico
+217,0032,Cruztitla
+217,0043,Ocotlamanic
+217,0048,Pozotitla
+217,0049,Quiaptepec
+217,0052,Totlala
+217,0053,Tecolotleapa
+217,0056,Tepantitla
+217,0057,Tepepan Bandera
+217,0058,Tepepa de Zaragoza
+217,0062,Tepeyacac
+217,0065,Xolochtepec (Tlacotzinga)
+217,0068,Trancas
+217,0070,Xicala
+217,0071,Xocotla
+217,0097,Axocobaca
+217,0115,Cuafximaloya
+217,0136,Itzmicapa
+217,0158,Quetzaltotoc
+217,0242,Zoquitlanzacualco
+217,0434,Dos Caminos
+217,0444,Tepequexpa
+217,0641,Ocotempa
+217,0801,Atlantiopa
