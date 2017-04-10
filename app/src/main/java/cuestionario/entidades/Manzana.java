@@ -7,9 +7,9 @@ import com.orm.SugarRecord;
  */
 
 public class Manzana extends SugarRecord {
-    String claveAgeb;
-    String claveManzana;
-    String zap;
+    public String claveAgeb;
+    public String claveManzana;
+    public String zap;
 
     public Manzana(){
 

@@ -257,56 +257,5 @@ public class InicializadorDatos extends Activity {
         }
         return 1;
     }
-    public int InitLocalidad(){
-        Log.d(TAG,"Loading localidades...");
-        final Resources resources =  getResources();
-        InputStream inputStream = resources.openRawResource(R.raw.localidades);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
-        try {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                String[] strings = TextUtils.split(line, ",");
-            }
-        }catch(Exception e){
-
-        }
-        Log.d(TAG, "DONE loading localidades.");
-        return 1;
-    }
-    public int InitAgeb(){
-        Log.d(TAG,"Loading ageb...");
-        final Resources resources =  getResources();
-        InputStream inputStream = resources.openRawResource(R.raw.ageb);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-
-        try {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                String[] strings = TextUtils.split(line, ",");
-            }
-        }catch(Exception e){
-
-        }
-        Log.d(TAG, "DONE loading ageb.");
-        return 1;
-    }
-
-    public int InitManzana(){
-        Log.d(TAG,"Loading manzana...");
-        final Resources resources =  getResources();
-        InputStream inputStream = resources.openRawResource(R.raw.manzana);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-
-        try {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                String[] strings = TextUtils.split(line, ",");
-            }
-        }catch(Exception e){
-
-        }
-        Log.d(TAG, "DONE loading manzana.");
-        return 1;
-    }
 }

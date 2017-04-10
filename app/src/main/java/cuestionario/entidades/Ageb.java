@@ -7,9 +7,9 @@ import com.orm.SugarRecord;
  */
 
 public class Ageb extends SugarRecord{
-    String claveGeo;
-    String claveLocalidad;
-    String claveAgeb;
+    public String claveGeo;
+    public String claveLocalidad;
+    public String claveAgeb;
 
     public Ageb(){
 

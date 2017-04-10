@@ -7,9 +7,9 @@ import com.orm.SugarRecord;
  */
 
 public class Localidad extends SugarRecord{
-    String claveMunicipio;
-    String claveLocalidad;
-    String nombreLocalidad;
+    public String claveMunicipio;
+    public String claveLocalidad;
+    public String nombreLocalidad;
 
     public Localidad(){
 
