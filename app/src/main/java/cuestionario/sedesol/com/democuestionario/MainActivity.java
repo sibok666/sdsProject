@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.orm.SugarContext;
+
 import java.util.List;
 
 import cuestionario.entidades.Ageb;
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        SugarContext.init(this);
         ////obtenemos la latitud y longitud
         GPSTracker gps = new GPSTracker(MainActivity.this);
         // check if GPS enabled
@@ -38,9 +40,10 @@ public class MainActivity extends AppCompatActivity {
             // Ask user to enable GPS/network in settings
             gps.showSettingsAlert();
         }
+
         getBDEntidad();
-        getBDMunicipio();
-        getBDLocalidad();
+        //getBDMunicipio();
+        //getBDLocalidad();
     }
 
     /** Called when the user clicks the Send button */

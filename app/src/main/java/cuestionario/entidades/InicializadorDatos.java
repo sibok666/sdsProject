@@ -5,6 +5,8 @@ import android.content.res.Resources;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.orm.SugarContext;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -20,6 +22,11 @@ import static android.content.ContentValues.TAG;
  */
 
 public class InicializadorDatos extends Activity {
+
+    public InicializadorDatos(){
+        SugarContext.init(this);
+    }
+
     public int InitMunicipio(){
         try {
 
