@@ -12,7 +12,6 @@ public class Ageb extends SugarRecord{
     public String claveAgeb;
 
     public Ageb(){
-
     }
 
     public Ageb(String claveGeo, String claveLocalidad,String claveAgeb){
@@ -20,4 +19,5 @@ public class Ageb extends SugarRecord{
         this.claveLocalidad=claveLocalidad;
         this.claveAgeb=claveAgeb;
     }
+
 }

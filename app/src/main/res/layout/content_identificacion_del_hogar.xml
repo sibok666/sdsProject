@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_identificacion_del_hogar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.IdentificacionDelHogar"
+    tools:showIn="@layout/activity_identificacion_del_hogar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Identifique si existe un informante adecuado que cumpla con las siguientes características:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView56"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="I) QUE SEA INTEGRANTE DEL HOGAR: Persona que se le reconoce como habitante común en la vivienda; vive frecuentemente en el hogar, regularmente ahí duerme,prepara sus alimentos, come y se protege del ambiente; también comprende a las personas que por razones “temporales”, como enfermedad, vacaciones, emergencia, trabajo o estudio, no están viviendo en ese momento en la vivienda. II) QUE CONOZCA LA INFORMACIÓN NECESARIA DE TODOS LOS INTEGRANTES DEL HOGAR. III) CON AL MENOS 15 AÑOS DE EDAD, O SI ES EL JEFE(A) DE HOGAR CON AL MENOS 12 AÑOS. IV) QUE NO TENGA ALGÚN IMPEDIMENTO PARA COMPRENDER, RAZONAR Y RESPONDER LAS PREGUNTAS. V) QUE NO SE ENCUENTRE BAJO EL INFLUJO DE ALCOHOL O ENERVANTES. PARA LOS PROCESOS DE RECERTIFICACIÓN, REEVALUACIÓN, VERIFICACIÓN PERMANENTE DE CONDICIONES SOCIECONÓMICAS, ACTUALIZACIÓN Y MODIFICACIÓN: VI) EL INFORMANTE SE ENCUENTRE EN EL LISTADO ORIGINAL DEL HOGAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView56"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView66"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="¿El informante es adecuado?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView66"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView67"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView67"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/spinnerInformanteAdecuado" />
+
+            <Button
+                android:text="Siguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/button5"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="evaluarInformanteAdecuado2" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

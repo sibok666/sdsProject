@@ -47,7 +47,23 @@
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="cuestionario.entidades" />
 
-        <activity android:name=".IniciarSesion"></activity>
+        <activity android:name=".IniciarSesion" />
+        <activity android:name=".cuestionario.sedesol.paginas.TresAActivity" />
+        <activity android:name=".cuestionario.sedesol.paginas.TresBActivity" />
+        <activity android:name=".cuestionario.sedesol.paginas.TresCActivity" />
+        <activity android:name=".cuestionario.sedesol.paginas.TresCSecondActivity" />
+        <activity
+            android:name=".cuestionario.sedesol.paginas.IdentificacionDelHogar"
+            android:label="@string/title_activity_identificacion_del_hogar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".cuestionario.sedesol.paginas.IdentificacionDelHogarSecond" />
+        <activity android:name=".cuestionario.sedesol.paginas.ResultadoEncuesta" />
+        <activity android:name=".cuestionario.sedesol.paginas.hogar.Pagina1" />
+        <activity android:name=".cuestionario.sedesol.paginas.hogar.Pagina2" />
+        <activity android:name=".cuestionario.sedesol.paginas.hogar.Pagina3" />
+        <activity android:name=".cuestionario.sedesol.paginas.hogar.Pagina4" />
+        <activity android:name=".cuestionario.sedesol.paginas.hogar.Pagina5" />
+        <activity android:name=".cuestionario.sedesol.paginas.hogar.AgregarIntegrante"></activity>
     </application>
 
 </manifest>

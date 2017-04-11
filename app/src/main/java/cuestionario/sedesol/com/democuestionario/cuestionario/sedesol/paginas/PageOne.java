@@ -37,7 +37,7 @@ public class PageOne extends AppCompatActivity {
 
         String [] arregloDomicilioGeografico={"--","Carretera","Camino","No"};
         ArrayAdapter adapterDomicilioGeografico = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,arregloDomicilioGeografico);
-        spinerDomicilioGeografico=(Spinner)findViewById(R.id.spinnerEntidad);
+        spinerDomicilioGeografico=(Spinner)findViewById(R.id.spinnerDomicilioGeografico);
         spinerDomicilioGeografico.setAdapter(adapterDomicilioGeografico);
 
         List<Municipio> municipios = Municipio.listAll(Municipio.class);
@@ -149,24 +149,21 @@ public class PageOne extends AppCompatActivity {
     }
 
     /** Called when the user clicks the Send button */
-    public void irAPagina2(View view) {
+    public void irAApartadoTres(View view) {
 
         String seleccionDomGeo=spinerDomicilioGeografico.getSelectedItem().toString();
 
         if(seleccionDomGeo.equals("Carretera")){
-            Intent intent = new Intent(this, PageTwo.class);
-            Cuestionario c=new Cuestionario();
+            Intent intent = new Intent(this, TresAActivity.class);
             startActivity(intent);
         }else if(seleccionDomGeo.equals("Camino")){
-            Intent intent = new Intent(this, PageTwo.class);
-            Cuestionario c=new Cuestionario();
+            Intent intent = new Intent(this, TresBActivity.class);
             startActivity(intent);
         }else if(seleccionDomGeo.equals("No")){
-            Intent intent = new Intent(this, PageTwo.class);
-            Cuestionario c=new Cuestionario();
+            Intent intent = new Intent(this, TresCActivity.class);
             startActivity(intent);
         }else if(seleccionDomGeo.equals("--")){
-///enviamos mensaje para pedir que seleccione el tipo de domicilio geografico
+        ///enviamos mensaje para pedir que seleccione el tipo de domicilio geografico
         }
 
     }
