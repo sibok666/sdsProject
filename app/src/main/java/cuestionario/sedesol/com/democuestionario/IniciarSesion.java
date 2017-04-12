@@ -26,7 +26,7 @@ public class IniciarSesion extends AppCompatActivity {
 
         //Note.find(Note.class, "name = ? and title = ?", "satya", "title1");
         List<Usuario> usuarios = Usuario.find(Usuario.class, "usuario = ? and contrasenia = ?", "test", "test");
-        if(usuarios.size()==1){
+        if(usuarios.size()>=1){
             Intent intent = new Intent(this, PageOne.class);
             startActivity(intent);
         }

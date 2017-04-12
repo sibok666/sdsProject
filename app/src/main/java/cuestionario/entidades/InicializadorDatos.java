@@ -24,7 +24,7 @@ import static android.content.ContentValues.TAG;
 public class InicializadorDatos extends Activity {
 
     public InicializadorDatos(){
-        SugarContext.init(this);
+
     }
 
     public int InitMunicipio(){

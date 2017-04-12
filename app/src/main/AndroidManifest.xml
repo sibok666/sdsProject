@@ -39,7 +39,7 @@
             android:value="sedesol.db" />
         <meta-data
             android:name="VERSION"
-            android:value="3" />
+            android:value="4" />
         <meta-data
             android:name="QUERY_LOG"
             android:value="true" />
@@ -63,7 +63,8 @@
         <activity android:name=".cuestionario.sedesol.paginas.hogar.Pagina3" />
         <activity android:name=".cuestionario.sedesol.paginas.hogar.Pagina4" />
         <activity android:name=".cuestionario.sedesol.paginas.hogar.Pagina5" />
-        <activity android:name=".cuestionario.sedesol.paginas.hogar.AgregarIntegrante"></activity>
+        <activity android:name=".cuestionario.sedesol.paginas.hogar.AgregarIntegrante" />
+        <activity android:name=".cuestionario.sedesol.paginas.hogar.DatosIntegrantes"></activity>
     </application>
 
 </manifest>

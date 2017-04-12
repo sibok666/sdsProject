@@ -10,174 +10,185 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cuestionario.sedesol.com.democuestionario.MainActivity">
 
-    <Button
-        android:text="Iniciar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/buttonLogin"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="IniciarUso (MainActivity)" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:text="Se detecto que es la primera vez que utilizas la aplicación, para continuar por favor proporciona los datos siguientes:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <TextView
-        android:text=" "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView21"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Se detecto que es la primera vez que utilizas la aplicación, para continuar por favor proporciona los datos siguientes:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
-    <TextView
-        android:text="Nombre:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView21"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView23"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView21"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/textView23"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/nombreRegistro"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Nombre:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView21"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView23"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:text="Dirección:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nombreRegistro"
-        android:id="@+id/textView24"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_below="@+id/textView23"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/nombreRegistro"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/textView24"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/direccionRegistro"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Dirección:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombreRegistro"
+                android:id="@+id/textView24"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
-    <TextView
-        android:text="Edad:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/direccionRegistro"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView29"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_below="@+id/textView24"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/direccionRegistro"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_below="@+id/textView29"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/edadRegistro"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Edad:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/direccionRegistro"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView29"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:text="Teléfono:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edadRegistro"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView28"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_below="@+id/textView29"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/edadRegistro"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/textView28"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/telefonoRegistro"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Teléfono:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edadRegistro"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView28"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:text="Contraseña:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/telefonoRegistro"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView30"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_below="@+id/textView28"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/telefonoRegistro"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:layout_below="@+id/textView30"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/contraseniaRegistro"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Contraseña:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/telefonoRegistro"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView30"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:text="Confirmar contraseña:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/contraseniaRegistro"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView31"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:layout_below="@+id/textView30"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/contraseniaRegistro"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:layout_above="@+id/buttonLogin"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/confirmacionContraseniaRegistro"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Confirmar contraseña:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contraseniaRegistro"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView31"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:layout_above="@+id/buttonLogin"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/confirmacionContraseniaRegistro"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:text="Iniciar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/buttonLogin"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="IniciarUso" />
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
