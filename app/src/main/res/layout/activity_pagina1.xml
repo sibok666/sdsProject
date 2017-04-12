@@ -10,4 +10,231 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.hogar.Pagina1">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/nombreCompletoText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="Actualmente ¿a qué institución está afiliado o inscrito para recibir atención médica?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombreCompletoText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView86"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <CheckBox
+                android:text="Seguro Popular (Incluye Seguro médico para una nueva generación)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox3" />
+
+            <CheckBox
+                android:text="IMSS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox4" />
+
+            <CheckBox
+                android:text="ISSSTE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox5" />
+
+            <CheckBox
+                android:text="PEMEX, Defensa o Marina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox6" />
+
+            <CheckBox
+                android:text="Clínica u hospital privado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox7" />
+
+            <CheckBox
+                android:text="A ninguna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox8" />
+
+            <TextView
+                android:text="¿Está afiliado o inscrito por?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView87" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerDerechohabiencia" />
+
+            <TextView
+                android:text="¿Habla alguna lengua indígena?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView88" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerHablaIndigena" />
+
+            <TextView
+                android:text="¿Cual?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView89" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerLenguasIndigenas" />
+
+            <TextView
+                android:text="Especifique:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView90" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText41" />
+
+            <TextView
+                android:text="¿También habla español?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView91" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerHablaEspañol" />
+
+            <TextView
+                android:text="De acuerdo a su cultura ¿(Ella /Él) se considera indígena?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/testView11223" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerSeConsideraIndigena" />
+
+            <TextView
+                android:text="¿Sabe leer y escribir un recado?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView93" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerSabeLeer" />
+
+            <TextView
+                android:text="¿Cuál fue el último nivel y grado que aprobó en la escuela? ANOTAR EL NIVEL Y LUEGO EL GRADO (NÚMERO DE AÑOS ESCOLARES APROBADOS)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView94" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerGrado" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerAnios" />
+
+            <TextView
+                android:text="¿Actualmente asiste a la escuela?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView95" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerAsisteALaEscuela" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView96"
+                android:text="¿Cuál fue el motivo principal por el que dejó la escuela? NO LEER LAS OPCIONES, ESPERAR RESPUESTA ESPONTÁNEA Y ANOTAR EL MOTIVO PRINCIPAL" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerMotivoAbandonoEscuela" />
+
+            <TextView
+                android:text="Actualmente, ¿Cuál es su estado civil (situación conyugal)?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView97" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerEsCasado" />
+
+            <TextView
+                android:text="En este hogar, ¿vive su pareja o esposa(o)?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView98" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerViveSuPareja" />
+
+            <TextView
+                android:text="¿Quién es?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView99" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerListadoIntegrantes" />
+
+            <Button
+                android:text="Siguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button9"
+                android:onClick="irADatosDeintegrante3 (Pagina1)" />
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>

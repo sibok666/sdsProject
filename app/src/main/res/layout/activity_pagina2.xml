@@ -10,4 +10,117 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.hogar.Pagina2">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombreText"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="El mes pasado..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView82" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerMesPasado" />
+
+            <TextView
+                android:text="Durante el mes pasado realizó actividades como..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView92" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerActividadesMesPasado" />
+
+            <TextView
+                android:text="¿Cuál es la razón de que no haya trabajado el mes pasado?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView100" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerMotivoNoTrabajar" />
+
+            <TextView
+                android:text="En su trabajo principal del mes pasado ¿Se desempeñó como…? NO LEER LAS OPCIONES Y ANOTAR LA OCUPACIÓN PRINCIPAL."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView102" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerSeDesempeniaComo" />
+
+            <TextView
+                android:text="Considerando el trabajo principal que realizó el mes pasado se dedica a trabajar..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView103" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerSeDedicaATrabajar" />
+
+            <TextView
+                android:text="¿Cuál es el motivo por el que no trabaja todo el año?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView104" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerMotivoNoTrabajo" />
+
+            <TextView
+                android:text="En su trabajo principal del mes pasado ¿Tuvo un(a) jefe(a) o supervisor(a)?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView105" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerTuvoJefe" />
+
+            <TextView
+                android:text="Entonces en el trabajo principal del mes pasado de ¿se dedicó a un negocio o actividad por su cuenta?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView106" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerActividadPorSucuenta" />
+
+            <Button
+                android:text="Siguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button10"
+                android:onClick="irADatosDeintegrante4 (Pagina2)" />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

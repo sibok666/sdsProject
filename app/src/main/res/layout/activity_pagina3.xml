@@ -10,4 +10,247 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.hogar.Pagina3">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombreCompletoText3"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="En su trabajo principal del mes pasado ¿le dieron las siguientes prestaciones, aunque no las haya utilizado?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView107" />
+
+            <CheckBox
+                android:text="Incapacidad por enfermedad, accidente o maternidad?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox9" />
+
+            <CheckBox
+                android:text="SAR o Afore?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox10" />
+
+            <CheckBox
+                android:text="Crédito para vivienda?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox11" />
+
+            <CheckBox
+                android:text="Guardería?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox12" />
+
+            <CheckBox
+                android:text="Aguinaldo?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox13" />
+
+            <CheckBox
+                android:text="Seguro de vida?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox14" />
+
+            <CheckBox
+                android:text="No tiene derecho a ninguna de estas prestaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox15" />
+
+            <CheckBox
+                android:text="No sabe/No responde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox16" />
+
+            <TextView
+                android:text="En su trabajo principal del mes pasado ¿recibió un pago?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView108" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerRecibioPago" />
+
+            <TextView
+                android:text="¿Cuánto dinero recibe por su trabajo principal del mes pasado?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView109" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText43" />
+
+            <TextView
+                android:text="¿Cada cuándo recibe esa cantidad?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView110" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerCadaCuanto" />
+
+            <TextView
+                android:text="¿Tiene contratado voluntariamente…"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView111" />
+
+            <CheckBox
+                android:text="SAR, AFORE o fondo de pensiones?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox17" />
+
+            <CheckBox
+                android:text="Seguro privado de gastos médicos?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox18" />
+
+            <CheckBox
+                android:text="Seguro de vida?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox19" />
+
+            <CheckBox
+                android:text="Seguro de invalidez?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox20" />
+
+            <CheckBox
+                android:text="Otro tipo de seguro?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox21" />
+
+            <CheckBox
+                android:text="Ninguno de los anteriores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox22" />
+
+            <CheckBox
+                android:text="No sabe/No responde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox23" />
+
+            <TextView
+                android:text="¿Es jubilado o pensionado?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView112" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerEsJubilado" />
+
+            <TextView
+                android:text="¿Recibe dinero por …"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView113" />
+
+            <CheckBox
+                android:text="Jubilación o pensión dentro del país?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox24" />
+
+            <CheckBox
+                android:text="Jubilación o pensión proveniente de otros países?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox25" />
+
+            <CheckBox
+                android:text="Ninguna de las anteriores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox26" />
+
+            <TextView
+                android:text="¿Tiene tarjeta del Instituto Nacional de las Personas Adultas Mayores (INAPAM)?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView114" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerTieneINAPAM" />
+
+            <TextView
+                android:text="¿Recibe dinero por …"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView115" />
+
+            <CheckBox
+                android:text="Programa Pensión para Adultos Mayores?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox27" />
+
+            <CheckBox
+                android:text="Componente de apoyo para Adultos Mayores del Programa PROSPERA?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox28" />
+
+            <CheckBox
+                android:text="Otros Programas para Adultos Mayores (Estatal o Municipal)?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox29" />
+
+            <CheckBox
+                android:text="Ninguno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox30" />
+
+            <CheckBox
+                android:text="No sabe/No responde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox31" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonFinalizar"
+                android:onClick="irADatosDeintegrante (Pagina3)" />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

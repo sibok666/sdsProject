@@ -3,6 +3,7 @@ package cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.h
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -40,30 +41,30 @@ public class DatosIntegrantes extends AppCompatActivity {
         Intent intent = getIntent();
         String nombreCompleto=intent.getStringExtra("nombreEncuestado");
         nombreCompletoTV= (TextView) findViewById(R.id.nombreIntegrante);
-        nombreCompletoTV.setText("¿"+nombreCompleto+"?");
+        nombreCompletoTV.setText("La siguientes preguntas se refieren a "+nombreCompleto+"");
         parentezcoTV= (TextView) findViewById(R.id.parentezcoText);
-        parentezcoTV.setText("¿Qué parentesco tiene "+nombreCompleto+" con (JEFE (A) DEL HOGAR?");
+        parentezcoTV.setText("¿Qué parentesco tiene con el (JEFE (A) DEL HOGAR?");
         anioTV= (TextView) findViewById(R.id.anioNacioText);
-        anioTV.setText("¿En que año nacio "+nombreCompleto+"?");
+        anioTV.setText("¿En que año nacio?");
         tieneCurpTV= (TextView) findViewById(R.id.tieneCurpText);
-        tieneCurpTV.setText("¿"+nombreCompleto+" tiene CURP?" );
+        tieneCurpTV.setText("¿Tiene CURP?" );
         nombreCurp= (TextView) findViewById(R.id.nombreCurpText);
-        nombreCurp.setText("¿Cual es el CURP de "+nombreCompleto+"?" );
+        nombreCurp.setText("¿Cual es su CURP?" );
         edadTV= (TextView) findViewById(R.id.edadText);
-        edadTV.setText("¿Cuántos años cumplidos tiene "+nombreCompleto+"?" );
+        edadTV.setText("¿Cuántos años cumplidos tiene?" );
         sexoTV= (TextView) findViewById(R.id.sexoText);
-        sexoTV.setText("¿"+nombreCompleto+" es hombre o mujer?" );
+        sexoTV.setText("¿es hombre o mujer?" );
         lugarNacimientoTV= (TextView) findViewById(R.id.lugarNacimientoText);
-        lugarNacimientoTV.setText("¿En qué estado de la República Mexicana nació"+nombreCompleto+"?" );
+        lugarNacimientoTV.setText("¿En qué estado de la República Mexicana nació?" );
 
         tieneActaTV= (TextView) findViewById(R.id.tieneActaText);
-        tieneActaTV.setText("¿"+nombreCompleto+" tiene acta de nacimiento?");
+        tieneActaTV.setText("¿Tiene acta de nacimiento?");
         viveElPadreTV= (TextView) findViewById(R.id.viveElPadreText);
-        viveElPadreTV.setText("¿Vive el padre de "+nombreCompleto+" en este hogar?" );
+        viveElPadreTV.setText("¿Vive su padre en este hogar?" );
         viveLaMadreTV= (TextView) findViewById(R.id.viveLaMadreText);
-        viveLaMadreTV.setText("¿Vive la madre de "+nombreCompleto+" en este hogar?" );
+        viveLaMadreTV.setText("¿Vive su madre este hogar?" );
         desdeQueAnioTV= (TextView) findViewById(R.id.resideEnMexicoText);
-        desdeQueAnioTV.setText("¿Desde que año reside "+nombreCompleto+" en México?" );
+        desdeQueAnioTV.setText("¿Desde que año reside en México?" );
 
         String [] arregloCondicionResidencia={"--","vive normalmente en su domicilio",
                 "vive en otro lugar porque está trabajando, estudiando o por otra razón",
@@ -127,5 +128,10 @@ public class DatosIntegrantes extends AppCompatActivity {
         spinerViveElPadre.setAdapter(adapterVive);
         spinerViveLaMadre=(Spinner) findViewById(R.id.spinnerViveLaMadre);
         spinerViveLaMadre.setAdapter(adapterVive);
+    }
+    public void irADatosDeintegrante2(View view) {
+        Intent intent = new Intent(this, Pagina1.class);
+        intent.putExtra("nombreEncuestado",nombreCompletoTV.getText());
+        startActivity(intent);
     }
 }
