@@ -14,6 +14,8 @@ import android.widget.Spinner;
 import java.util.List;
 
 import cuestionario.entidades.Ageb;
+import cuestionario.entidades.EncuestaGeneral;
+import cuestionario.entidades.EncuestaGeneralPre;
 import cuestionario.entidades.Localidad;
 import cuestionario.entidades.Manzana;
 import cuestionario.entidades.Municipio;
@@ -27,6 +29,15 @@ public class PageOne extends AppCompatActivity {
     Spinner spinerManzana;
     Spinner spinerEntidad;
     Spinner spinerDomicilioGeografico;
+    EncuestaGeneralPre encuestaGeneralPre;
+    String entidadEncuesta;
+    String claveEntidadEncuesta;
+    String municipioEncuesta;
+    String claveMunicipioEncuesta;
+    String localidadEncuesta;
+    String claveLocalidad;
+    String claveAgeb;
+    String carreteraOCamino;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

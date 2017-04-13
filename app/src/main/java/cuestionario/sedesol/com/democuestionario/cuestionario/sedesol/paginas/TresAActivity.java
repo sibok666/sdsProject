@@ -12,7 +12,14 @@ import cuestionario.sedesol.com.democuestionario.R;
 public class TresAActivity extends AppCompatActivity {
     Spinner spinerTipoAdministracion;
     Spinner spinerDerechoTransito;
-
+    String tipoAdministracionEncuesta;
+    String derechoATranstoEncuesta;
+    ///el siguiente campofalta en las entidades encuesta
+    String codigoCarreteraEncuesta;
+    String origenEncuesta;
+    String destinoEncuesta;
+    String KmEncuesta;
+    String metrosEncuesta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

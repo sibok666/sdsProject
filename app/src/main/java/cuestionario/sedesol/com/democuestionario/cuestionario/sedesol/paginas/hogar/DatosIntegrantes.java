@@ -32,6 +32,7 @@ public class DatosIntegrantes extends AppCompatActivity {
     TextView parentezcoTV;
     TextView anioTV;
     TextView desdeQueAnioTV;
+    String nombreCompletoP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class DatosIntegrantes extends AppCompatActivity {
         String nombreCompleto=intent.getStringExtra("nombreEncuestado");
         nombreCompletoTV= (TextView) findViewById(R.id.nombreIntegrante);
         nombreCompletoTV.setText("La siguientes preguntas se refieren a "+nombreCompleto+"");
+        nombreCompletoP=nombreCompleto;
         parentezcoTV= (TextView) findViewById(R.id.parentezcoText);
         parentezcoTV.setText("¿Qué parentesco tiene con el (JEFE (A) DEL HOGAR?");
         anioTV= (TextView) findViewById(R.id.anioNacioText);
@@ -132,6 +134,7 @@ public class DatosIntegrantes extends AppCompatActivity {
     public void irADatosDeintegrante2(View view) {
         Intent intent = new Intent(this, Pagina1.class);
         intent.putExtra("nombreEncuestado",nombreCompletoTV.getText());
+        intent.putExtra("soloNombre",nombreCompletoP);
         startActivity(intent);
     }
 }

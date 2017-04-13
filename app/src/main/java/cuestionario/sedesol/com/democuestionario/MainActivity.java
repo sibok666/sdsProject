@@ -89,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         String usuario="test";
+        if(contraseniaR.equals("")){
+            usuario="test";
+        }
         Log.d(TAG, "Start time-----------"+new Date());
         Usuario u=new Usuario(nombreR,direccionR,edadRI,telefonoR,contraseniaR,usuario);
         u.save();

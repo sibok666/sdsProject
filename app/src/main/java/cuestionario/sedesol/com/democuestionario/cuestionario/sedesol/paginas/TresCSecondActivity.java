@@ -15,6 +15,15 @@ public class TresCSecondActivity extends AppCompatActivity {
     Spinner tipoVialidad2;
     Spinner tipoVialidad3;
 
+    String tipoAsentamientoEncuesta;
+    String nombreAsentamientoEncuesta;
+    String entrevialidad1TipoEncuesta;
+    String entrevialidad1NombreEncuesta;
+    String entrevialidad2TipoEncuesta;
+    String entrevialidad2NombreEncuesta;
+    String vialidadPosteriorTipoEncuesta;
+    String vialidadPosteriorNombreEncuesta;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

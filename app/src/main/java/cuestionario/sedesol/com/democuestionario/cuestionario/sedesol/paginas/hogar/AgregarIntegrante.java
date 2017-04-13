@@ -30,6 +30,7 @@ public class AgregarIntegrante extends AppCompatActivity {
     EditText apellidoM;
     TableLayout tabla;
     Integer renglon=0;
+    String nombreCompletoP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +66,7 @@ public class AgregarIntegrante extends AppCompatActivity {
                 String nombreCompleto=""+nombre.getText();
                 Intent intent = new Intent(v.getContext(), DatosIntegrantes.class);
                 intent.putExtra("nombreEncuestado",nombreCompleto);
+                nombreCompletoP=nombreCompleto;
                 startActivity(intent);
             }
         });

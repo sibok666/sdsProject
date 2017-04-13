@@ -13,6 +13,13 @@ public class TresBActivity extends AppCompatActivity {
     Spinner spinerTerminoGenerico;
     Spinner spinerMargen;
 
+    String terminoGenericoEncuesta;
+    String origenEncuesta;
+    String destinoEncuesta;
+    String margenEncuesta;
+    String KmEncuesta;
+    String metrosEncuesta;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

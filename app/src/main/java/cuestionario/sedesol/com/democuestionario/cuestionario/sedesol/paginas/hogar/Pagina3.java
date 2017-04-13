@@ -18,7 +18,7 @@ public class Pagina3 extends AppCompatActivity {
     Spinner spinerCadaCuanto;
     Spinner spinerEsJubilado;
     Spinner spinerTieneInapam;
-
+    String nombreCompletoP;
 
 
     @Override
@@ -29,8 +29,9 @@ public class Pagina3 extends AppCompatActivity {
         String nombreCompleto=intent.getStringExtra("nombreEncuestado");
         nombreCompletoTV= (TextView) findViewById(R.id.nombreCompletoText3);
         nombreCompletoTV.setText(nombreCompleto);
+        nombreCompletoP=intent.getStringExtra("soloNombre");
         botonFinalizarEncuesta=(Button) findViewById(R.id.buttonFinalizar);
-        botonFinalizarEncuesta.setText("Finalizar con "+ nombreCompletoTV);
+        botonFinalizarEncuesta.setText("Finalizar con "+nombreCompletoP);
 
         spinerRecibioPago=(Spinner) findViewById(R.id.spinnerRecibioPago);
         spinerCadaCuanto=(Spinner) findViewById(R.id.spinnerCadaCuanto);
@@ -54,7 +55,7 @@ public class Pagina3 extends AppCompatActivity {
 
     }
     public void irADatosDeintegrante(View view) {
-        Intent intent = new Intent(this, DatosIntegrantes.class);
+        Intent intent = new Intent(this, AgregarIntegrante.class);
         intent.putExtra("nombreEncuestado",nombreCompletoTV.getText());
         startActivity(intent);
     }

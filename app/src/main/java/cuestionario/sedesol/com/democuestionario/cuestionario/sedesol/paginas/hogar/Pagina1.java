@@ -25,7 +25,9 @@ public class Pagina1 extends AppCompatActivity {
     Spinner spinerListadoIntegrantes;
     Spinner spinerLenguasIndigenas;
 
+
     TextView nombreCompletoTV;
+    String nombreCompletoP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class Pagina1 extends AppCompatActivity {
         setContentView(R.layout.activity_pagina1);
         Intent intent = getIntent();
         String nombreCompleto=intent.getStringExtra("nombreEncuestado");
+        nombreCompletoP=intent.getStringExtra("soloNombre");
         nombreCompletoTV= (TextView) findViewById(R.id.nombreCompletoText);
         nombreCompletoTV.setText(nombreCompleto);
         spinerDerechohabiencia=(Spinner) findViewById(R.id.spinnerDerechohabiencia);
@@ -58,6 +61,7 @@ public class Pagina1 extends AppCompatActivity {
         ArrayAdapter adapterHablaI = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,arregloHablaIndigena);
         spinerHablaIndigena.setAdapter(adapterHablaI);
         spinerHablaEspaniol.setAdapter(adapterHablaI);
+        spinerSabeLeer.setAdapter(adapterHablaI);
 
         String [] arregloSeConsideraIndigena={"--","Si","No","NS/NR"};
         ArrayAdapter adapterSeCons = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,arregloSeConsideraIndigena);
@@ -111,6 +115,7 @@ public class Pagina1 extends AppCompatActivity {
     public void irADatosDeintegrante3(View view) {
         Intent intent = new Intent(this, Pagina2.class);
         intent.putExtra("nombreEncuestado",nombreCompletoTV.getText());
+        intent.putExtra("soloNombre",nombreCompletoP);
         startActivity(intent);
     }
 }

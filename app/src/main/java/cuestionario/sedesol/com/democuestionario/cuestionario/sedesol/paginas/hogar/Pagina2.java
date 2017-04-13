@@ -22,7 +22,7 @@ public class Pagina2 extends AppCompatActivity {
     Spinner spinerActividadPorSucuenta;
 
     TextView nombreCompletoTV;
-
+    String nombreCompletoP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +31,7 @@ public class Pagina2 extends AppCompatActivity {
         String nombreCompleto=intent.getStringExtra("nombreEncuestado");
         nombreCompletoTV= (TextView) findViewById(R.id.nombreText);
         nombreCompletoTV.setText(nombreCompleto);
-
+        nombreCompletoP=intent.getStringExtra("soloNombre");
         spinerMesPasado=(Spinner)findViewById(R.id.spinnerMesPasado);
         spinerActividadesMesPasado=(Spinner)findViewById(R.id.spinnerActividadesMesPasado);
         spinerMotivoNoTrabajar=(Spinner)findViewById(R.id.spinnerMotivoNoTrabajar);
@@ -121,6 +121,7 @@ public class Pagina2 extends AppCompatActivity {
     public void irADatosDeintegrante4(View view) {
         Intent intent = new Intent(this, Pagina3.class);
         intent.putExtra("nombreEncuestado",nombreCompletoTV.getText());
+        intent.putExtra("soloNombre",nombreCompletoP);
         startActivity(intent);
     }
 }

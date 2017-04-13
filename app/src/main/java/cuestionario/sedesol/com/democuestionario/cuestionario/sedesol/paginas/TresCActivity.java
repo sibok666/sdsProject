@@ -12,6 +12,13 @@ import cuestionario.sedesol.com.democuestionario.R;
 public class TresCActivity extends AppCompatActivity {
     Spinner spinerTipoVialidad;
 
+    String tipoVialidadEncuesta;
+    String nombreVialidadEncuesta;
+    Integer numeroExtEncuesta;
+    String letraIntEncuesta;
+    Integer numExtAntEncuesta;
+    Integer numInteriorEncuesta;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
