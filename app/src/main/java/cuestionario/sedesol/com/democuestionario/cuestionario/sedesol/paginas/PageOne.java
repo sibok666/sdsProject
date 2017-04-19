@@ -2,6 +2,7 @@ package cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import java.util.Date;
 import java.util.List;
 
 import cuestionario.entidades.Ageb;
@@ -35,9 +37,10 @@ public class PageOne extends AppCompatActivity {
     String municipioEncuesta;
     String claveMunicipioEncuesta;
     String localidadEncuesta;
-    String claveLocalidad;
-    String claveAgeb;
-    String carreteraOCamino;
+    String claveLocalidadEncuesta;
+    String claveAgebEncuesta;
+    String carreteraOCaminoEncuesta;
+    String claveManzanaEncuesta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,10 @@ public class PageOne extends AppCompatActivity {
         setContentView(R.layout.activity_page_one);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        encuestaGeneralPre=new EncuestaGeneralPre();
+        encuestaGeneralPre.setEntidadFederativa("Puebla");
+        encuestaGeneralPre.setClaveEntidad("21");
+        encuestaGeneralPre.setFechaInicio(new Date());
 
         String [] arregloDomicilioGeografico={"--","Carretera","Camino","No"};
         ArrayAdapter adapterDomicilioGeografico = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,arregloDomicilioGeografico);
@@ -163,15 +170,36 @@ public class PageOne extends AppCompatActivity {
     public void irAApartadoTres(View view) {
 
         String seleccionDomGeo=spinerDomicilioGeografico.getSelectedItem().toString();
+        municipioEncuesta=spinerMunicipio.getSelectedItem().toString();
+        localidadEncuesta=spinerLocalidad.getSelectedItem().toString();
+        claveAgebEncuesta=spinerAgeb.getSelectedItem().toString();
+        claveManzanaEncuesta=spinerManzana.getSelectedItem().toString();
+        carreteraOCaminoEncuesta=seleccionDomGeo;
 
+        encuestaGeneralPre.setDomicilioGeografico(carreteraOCaminoEncuesta);
+        encuestaGeneralPre.setMunicipio(municipioEncuesta);
+        encuestaGeneralPre.setLocalidad(localidadEncuesta);
+        encuestaGeneralPre.setClaveAgeb(claveAgebEncuesta);
+        encuestaGeneralPre.setClaveManzana(claveManzanaEncuesta);
+        Bundle bundle=new Bundle();
         if(seleccionDomGeo.equals("Carretera")){
             Intent intent = new Intent(this, TresAActivity.class);
+            bundle.putSerializable("EncuestaGeneralPre",encuestaGeneralPre);
+            //intent.putExtra("EncuestaGeneralPre",encuestaGeneralPre);
+            intent.putExtras(bundle);
             startActivity(intent);
         }else if(seleccionDomGeo.equals("Camino")){
             Intent intent = new Intent(this, TresBActivity.class);
-            startActivity(intent);
+            //intent.putExtra("EncuestaGeneralPre", encuestaGeneralPre);
+            bundle.putSerializable("EncuestaGeneralPre",encuestaGeneralPre);
+            //intent.putExtra("EncuestaGeneralPre",encuestaGeneralPre);
+            intent.putExtras(bundle);startActivity(intent);
         }else if(seleccionDomGeo.equals("No")){
             Intent intent = new Intent(this, TresCActivity.class);
+            //intent.putExtra("encuestaGeneralPre",encuestaGeneralPre);
+            bundle.putSerializable("EncuestaGeneralPre",encuestaGeneralPre);
+            //intent.putExtra("EncuestaGeneralPre",encuestaGeneralPre);
+            intent.putExtras(bundle);
             startActivity(intent);
         }else if(seleccionDomGeo.equals("--")){
         ///enviamos mensaje para pedir que seleccione el tipo de domicilio geografico

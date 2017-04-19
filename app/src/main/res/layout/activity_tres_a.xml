@@ -169,7 +169,7 @@
                 android:layout_below="@+id/textView35"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:id="@+id/editText16"
+                android:id="@+id/editTextKm"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 
@@ -177,7 +177,7 @@
                 android:text="Metros:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/editText16"
+                android:layout_below="@+id/editTextKm"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:id="@+id/textView37"
@@ -189,7 +189,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText17"
+                android:id="@+id/editTextMetros"
                 android:layout_below="@+id/textView37"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"

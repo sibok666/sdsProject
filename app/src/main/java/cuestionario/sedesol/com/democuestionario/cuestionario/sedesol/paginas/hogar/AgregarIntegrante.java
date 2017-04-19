@@ -2,6 +2,7 @@ package cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.h
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -66,6 +67,7 @@ public class AgregarIntegrante extends AppCompatActivity {
                 String nombreCompleto=""+nombre.getText();
                 Intent intent = new Intent(v.getContext(), DatosIntegrantes.class);
                 intent.putExtra("nombreEncuestado",nombreCompleto);
+                intent.putExtra("tablaIntegrantes", (Parcelable) tabla);
                 nombreCompletoP=nombreCompleto;
                 startActivity(intent);
             }

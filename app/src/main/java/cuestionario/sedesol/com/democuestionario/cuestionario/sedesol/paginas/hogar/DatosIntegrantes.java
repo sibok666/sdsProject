@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import cuestionario.entidades.EncuestaPorIntegrante;
+import cuestionario.entidades.EncuestaPorIntegrantePre;
 import cuestionario.sedesol.com.democuestionario.R;
 
 public class DatosIntegrantes extends AppCompatActivity {
@@ -33,6 +35,20 @@ public class DatosIntegrantes extends AppCompatActivity {
     TextView anioTV;
     TextView desdeQueAnioTV;
     String nombreCompletoP;
+    EncuestaPorIntegrantePre encuestaPorIntegrantePre;
+
+    String condicionResidenciaEncuesta;
+    String parentezcoEncuesta;
+    String tieneCurpEncuesta;
+    String curpEncuesta;
+    String anioNacimientoEncuesta;
+    Integer edadEncuesta;
+    String sexoEncuesta;
+    String lugarDeNacimientoEncuesta;
+    String desdeQueAnioResideEnMexicoEncuesta;
+    String tieneActaEncuesta;
+    String viveElPadreEncuesta;
+    String viveLaMadreEncuesta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

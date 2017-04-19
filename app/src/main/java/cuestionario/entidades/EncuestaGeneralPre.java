@@ -1,8 +1,11 @@
 package cuestionario.entidades;
 
+import android.os.Parcelable;
+
+import java.io.Serializable;
 import java.util.Date;
 
-public class EncuestaGeneralPre{
+public class EncuestaGeneralPre implements Serializable {
     private Integer idEncuesta;
     private String folio;
     private Long latitud;
@@ -23,6 +26,7 @@ public class EncuestaGeneralPre{
     private String domicilioGeografico;
     private String a3tipoAdminCarretera;
     private String a3derechoTransito;
+    private String a3codigoCarretera;
     private String a3Origen;
     private String a3Destino;
     private String a3Km;
@@ -76,7 +80,7 @@ public class EncuestaGeneralPre{
                            Date fechaInicio,Date fechaFin,Integer guardadoEnBDRemota,String entidadFederativa,
                            String claveEntidad,String municipio,String claveMunicipio,String localidad,
                            String claveLocalidad,String claveAgeb,String claveManzana,String domicilioGeografico,
-                           String a3tipoAdminCarretera,String a3derechoTransito,String a3Origen,String a3Destino,
+                           String a3tipoAdminCarretera,String a3derechoTransito,String a3codigoCarretera,String a3Origen,String a3Destino,
                            String a3Km,String a3Metros,String b3TerminoGenerico,String b3Origen,String b3Destino,
                            String b3Margen,String b3Km,String b3Metros,String c3TipoVialidad,String c3NombreVialidad,
                            String c3NumeroExt,String c3letra,String c3NumExtAnt,String c3NumInterior,String c3LetraInterior,
@@ -110,6 +114,7 @@ public class EncuestaGeneralPre{
         this.setDomicilioGeografico(domicilioGeografico);
         this.setA3tipoAdminCarretera(a3tipoAdminCarretera);
         this.setA3derechoTransito(a3derechoTransito);
+        this.setA3codigoCarretera(a3codigoCarretera);
         this.setA3Origen(a3Origen);
         this.setA3Destino(a3Destino);
         this.setA3Km(a3Km);
@@ -676,5 +681,13 @@ public class EncuestaGeneralPre{
 
     public void setTelFijo(Integer telFijo) {
         this.telFijo = telFijo;
+    }
+
+    public String getA3codigoCarretera() {
+        return a3codigoCarretera;
+    }
+
+    public void setA3codigoCarretera(String a3codigoCarretera) {
+        this.a3codigoCarretera = a3codigoCarretera;
     }
 }

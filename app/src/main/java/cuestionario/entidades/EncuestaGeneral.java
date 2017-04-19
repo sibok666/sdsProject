@@ -29,6 +29,7 @@ public class EncuestaGeneral extends SugarRecord {
     String domicilioGeografico;
     String a3tipoAdminCarretera;
     String a3derechoTransito;
+    String a3codigoCarretera;
     String a3Origen;
     String a3Destino;
     String a3Km;
@@ -82,7 +83,7 @@ public class EncuestaGeneral extends SugarRecord {
             Date fechaInicio,Date fechaFin,Integer guardadoEnBDRemota,String entidadFederativa,
             String claveEntidad,String municipio,String claveMunicipio,String localidad,
             String claveLocalidad,String claveAgeb,String claveManzana,String domicilioGeografico,
-            String a3tipoAdminCarretera,String a3derechoTransito,String a3Origen,String a3Destino,
+            String a3tipoAdminCarretera,String a3derechoTransito,String a3codigoCarretera,String a3Origen,String a3Destino,
             String a3Km,String a3Metros,String b3TerminoGenerico,String b3Origen,String b3Destino,
             String b3Margen,String b3Km,String b3Metros,String c3TipoVialidad,String c3NombreVialidad,
             String c3NumeroExt,String c3letra,String c3NumExtAnt,String c3NumInterior,String c3LetraInterior,
@@ -116,6 +117,7 @@ public class EncuestaGeneral extends SugarRecord {
         this.domicilioGeografico=domicilioGeografico;
         this.a3tipoAdminCarretera=a3tipoAdminCarretera;
         this.a3derechoTransito=a3derechoTransito;
+        this.a3codigoCarretera=a3codigoCarretera;
         this.a3Origen=a3Origen;
         this.a3Destino=a3Destino;
         this.a3Km=a3Km;
