@@ -8,8 +8,8 @@ import java.util.Date;
 public class EncuestaGeneralPre implements Serializable {
     private Integer idEncuesta;
     private String folio;
-    private Long latitud;
-    private Long longitud;
+    private Double latitud;
+    private Double longitud;
     private String claveEncuestador;
     private String nombreEncuestador;
     private Date fechaInicio;
@@ -75,8 +75,8 @@ public class EncuestaGeneralPre implements Serializable {
     private Integer telFijo;
 
     public EncuestaGeneralPre(){}
-    public EncuestaGeneralPre(Integer idEncuesta,String folio,Long latitud,
-                           Long longitud,String claveEncuestador,String nombreEncuestador,
+    public EncuestaGeneralPre(Integer idEncuesta,String folio,Double latitud,
+                           Double longitud,String claveEncuestador,String nombreEncuestador,
                            Date fechaInicio,Date fechaFin,Integer guardadoEnBDRemota,String entidadFederativa,
                            String claveEntidad,String municipio,String claveMunicipio,String localidad,
                            String claveLocalidad,String claveAgeb,String claveManzana,String domicilioGeografico,
@@ -179,21 +179,7 @@ public class EncuestaGeneralPre implements Serializable {
         this.folio = folio;
     }
 
-    public Long getLatitud() {
-        return latitud;
-    }
 
-    public void setLatitud(Long latitud) {
-        this.latitud = latitud;
-    }
-
-    public Long getLongitud() {
-        return longitud;
-    }
-
-    public void setLongitud(Long longitud) {
-        this.longitud = longitud;
-    }
 
     public String getClaveEncuestador() {
         return claveEncuestador;
@@ -689,5 +675,21 @@ public class EncuestaGeneralPre implements Serializable {
 
     public void setA3codigoCarretera(String a3codigoCarretera) {
         this.a3codigoCarretera = a3codigoCarretera;
+    }
+
+    public Double getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(Double latitud) {
+        this.latitud = latitud;
+    }
+
+    public Double getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(Double longitud) {
+        this.longitud = longitud;
     }
 }

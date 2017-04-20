@@ -41,6 +41,8 @@ public class GetAllActivity extends AppCompatActivity {
     TextView t7;
     TextView t8;
     TextView t9;
+    TextView t10;
+    TextView t11;
     Integer posicion=0;
     private ProgressDialog pDialog;
 
@@ -64,6 +66,9 @@ public class GetAllActivity extends AppCompatActivity {
         t7=(TextView) findViewById(R.id.fechaInicioText);
         t8=(TextView) findViewById(R.id.fechaFinText);
         t9=(TextView) findViewById(R.id.numeroEncuestaText);
+        t10=(TextView) findViewById(R.id.latitudText);
+        t11=(TextView) findViewById(R.id.longitudText);
+
         encuestaAnterior=(Button)findViewById(R.id.buttonEncuestaAnterior);
         encuestaSiguiente=(Button)findViewById(R.id.buttonEncuestaSiguiente);
         encuestaFinal=(Button)findViewById(R.id.buttonEncuestaFinal);
@@ -163,8 +168,8 @@ public class GetAllActivity extends AppCompatActivity {
                     encuesta.setLocalidad(jsonArrayChild.optString("localidad"));
                     encuesta.setMunicipio(jsonArrayChild.optString("municipio"));
                     encuesta.setClaveEntidad(jsonArrayChild.optString("claveEntidad"));
-                    encuesta.setLatitud(jsonArrayChild.optLong("latitud"));
-                    encuesta.setLongitud(jsonArrayChild.optLong("longitud"));
+                    encuesta.setLatitud(jsonArrayChild.optDouble("latitud"));
+                    encuesta.setLongitud(jsonArrayChild.optDouble("longitud"));
                     encuesta.setIdEncuesta(jsonArrayChild.optInt("idEncuesta"));
                     listaEncuestas.add(encuesta);
                 }
@@ -194,10 +199,12 @@ public class GetAllActivity extends AppCompatActivity {
                 t2.setText("Clave: "+encuesta.getClaveEntidad());
                 t3.setText("Municipio: "+encuesta.getMunicipio());
                 t4.setText("Localidad: "+encuesta.getLocalidad());
-                t5.setText("Clave ageb:"+encuesta.getClaveAgeb());
+                t5.setText("Clave ageb: "+encuesta.getClaveAgeb());
                 t6.setText("Clave Manzana: "+encuesta.getClaveManzana());
-                t7.setText(format.format(encuesta.getFechaInicio()));
-                t8.setText(format.format(encuesta.getFechaFin()));
+                t7.setText("Fecha de inicio: "+format.format(encuesta.getFechaInicio()));
+                t8.setText("Fecha de finalización: "+format.format(encuesta.getFechaFin()));
+                t10.setText("Latitud: "+encuesta.getLatitud());
+                t11.setText("Longitud: "+encuesta.getLongitud());
 
             }
         });

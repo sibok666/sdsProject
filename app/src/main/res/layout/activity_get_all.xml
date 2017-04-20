@@ -80,6 +80,18 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/fechaFinText" />
 
+            <TextView
+                android:text="Latitud:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/latitudText" />
+
+            <TextView
+                android:text="Longitud:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/longitudText" />
+
             <Button
                 android:text="Anterior"
                 android:layout_width="match_parent"

@@ -3,6 +3,7 @@ package cuestionario.sedesol.com.democuestionario;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -32,24 +33,26 @@ public class MainActivity extends AppCompatActivity {
     Double latitud;
     Double longitud;
     ProgressDialog progress;
+    Handler updateBarHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        updateBarHandler = new Handler();
         ////obtenemos la latitud y longitud
-        //GPSTracker gps = new GPSTracker(MainActivity.this);
+        GPSTracker gps = new GPSTracker(MainActivity.this);
         // check if GPS enabled
-        //if(gps.canGetLocation()){
-        //    latitud = gps.getLatitude();
-        //    longitud = gps.getLongitude();
-        //}else{
+        if(gps.canGetLocation()){
+            latitud = gps.getLatitude();
+            longitud = gps.getLongitude();
+        }else{
             // can't get location
             // GPS or Network is not enabled
             // Ask user to enable GPS/network in settings
-        //    gps.showSettingsAlert();
-        //}
+            gps.showSettingsAlert();
+        }
 
         List<Usuario> usuarios = Usuario.listAll(Usuario.class);
 
@@ -59,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-        progress=new ProgressDialog(this);
+        progress=new ProgressDialog(MainActivity.this);
 
     }
 
@@ -95,22 +98,52 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "Start time-----------"+new Date());
         Usuario u=new Usuario(nombreR,direccionR,edadRI,telefonoR,contraseniaR,usuario);
         u.save();
-        progress.setTitle("Cargando");
-        progress.setMessage("Espera mientras configuramos...");
-        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
-        progress.show();
-        getBDEntidad();
-        getBDMunicipio();
-        InitLocalidad();
-        InitAgeb();
-        InitManzana();
-        // To dismiss the dialog
-        progress.dismiss();
-        Intent intent = new Intent(this, IniciarSesion.class);
+
+        final Intent intent = new Intent(this, IniciarSesion.class);
         //String message = editText.getText().toString();
         //intent.putExtra(EXTRA_MESSAGE, message);
         Log.d(TAG, "Finish time-----------"+new Date());
-        startActivity(intent);
+
+        progress.setTitle("Cargando");
+        progress.setMessage("Espera mientras configuramos...");
+        progress.setIndeterminate(false);
+        //progress.setProgressStyle(progress.STYLE_HORIZONTAL);
+        progress.setMax(100);
+        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
+        progress.show();
+
+       // runOnUiThread(new Runnable() {
+       //     public void run() {
+
+       //     }
+       // });
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    getBDEntidad();
+                    getBDMunicipio();
+                    InitLocalidad();
+                    InitAgeb();
+                    InitManzana();
+                    startActivity(intent);
+                    // Here you should write your time consuming task...
+                    while (progress.getProgress() <= progress.getMax()) {
+                        updateBarHandler.post(new Runnable() {
+                            public void run() {
+                                progress.incrementProgressBy(2);
+                            }
+                        });
+                        if (progress.getProgress() == progress.getMax()) {
+                            progress.dismiss();
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
 
     }
 

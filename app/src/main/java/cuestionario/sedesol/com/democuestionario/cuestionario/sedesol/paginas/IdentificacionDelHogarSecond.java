@@ -160,9 +160,19 @@ public class IdentificacionDelHogarSecond extends AppCompatActivity {
         }
         encuestaGeneralPre.setNumeroDeHogares(numeroHog);
         encuestaGeneralPre.setPersonasEnVivienda(numeroH);
-        GPSTracker gps=new GPSTracker(this);
-        encuestaGeneralPre.setLatitud((long)gps.getLatitude());
-        encuestaGeneralPre.setLongitud((long)gps.getLongitude());
+
+
+        GPSTracker gps = new GPSTracker(this);
+        // check if GPS enabled
+        if(gps.canGetLocation()){
+            encuestaGeneralPre.setLatitud(gps.getLatitude());
+            encuestaGeneralPre.setLongitud(gps.getLongitude());
+        }else{
+        // can't get location
+        // GPS or Network is not enabled
+        // Ask user to enable GPS/network in settings
+            gps.showSettingsAlert();
+        }
 
         guardarEncuestaLocal(encuestaGeneralPre);
 
@@ -240,6 +250,8 @@ public class IdentificacionDelHogarSecond extends AppCompatActivity {
         ////intentamos guardar en la BD remota
         new InsertNewAnswer().execute();
         if (success==1){
+            e.guardadoEnBDRemota=1;
+            e.save();
             Toast.makeText(getApplicationContext(), "Se guardo la encuesta...", Toast.LENGTH_LONG).show();
         }else{
             //Toast.makeText(getApplicationContext(), "New idiom FAILED to saved...", Toast.LENGTH_LONG).show();
@@ -248,8 +260,8 @@ public class IdentificacionDelHogarSecond extends AppCompatActivity {
     class InsertNewAnswer extends AsyncTask<String, String, String> {
         JSONObject json;
         String folio=encuestaGeneralPre.getFolio();
-        Long latitud=encuestaGeneralPre.getLatitud();
-        Long longitud=encuestaGeneralPre.getLongitud();
+        Double latitud=encuestaGeneralPre.getLatitud();
+        Double longitud=encuestaGeneralPre.getLongitud();
         String claveEncuestador=encuestaGeneralPre.getClaveEncuestador();
         String nombreEncuestador=encuestaGeneralPre.getNombreEncuestador();
         Date fechaInicio=encuestaGeneralPre.getFechaInicio();
