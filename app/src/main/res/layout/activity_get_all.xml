@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_get_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.GetAllActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:text="Mostrar encuestas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonGetAll"
+                android:onClick="obtenerListadoEncuestas" />
+
+            <TextView
+                android:text="Identificador:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/numeroEncuestaText" />
+
+            <TextView
+                android:text="Entidad:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/entidadText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/claveEntidadtext"
+                android:text="Clave:" />
+
+            <TextView
+                android:text="Municipio:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/municipioText" />
+
+            <TextView
+                android:text="Localidad:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/localidadText" />
+
+            <TextView
+                android:text="Clave Ageb:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/claveAgebText" />
+
+            <TextView
+                android:text="Clave manzana:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/claveManzanaText" />
+
+            <TextView
+                android:text="Fecha inicio:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fechaInicioText" />
+
+            <TextView
+                android:text="Fecha fin:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fechaFinText" />
+
+            <Button
+                android:text="Anterior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonEncuestaAnterior" />
+
+            <Button
+                android:text="Siguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonEncuestaSiguiente" />
+
+            <Button
+                android:text="ver ultima encuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonEncuestaFinal" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

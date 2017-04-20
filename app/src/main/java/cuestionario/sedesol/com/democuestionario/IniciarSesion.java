@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 import cuestionario.entidades.Usuario;
+import cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.GetAllActivity;
 import cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.PageOne;
 
 import static android.content.ContentValues.TAG;
@@ -31,5 +32,10 @@ public class IniciarSesion extends AppCompatActivity {
             startActivity(intent);
         //}
 
+    }
+
+    public void verEncuestas(View view){
+        Intent intent = new Intent(this, GetAllActivity.class);
+        startActivity(intent);
     }
 }

@@ -178,7 +178,7 @@
                 android:id="@+id/button3"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:onClick="irAApartadoIdentificacionDelHogar (TresBActivity)" />
+                android:onClick="irAApartadoIdentificacionDelHogar" />
         </LinearLayout>
     </ScrollView>
 

@@ -88,6 +88,7 @@ public class TresCActivity extends AppCompatActivity {
         //intent.putExtra("EncuestaGeneralPre",encuestaGeneralPre);
         Bundle bundle=new Bundle();
         bundle.putSerializable("EncuestaGeneralPre",encuestaGeneralPre);
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 

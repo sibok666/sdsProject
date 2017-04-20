@@ -240,13 +240,13 @@ public class IdentificacionDelHogarSecond extends AppCompatActivity {
         ////intentamos guardar en la BD remota
         new InsertNewAnswer().execute();
         if (success==1){
-            Toast.makeText(getApplicationContext(), "New idiom saved...", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Se guardo la encuesta...", Toast.LENGTH_LONG).show();
         }else{
-            Toast.makeText(getApplicationContext(), "New idiom FAILED to saved...", Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(), "New idiom FAILED to saved...", Toast.LENGTH_LONG).show();
         }
     }
     class InsertNewAnswer extends AsyncTask<String, String, String> {
-        //capture values from EditText
+        JSONObject json;
         String folio=encuestaGeneralPre.getFolio();
         Long latitud=encuestaGeneralPre.getLatitud();
         Long longitud=encuestaGeneralPre.getLongitud();
@@ -406,25 +406,24 @@ public class IdentificacionDelHogarSecond extends AppCompatActivity {
 
             // getting JSON Object
             // Note that create product url accepts GET method
-            try {
-            JSONObject json = jsonParser.makeHttpRequest(url_insert_new,
+            //try {
+            json = jsonParser.makeHttpRequest(url_insert_new,
                     "GET", params);
 
             // check log cat from response
             Log.d("Inserting", json.toString());
 
             // check for success tag
+                //success = json.getInt(TAG_SUCCESS);
 
-                success = json.getInt(TAG_SUCCESS);
-
-                if (success == 1) {
+                //if (success == 1) {
                     // successfully save new idiom
-                } else {
+                //} else {
                     // failed to add new idiom
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
+                //}
+            //} catch (JSONException e) {
+            //    e.printStackTrace();
+            //}
 
             //return null;
             return null;
@@ -433,7 +432,19 @@ public class IdentificacionDelHogarSecond extends AppCompatActivity {
         /**
          * After completing background task Dismiss the progress dialog
          * **/
+
         protected void onPostExecute(String file_url) {
+          try{  // check for success tag
+            success = json.getInt(TAG_SUCCESS);
+
+            if (success == 1) {
+                // successfully save new idiom
+            } else {
+                // failed to add new idiom
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
             // dismiss the dialog once done
             pDialog.dismiss();
         }
