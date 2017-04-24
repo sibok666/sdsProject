@@ -223,7 +223,7 @@ public class GetAllActivity extends AppCompatActivity implements OnMapReadyCallb
                 t8.setText("Fecha de finalización: "+format.format(encuesta.getFechaFin()));
                 t10.setText("Latitud: "+encuesta.getLatitud());
                 t11.setText("Longitud: "+encuesta.getLongitud());
-                mMarker=mMap.addMarker(new MarkerOptions().position(new LatLng(encuesta.getLatitud(), encuesta.getLongitud())).title("Ubicacion"));
+                mMarker=mMap.addMarker(new MarkerOptions().position(new LatLng(encuesta.getLatitud(), encuesta.getLongitud())).title("Familia:\n"+"Fulanito Muestrario Datos"));
                 CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(mMarker.getPosition(), 16);
                 mMap.animateCamera(cameraUpdate);
             }
