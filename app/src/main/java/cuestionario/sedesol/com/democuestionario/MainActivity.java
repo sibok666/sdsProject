@@ -108,41 +108,43 @@ public class MainActivity extends AppCompatActivity {
         progress.setMessage("Espera mientras configuramos...");
         progress.setIndeterminate(false);
         //progress.setProgressStyle(progress.STYLE_HORIZONTAL);
-        progress.setMax(100);
-        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
-        progress.show();
+        //progress.setMax(100);
+        //progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
+        //progress.show();
 
        // runOnUiThread(new Runnable() {
        //     public void run() {
 
        //     }
        // });
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    getBDEntidad();
-                    getBDMunicipio();
-                    InitLocalidad();
-                    InitAgeb();
-                    InitManzana();
-                    startActivity(intent);
-                    // Here you should write your time consuming task...
-                    while (progress.getProgress() <= progress.getMax()) {
-                        updateBarHandler.post(new Runnable() {
-                            public void run() {
-                                progress.incrementProgressBy(2);
-                            }
-                        });
-                        if (progress.getProgress() == progress.getMax()) {
-                            progress.dismiss();
-                        }
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }).start();
+
+        getBDEntidad();
+        getBDMunicipio();
+        InitLocalidad();
+        InitAgeb();
+        InitManzana();
+        startActivity(intent);
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                try {
+//
+//                    // Here you should write your time consuming task...
+//                    while (progress.getProgress() <= progress.getMax()) {
+//                        updateBarHandler.post(new Runnable() {
+//                            public void run() {
+//                                progress.incrementProgressBy(2);
+//                            }
+//                        });
+//                        if (progress.getProgress() == progress.getMax()) {
+//                            progress.dismiss();
+//                        }
+//                    }
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }).start();
 
 
     }

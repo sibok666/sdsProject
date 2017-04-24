@@ -30,4 +30,5 @@ dependencies {
     compile 'com.github.satyan:sugar:1.4'
     testCompile 'junit:junit:4.12'
 
+    compile 'com.google.android.gms:play-services-maps:10.0.0'
 }

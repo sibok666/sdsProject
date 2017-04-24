@@ -8,6 +8,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -30,7 +40,7 @@ import java.util.List;
 import cuestionario.entidades.EncuestaGeneralPre;
 import cuestionario.sedesol.com.democuestionario.R;
 
-public class GetAllActivity extends AppCompatActivity {
+public class GetAllActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     TextView t1;
     TextView t2;
@@ -52,6 +62,12 @@ public class GetAllActivity extends AppCompatActivity {
     Button encuestaAnterior;
     Button encuestaSiguiente;
     Button encuestaFinal;
+
+    SupportMapFragment mapFragment;
+    private GoogleMap mMap;
+    Marker mMarker;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +127,8 @@ public class GetAllActivity extends AppCompatActivity {
             }
         });
 
+        mapFragment=(SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
 
 
     }
@@ -205,10 +223,18 @@ public class GetAllActivity extends AppCompatActivity {
                 t8.setText("Fecha de finalización: "+format.format(encuesta.getFechaFin()));
                 t10.setText("Latitud: "+encuesta.getLatitud());
                 t11.setText("Longitud: "+encuesta.getLongitud());
-
+                mMarker=mMap.addMarker(new MarkerOptions().position(new LatLng(encuesta.getLatitud(), encuesta.getLongitud())).title("Ubicacion"));
+                CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(mMarker.getPosition(), 16);
+                mMap.animateCamera(cameraUpdate);
             }
         });
 
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap=googleMap;
+        //googleMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
     }
 
     class Mostrar extends AsyncTask<String,String,String>{

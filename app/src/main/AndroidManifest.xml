@@ -47,6 +47,9 @@
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="cuestionario.entidades" />
 
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB3wENwVk537Nrh6llapXBXe1Jeb-i9qKg"/>
+
         <activity android:name=".IniciarSesion" />
         <activity android:name=".cuestionario.sedesol.paginas.TresAActivity" />
         <activity android:name=".cuestionario.sedesol.paginas.TresBActivity" />
