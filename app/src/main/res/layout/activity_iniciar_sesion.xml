@@ -76,16 +76,16 @@
                 android:id="@+id/iniciarSesionButton"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:onClick="IniciarSesion" />
+                android:onClick="verMenu" />
 
             <Button
-                android:text="Ver encuestas capturadas"
+                android:text="Registrarse"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button11"
+                android:id="@+id/Registrarse"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:onClick="verEncuestas" />
+                android:onClick="registrarUsuario" />
         </LinearLayout>
     </ScrollView>
 

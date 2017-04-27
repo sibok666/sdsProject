@@ -56,15 +56,19 @@ public class MainActivity extends AppCompatActivity {
 
         List<Usuario> usuarios = Usuario.listAll(Usuario.class);
 
-        if(usuarios.size()>0){
             Intent intent = new Intent(this, IniciarSesion.class);
             Log.d(TAG, "Usuario ya registrado");
             startActivity(intent);
-        }
+
+
+        //if(usuarios.size()>0){
+        //}
 
         progress=new ProgressDialog(MainActivity.this);
 
     }
+
+
 
     /** Called when the user clicks the Send button */
     public void IniciarUso(View view) {
@@ -117,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
 
        //     }
        // });
-
         getBDEntidad();
         getBDMunicipio();
         InitLocalidad();

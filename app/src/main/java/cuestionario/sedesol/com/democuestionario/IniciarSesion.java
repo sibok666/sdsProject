@@ -38,4 +38,14 @@ public class IniciarSesion extends AppCompatActivity {
         Intent intent = new Intent(this, GetAllActivity.class);
         startActivity(intent);
     }
+
+    public void registrarUsuario(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void verMenu(View view){
+        Intent intent = new Intent(this, MainMenuActivity.class);
+        startActivity(intent);
+    }
 }
