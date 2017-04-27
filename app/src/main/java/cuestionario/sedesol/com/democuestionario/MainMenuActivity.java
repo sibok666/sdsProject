@@ -1,8 +1,12 @@
 package cuestionario.sedesol.com.democuestionario;
 
+import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,8 +17,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.FragmentBeneficiariosGrid;
+
 public class MainMenuActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,FragmentBeneficiariosGrid.OnFragmentInteractionListener  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +29,14 @@ public class MainMenuActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -80,13 +86,28 @@ public class MainMenuActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_account) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_beneficiarios) {
+            // Create a new fragment and specify the option to show based on
+            // position
+            Fragment fragment=new FragmentBeneficiariosGrid();
+            Bundle args = new Bundle();
+            args.putString(FragmentBeneficiariosGrid.KEY_TEXT, "Actualizacion Beneficiarios");
+            fragment.setArguments(args);
 
-        } else if (id == R.id.nav_slideshow) {
+            // Insert the fragment by replacing any existing fragment
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_main_menu, fragment).commit();
 
-        } else if (id == R.id.nav_manage) {
+            // Highlight the selected item, update the title, and close the drawer
+            //navList.setItemChecked(position, true);
+            getSupportActionBar().setTitle("Actualizacion Beneficiarios");
+            //drawerLayout.closeDrawer(navList);
+        } else if (id == R.id.nav_uploadchanges) {
+
+        } else if (id == R.id.nav_config) {
 
         } else if (id == R.id.nav_share) {
 
@@ -97,5 +118,11 @@ public class MainMenuActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }
