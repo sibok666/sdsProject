@@ -2,13 +2,14 @@ package cuestionario.entidades;
 
 import com.orm.SugarRecord;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by asuarezr on 02/05/2017.
  */
 
-public class EncuestaSeguimiento extends SugarRecord {
+public class EncuestaSeguimiento extends SugarRecord implements Serializable {
     public Date fecharecepcion;
     public String terminado;
     public String curp;

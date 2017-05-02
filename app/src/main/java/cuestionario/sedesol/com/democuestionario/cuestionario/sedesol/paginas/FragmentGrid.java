@@ -60,6 +60,7 @@ public class FragmentGrid extends Fragment {
     ImageButton fotoInicioBeneficiarioButton;
     View inflatedView = null;
     TableLayout tabla;
+    Integer renglon=0;
 
     MapView mMapView;
     private GoogleMap googleMap;
@@ -99,12 +100,14 @@ public class FragmentGrid extends Fragment {
             TextView nombre = new TextView(getActivity());
             nombre.setText(en.apellidoPaterno + " " + en.apellidoMaterno + " " + en.nombre);
             final Button botonContestar = new Button(getActivity());
-            // botonContestar.setId(renglon);
+            botonContestar.setId(renglon);
+            final EncuestaSeguimiento beneficiario=en;
             botonContestar.setOnClickListener(new Button.OnClickListener() {
                 public void onClick(View v) {
-                    Fragment fragment=new FragmentGrid();
+                    Fragment fragment=new FragmentBeneficiariosGrid();
                     Bundle args = new Bundle();
-                    args.putString(FragmentGrid.KEY_TEXT, "Actualizacion Beneficiarios");
+                    args.putString(FragmentBeneficiariosGrid.KEY_TEXT, "Actualizacion Beneficiarios");
+                    args.putSerializable("beneficiario",beneficiario);
                     fragment.setArguments(args);
 
                     // Insert the fragment by replacing any existing fragment
@@ -119,10 +122,11 @@ public class FragmentGrid extends Fragment {
                 }
             });
             botonContestar.setText("Detalle");
+            tableRow.addView(botonContestar);
             tableRow.addView(nombre);
-            //tableRow.addView(botonContestar);
-            tabla.addView(tableRow);
 
+            tabla.addView(tableRow);
+            renglon++;
         }
 
 
