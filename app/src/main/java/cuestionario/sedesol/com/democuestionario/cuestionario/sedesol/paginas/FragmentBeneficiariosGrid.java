@@ -2,6 +2,7 @@ package cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -24,9 +25,12 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import cuestionario.entidades.EncuestaSeguimiento;
 import cuestionario.sedesol.com.democuestionario.CaptureSignature;
 import cuestionario.sedesol.com.democuestionario.CaptureSignatureActivity;
 import cuestionario.sedesol.com.democuestionario.R;
+
+import static android.app.Activity.RESULT_OK;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -172,15 +176,24 @@ public class FragmentBeneficiariosGrid extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            EncuestaSeguimiento beneficiario=(EncuestaSeguimiento) getArguments().getSerializable("beneficiario");
+
         }
     }
 
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_fragment_beneficiarios_grid, container, false);
-//    }
+///sobreescribimos el metodo para obtener la imagen de la camara
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+
+            //mImageView.setImageBitmap(imageBitmap);
+        }
+    }
+
+
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
