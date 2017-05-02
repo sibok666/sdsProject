@@ -18,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.FragmentBeneficiariosGrid;
+import cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.FragmentGrid;
 
 public class MainMenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,FragmentBeneficiariosGrid.OnFragmentInteractionListener  {
@@ -91,9 +92,9 @@ public class MainMenuActivity extends AppCompatActivity
         } else if (id == R.id.nav_beneficiarios) {
             // Create a new fragment and specify the option to show based on
             // position
-            Fragment fragment=new FragmentBeneficiariosGrid();
+            Fragment fragment=new FragmentGrid();
             Bundle args = new Bundle();
-            args.putString(FragmentBeneficiariosGrid.KEY_TEXT, "Actualizacion Beneficiarios");
+            args.putString(FragmentGrid.KEY_TEXT, "Actualizacion Beneficiarios");
             fragment.setArguments(args);
 
             // Insert the fragment by replacing any existing fragment
@@ -103,7 +104,7 @@ public class MainMenuActivity extends AppCompatActivity
 
             // Highlight the selected item, update the title, and close the drawer
             //navList.setItemChecked(position, true);
-            getSupportActionBar().setTitle("Actualizacion Beneficiarios");
+            getSupportActionBar().setTitle("Actualización Beneficiarios");
             //drawerLayout.closeDrawer(navList);
         } else if (id == R.id.nav_uploadchanges) {
 

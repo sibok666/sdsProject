@@ -185,7 +185,7 @@ public class CaptureSignature extends Activity {
         } catch (Exception e)
         {
             e.printStackTrace();
-            Toast.makeText(this, "Could not initiate File System.. Is Sdcard mounted properly?", 1000).show();
+            Toast.makeText(this, "Could not initiate File System.. Is Sdcard mounted properly?", Toast.LENGTH_LONG).show();
             return false;
         }
     }

@@ -10,10 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -29,14 +26,10 @@ import cuestionario.sedesol.com.democuestionario.CaptureSignatureActivity;
 import cuestionario.sedesol.com.democuestionario.R;
 
 /**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link FragmentBeneficiariosGrid.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link FragmentBeneficiariosGrid#newInstance} factory method to
- * create an instance of this fragment.
+ * Created by asuarezr on 28/04/2017.
  */
-public class FragmentBeneficiariosGrid extends Fragment {
+
+public class FragmentVisitaSeguimiento extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -47,18 +40,20 @@ public class FragmentBeneficiariosGrid extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    ImageButton fotoBeneficiarioButton;
-    ImageButton scanIneBeneficiarioButton;
-    ImageButton firmaBeneficiarioButton;
-    ImageButton fotoInicioBeneficiarioButton;
+    ImageButton botonDurante1;
+    ImageButton botonDurante2;
+    ImageButton botonDurante3;
+    ImageButton botonDurante4;
+    ImageButton botonDurante5;
+    ImageButton botonFin;
     View inflatedView = null;
 
     MapView mMapView;
     private GoogleMap googleMap;
 
-    private OnFragmentInteractionListener mListener;
+    private FragmentVisitaSeguimiento.OnFragmentInteractionListener mListener;
 
-    public FragmentBeneficiariosGrid() {
+    public FragmentVisitaSeguimiento() {
         // Required empty public constructor
     }
 
@@ -82,19 +77,16 @@ public class FragmentBeneficiariosGrid extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        this.inflatedView = inflater.inflate(R.layout.fragment_fragment_beneficiarios_grid, container, false);
+        this.inflatedView = inflater.inflate(R.layout.visita_seguimiento_fragment, container, false);
 
-        fotoBeneficiarioButton = (ImageButton) inflatedView.findViewById(R.id.fotoBeneficiarioButton);
-        scanIneBeneficiarioButton=(ImageButton) inflatedView.findViewById(R.id.scanIneBeneficiarioButton);
-        firmaBeneficiarioButton=(ImageButton) inflatedView.findViewById(R.id.firmaBeneficiarioButton);
-        fotoInicioBeneficiarioButton=(ImageButton) inflatedView.findViewById(R.id.fotoInicioBeneficiarioButton);
+        botonDurante1 = (ImageButton) inflatedView.findViewById(R.id.botonDurante1);
+        botonDurante2=(ImageButton) inflatedView.findViewById(R.id.botonDurante2);
+        botonDurante3=(ImageButton) inflatedView.findViewById(R.id.botonDurante3);
+        botonDurante4=(ImageButton) inflatedView.findViewById(R.id.botonDurante4);
+        botonDurante5 = (ImageButton) inflatedView.findViewById(R.id.botonDurante5);
+        botonFin = (ImageButton) inflatedView.findViewById(R.id.botonFin);
 
-        if(fotoBeneficiarioButton == null)
-        {
-            Log.d("debugCheck", "HeadFrag: sendButton is null");
-            return inflatedView;
-        }
-        fotoBeneficiarioButton.setOnClickListener(new View.OnClickListener() {
+        botonDurante1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -104,7 +96,7 @@ public class FragmentBeneficiariosGrid extends Fragment {
             }
         });
 
-        scanIneBeneficiarioButton.setOnClickListener(new View.OnClickListener() {
+        botonDurante2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -114,14 +106,32 @@ public class FragmentBeneficiariosGrid extends Fragment {
             }
         });
 
-        firmaBeneficiarioButton.setOnClickListener(new View.OnClickListener() {
+        botonDurante3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent capturarFirma = new Intent(getActivity(),CaptureSignature.class);
                 startActivity(capturarFirma);
             }
         });
-        fotoInicioBeneficiarioButton.setOnClickListener(new View.OnClickListener() {
+        botonDurante4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                }
+            }
+        });
+        botonDurante5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                }
+            }
+        });
+        botonFin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -199,7 +209,7 @@ public class FragmentBeneficiariosGrid extends Fragment {
     public void onStart() {
         super.onStart();
         try {
-            mListener = (OnFragmentInteractionListener) getActivity();
+            mListener = (FragmentVisitaSeguimiento.OnFragmentInteractionListener) getActivity();
         } catch (ClassCastException e) {
             throw new ClassCastException(getActivity().toString()
                     + " must implement OnFragmentInteractionListener");

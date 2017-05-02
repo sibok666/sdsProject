@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -5,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context="cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.FragmentBeneficiariosGrid"
     android:background="@android:color/background_light">
-
-    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -107,9 +106,9 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:text="Foto beneficiario:"
+                    android:text="Foto durante 1:"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView116"
+                    android:id="@+id/labelBotonDurante1"
                     android:layout_weight="1"
                     android:layout_width="0dp" />
 
@@ -117,9 +116,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/ic_menu_camera"
-                    android:id="@+id/fotoBeneficiarioButton"
+                    android:id="@+id/botonDurante1"
                     android:layout_weight="1" />
-
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -127,9 +125,9 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:text="Scan INE:"
+                    android:text="Foto durante 2:"
                     android:layout_height="wrap_content"
-                    android:id="@+id/scanIneBeneficiarioLabel"
+                    android:id="@+id/labelBotonDurante2"
                     android:layout_weight="1"
                     android:layout_width="0dp" />
 
@@ -137,9 +135,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/ic_menu_camera"
-                    android:id="@+id/scanIneBeneficiarioButton"
+                    android:id="@+id/botonDurante2"
                     android:layout_weight="1" />
-
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -147,19 +144,18 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:text="Firma:"
+                    android:text="Foto durante 3:"
                     android:layout_height="wrap_content"
-                    android:id="@+id/firmaBeneficiarioLabel"
+                    android:id="@+id/labelBotonDurante3"
                     android:layout_weight="1"
                     android:layout_width="0dp" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@android:drawable/ic_menu_edit"
-                    android:id="@+id/firmaBeneficiarioButton"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    android:id="@+id/botonDurante3"
                     android:layout_weight="1" />
-
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
@@ -167,40 +163,70 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:text="Foto inicio:"
-                    android:layout_width="0dp"
+                    android:text="Foto durante 4:"
                     android:layout_height="wrap_content"
-                    android:id="@+id/fotoInicioBeneficiarioLabel"
-                    android:layout_weight="1" />
+                    android:id="@+id/labelBotonDurante4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/ic_menu_camera"
-                    android:id="@+id/fotoInicioBeneficiarioButton"
+                    android:id="@+id/botonDurante4"
                     android:layout_weight="1" />
-
             </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <TextView
+                    android:text="Foto durante 5:"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelBotonDurante5"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    android:id="@+id/botonDurante5"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="Foto durante 5:"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelBotonFin"
+                    android:layout_weight="1"
+                    android:layout_width="0dp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    android:id="@+id/botonFin"
+                    android:layout_weight="1" />
+            </LinearLayout>
             <TextView
                 android:text="Georeferencia:"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/textView117" />
-
             <com.google.android.gms.maps.MapView
                 android:id="@+id/mapView"
                 android:layout_width="match_parent"
                 android:layout_height="400dp" />
-
             <Button
-                android:text="Guardar"
+                android:text="Guardar cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/botonActualizarDatosBeneficiario" />
-
         </LinearLayout>
 
     </ScrollView>
-
 </FrameLayout>
