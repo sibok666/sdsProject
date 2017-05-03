@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,10 +27,16 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import cuestionario.entidades.EncuestaSeguimiento;
 import cuestionario.sedesol.com.democuestionario.CaptureSignature;
 import cuestionario.sedesol.com.democuestionario.CaptureSignatureActivity;
 import cuestionario.sedesol.com.democuestionario.R;
+import cuestionario.utils.Util;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -55,12 +63,17 @@ public class FragmentBeneficiariosGrid extends Fragment {
     ImageButton scanIneBeneficiarioButton;
     ImageButton firmaBeneficiarioButton;
     ImageButton fotoInicioBeneficiarioButton;
+    Button botonGuardarInformacionBeneficiario;
     View inflatedView = null;
+    Util util=new Util();
+    String mCurrentPhotoPath;
 
     MapView mMapView;
     private GoogleMap googleMap;
 
     private OnFragmentInteractionListener mListener;
+
+    EncuestaSeguimiento beneficiario=null;
 
     public FragmentBeneficiariosGrid() {
         // Required empty public constructor
@@ -92,6 +105,26 @@ public class FragmentBeneficiariosGrid extends Fragment {
         scanIneBeneficiarioButton=(ImageButton) inflatedView.findViewById(R.id.scanIneBeneficiarioButton);
         firmaBeneficiarioButton=(ImageButton) inflatedView.findViewById(R.id.firmaBeneficiarioButton);
         fotoInicioBeneficiarioButton=(ImageButton) inflatedView.findViewById(R.id.fotoInicioBeneficiarioButton);
+        botonGuardarInformacionBeneficiario=(Button)inflatedView.findViewById(R.id.botonActualizarDatosBeneficiario);
+
+        botonGuardarInformacionBeneficiario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                beneficiario.guardadoBdRemota=0;
+                EncuestaSeguimiento.save(beneficiario);
+                Fragment fragment=new FragmentVisitaSeguimiento();
+                Bundle args = new Bundle();
+                args.putString(FragmentVisitaSeguimiento.KEY_TEXT, "Actualizacion Beneficiarios");
+                args.putSerializable("beneficiario",beneficiario);
+                fragment.setArguments(args);
+
+                // Insert the fragment by replacing any existing fragment
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_main_menu, fragment).commit();
+
+            }
+        });
 
         if(fotoBeneficiarioButton == null)
         {
@@ -158,7 +191,8 @@ public class FragmentBeneficiariosGrid extends Fragment {
                     e.printStackTrace();
                 }
                 // For dropping a marker at a point on the Map
-                LatLng sydney = new LatLng(-34, 151);
+                LatLng sydney = new LatLng(util.stringADouble(beneficiario.latitud),util.stringADouble(beneficiario.longitud));
+                        //new LatLng(-34, 151);
                 googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker Title").snippet("Marker Description"));
 
                 // For zooming automatically to the location of the marker
@@ -176,7 +210,8 @@ public class FragmentBeneficiariosGrid extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-            EncuestaSeguimiento beneficiario=(EncuestaSeguimiento) getArguments().getSerializable("beneficiario");
+            beneficiario=(EncuestaSeguimiento) getArguments().getSerializable("beneficiario");
+
 
         }
     }
@@ -187,14 +222,30 @@ public class FragmentBeneficiariosGrid extends Fragment {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
-
+            beneficiario.fotografiaBeneficiario=util.getImageBytes(imageBitmap);
+           try{
+                createImageFile();
+           }catch(Exception e){
+               e.printStackTrace();
+           }
             //mImageView.setImageBitmap(imageBitmap);
         }
     }
+    public File createImageFile() throws IOException {
+        // Create an image file name
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        File storageDir = getActivity().getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        File image = File.createTempFile(
+                imageFileName,  /* prefix */
+                ".jpg",         /* suffix */
+                storageDir      /* directory */
+        );
 
-
-
-
+        // Save a file: path for use with ACTION_VIEW intents
+        mCurrentPhotoPath = image.getAbsolutePath();
+        return image;
+    }
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
@@ -240,16 +291,5 @@ public class FragmentBeneficiariosGrid extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
-    private void mostrarTomarFoto() {
-        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-        }
-    }
-
-    private void mostrarCapturaFirma(View view) {
-        Intent capturarFirma = new Intent(getActivity(),CaptureSignatureActivity.class);
-        startActivity(capturarFirma);
-    }
 
 }

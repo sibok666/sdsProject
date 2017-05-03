@@ -19,9 +19,10 @@ import android.view.MenuItem;
 
 import cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.FragmentBeneficiariosGrid;
 import cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.FragmentGrid;
+import cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.FragmentVisitaSeguimiento;
 
 public class MainMenuActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener,FragmentBeneficiariosGrid.OnFragmentInteractionListener  {
+        implements NavigationView.OnNavigationItemSelectedListener,FragmentBeneficiariosGrid.OnFragmentInteractionListener,FragmentVisitaSeguimiento.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

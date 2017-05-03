@@ -92,7 +92,9 @@ public class FragmentGrid extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         this.inflatedView = inflater.inflate(R.layout.fragment_grid, container, false);
-        List<EncuestaSeguimiento> listadoBeneficiarios=EncuestaSeguimiento.listAll(EncuestaSeguimiento.class);
+        //List<EncuestaSeguimiento> listadoBeneficiarios=EncuestaSeguimiento.find(EncuestaSeguimiento.class, "guardadoBdRemota = ?", "0","50");
+        List<EncuestaSeguimiento> listadoBeneficiarios=EncuestaSeguimiento.findWithQuery(EncuestaSeguimiento.class,"Select * from encuesta_seguimiento limit ?","50");
+        //List<EncuestaSeguimiento> listadoBeneficiarios=EncuestaSeguimiento.listAll(EncuestaSeguimiento.class);
         tabla= (TableLayout) inflatedView.findViewById(R.id.tablaBeneficiarios);
 
         for(EncuestaSeguimiento en:listadoBeneficiarios) {

@@ -32,17 +32,17 @@ public Date stringADate(String fecha){
      return date;
  }
 
-    public static byte[] getImageBytes(Bitmap bitmap) {
+    public byte[] getImageBytes(Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         return stream.toByteArray();
     }
 
-    public static Bitmap getImage(byte[] image) {
+    public Bitmap getImage(byte[] image) {
         return BitmapFactory.decodeByteArray(image, 0, image.length);
     }
 
-    public static byte[] getBytes(InputStream inputStream) throws IOException {
+    public byte[] getBytes(InputStream inputStream) throws IOException {
         ByteArrayOutputStream byteBuffer = new ByteArrayOutputStream();
         int bufferSize = 1024;
         byte[] buffer = new byte[bufferSize];
@@ -52,6 +52,10 @@ public Date stringADate(String fecha){
             byteBuffer.write(buffer, 0, len);
         }
         return byteBuffer.toByteArray();
+    }
+
+    public Double stringADouble(String numero){
+        return Double.parseDouble(numero);
     }
 
 }

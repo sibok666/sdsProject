@@ -48,6 +48,7 @@ public class FragmentVisitaSeguimiento extends Fragment {
     ImageButton botonFin;
     View inflatedView = null;
 
+
     MapView mMapView;
     private GoogleMap googleMap;
 
@@ -207,9 +208,16 @@ public class FragmentVisitaSeguimiento extends Fragment {
 
     @Override
     public void onStart() {
+//        super.onStart();
+//        try {
+//            mListener = (FragmentVisitaSeguimiento.OnFragmentInteractionListener) getActivity();
+//        } catch (ClassCastException e) {
+//            throw new ClassCastException(getActivity().toString()
+//                    + " must implement OnFragmentInteractionListener");
+//        }
         super.onStart();
         try {
-            mListener = (FragmentVisitaSeguimiento.OnFragmentInteractionListener) getActivity();
+            mListener = (OnFragmentInteractionListener) getActivity();
         } catch (ClassCastException e) {
             throw new ClassCastException(getActivity().toString()
                     + " must implement OnFragmentInteractionListener");
@@ -237,16 +245,5 @@ public class FragmentVisitaSeguimiento extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
-    private void mostrarTomarFoto() {
-        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-        }
-    }
-
-    private void mostrarCapturaFirma(View view) {
-        Intent capturarFirma = new Intent(getActivity(),CaptureSignatureActivity.class);
-        startActivity(capturarFirma);
-    }
 
 }
