@@ -34,6 +34,10 @@ public class EncuestaSeguimiento extends SugarRecord implements Serializable {
     public byte []fotografiaDurante5;
     public byte []fotografiaFinal;
     public Integer guardadoBdRemota;
+    public String sexo;
+    public Integer edad;
+    public String direccion;
+
 
 
     //FOLIO UNICO,PATERNO,MATERNO,NOMBRE,VIALIDAD,NUMERO EXTERIOR,LOCALIDAD,
@@ -48,7 +52,7 @@ public class EncuestaSeguimiento extends SugarRecord implements Serializable {
                                byte []fotografiaIne,byte []fotografiaInicio,byte []imagenFirma,
                                        byte []fotografiaDurante1,byte []fotografiaDurante2,
                                        byte []fotografiaDurante3,byte []fotografiaDurante4,
-                                       byte []fotografiaDurante5,byte []fotografiaFinal,Integer guardadoBdRemota){
+                                       byte []fotografiaDurante5,byte []fotografiaFinal,Integer guardadoBdRemota,String sexo,Integer edad, String direccion){
 
         this.fecharecepcion=fecharecepcion;
         this.terminado=terminado;
@@ -74,6 +78,9 @@ public class EncuestaSeguimiento extends SugarRecord implements Serializable {
         this.fotografiaDurante5=fotografiaDurante5;
         this.fotografiaFinal=fotografiaFinal;
         this.guardadoBdRemota=guardadoBdRemota;
+        this.sexo=sexo;
+        this.edad=edad;
+        this.direccion=direccion;
 
     }
 }

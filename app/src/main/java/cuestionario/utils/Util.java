@@ -2,6 +2,7 @@ package cuestionario.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Base64;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -56,6 +57,11 @@ public Date stringADate(String fecha){
 
     public Double stringADouble(String numero){
         return Double.parseDouble(numero);
+    }
+
+    public String imagenBinariaAJson(byte [] byteArrayImage){
+        String encodedImage = Base64.encodeToString(byteArrayImage, Base64.DEFAULT);
+        return encodedImage;
     }
 
 }

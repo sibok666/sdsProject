@@ -55,6 +55,8 @@ public class FragmentBeneficiariosGrid extends Fragment {
     private static final String ARG_PARAM2 = "param2";
     public final static String KEY_TEXT = "key_text";
     static final int REQUEST_IMAGE_CAPTURE = 1;
+    static final int REQUEST_IMAGE_CAPTURE_INE = 1;
+    static final int REQUEST_IMAGE_CAPTURE_INICIO = 1;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -63,6 +65,14 @@ public class FragmentBeneficiariosGrid extends Fragment {
     ImageButton scanIneBeneficiarioButton;
     ImageButton firmaBeneficiarioButton;
     ImageButton fotoInicioBeneficiarioButton;
+    EditText nombreBeneficiarioText;
+    EditText apellidoPBeneficiarioText;
+    EditText apellidoMBeneficiarioText;
+    EditText edadBeneficiarioText1;
+    EditText sexoBeneficiarioText;
+    EditText direccionBeneficiarioText;
+
+
     Button botonGuardarInformacionBeneficiario;
     View inflatedView = null;
     Util util=new Util();
@@ -106,6 +116,19 @@ public class FragmentBeneficiariosGrid extends Fragment {
         firmaBeneficiarioButton=(ImageButton) inflatedView.findViewById(R.id.firmaBeneficiarioButton);
         fotoInicioBeneficiarioButton=(ImageButton) inflatedView.findViewById(R.id.fotoInicioBeneficiarioButton);
         botonGuardarInformacionBeneficiario=(Button)inflatedView.findViewById(R.id.botonActualizarDatosBeneficiario);
+        nombreBeneficiarioText=(EditText) inflatedView.findViewById(R.id.nombreBeneficiarioText);
+        apellidoPBeneficiarioText=(EditText) inflatedView.findViewById(R.id.apellidopBeneficiarioText);
+        apellidoMBeneficiarioText=(EditText) inflatedView.findViewById(R.id.apellidomBeneficiarioText);
+        edadBeneficiarioText1=(EditText) inflatedView.findViewById(R.id.edadBeneficiarioText);
+        sexoBeneficiarioText=(EditText) inflatedView.findViewById(R.id.sexoBeneficiarioText);
+        direccionBeneficiarioText=(EditText) inflatedView.findViewById(R.id.direccionBeneficiarioText);
+
+        nombreBeneficiarioText.setText(beneficiario.nombre);
+        apellidoPBeneficiarioText.setText(beneficiario.apellidoPaterno);
+        apellidoMBeneficiarioText.setText(beneficiario.apellidoMaterno);
+        edadBeneficiarioText1.setText(""+beneficiario.edad);
+        sexoBeneficiarioText.setText(beneficiario.sexo);
+        direccionBeneficiarioText.setText(beneficiario.direccion);
 
         botonGuardarInformacionBeneficiario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,7 +145,6 @@ public class FragmentBeneficiariosGrid extends Fragment {
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 fragmentManager.beginTransaction()
                         .replace(R.id.content_main_menu, fragment).commit();
-
             }
         });
 
@@ -146,7 +168,7 @@ public class FragmentBeneficiariosGrid extends Fragment {
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_INE);
                 }
             }
         });
@@ -163,7 +185,7 @@ public class FragmentBeneficiariosGrid extends Fragment {
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_INICIO);
                 }
             }
         });
@@ -211,8 +233,6 @@ public class FragmentBeneficiariosGrid extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
             beneficiario=(EncuestaSeguimiento) getArguments().getSerializable("beneficiario");
-
-
         }
     }
 
@@ -228,6 +248,28 @@ public class FragmentBeneficiariosGrid extends Fragment {
            }catch(Exception e){
                e.printStackTrace();
            }
+            //mImageView.setImageBitmap(imageBitmap);
+        }
+        if (requestCode == REQUEST_IMAGE_CAPTURE_INE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            beneficiario.fotografiaIne =util.getImageBytes(imageBitmap);
+            try{
+                createImageFile();
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+            //mImageView.setImageBitmap(imageBitmap);
+        }
+        if (requestCode == REQUEST_IMAGE_CAPTURE_INICIO && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            beneficiario.fotografiaInicio =util.getImageBytes(imageBitmap);
+            try{
+                createImageFile();
+            }catch(Exception e){
+                e.printStackTrace();
+            }
             //mImageView.setImageBitmap(imageBitmap);
         }
     }

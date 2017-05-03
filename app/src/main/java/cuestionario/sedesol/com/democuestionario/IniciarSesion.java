@@ -78,7 +78,7 @@ public class IniciarSesion extends AppCompatActivity {
             while ((line = reader.readLine()) != null) {
                 String[] s = TextUtils.split(line, ",");
                 Date d=util.stringADate(s[0]);
-                EncuestaSeguimiento en=new EncuestaSeguimiento(d,s[1],s[2],s[3],s[4],s[5],s[6],s[7],s[8],s[9],s[10],s[11],s[12],arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,0);
+                EncuestaSeguimiento en=new EncuestaSeguimiento(d,s[1],s[2],s[3],s[4],s[5],s[6],s[7],s[8],s[9],s[10],s[11],s[12],arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,arregloBytes,0,"",0,"");
                 en.save();
             }
         }catch(Exception e){
