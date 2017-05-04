@@ -32,6 +32,13 @@ public Date stringADate(String fecha){
      }
      return date;
  }
+    public String dateAString(Date fecha){
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        Date dateInString = fecha;
+        String date="";
+            date = formatter.format(dateInString);
+        return date;
+    }
 
     public byte[] getImageBytes(Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();

@@ -457,7 +457,7 @@ public class FragmentVisitaSeguimiento extends Fragment {
             params.add(new BasicNameValuePair("terminado", beneficiario.terminado));
             params.add(new BasicNameValuePair("vialidad", beneficiario.vialidad));
             params.add(new BasicNameValuePair("edad", ""+beneficiario.edad));
-            params.add(new BasicNameValuePair("fechaRecepcion", ""+beneficiario.fecharecepcion));
+            params.add(new BasicNameValuePair("fechaRecepcion", util.dateAString(beneficiario.fecharecepcion)));
             params.add(new BasicNameValuePair("fotografiaBeneficiario", util.imagenBinariaAJson(beneficiario.fotografiaBeneficiario)));
             params.add(new BasicNameValuePair("imagenFirma", util.imagenBinariaAJson(beneficiario.imagenFirma)));
             params.add(new BasicNameValuePair("fotografiaIne", util.imagenBinariaAJson(beneficiario.fotografiaIne)));
@@ -474,7 +474,7 @@ public class FragmentVisitaSeguimiento extends Fragment {
             // getting JSON Object
             // Note that create product url accepts GET method
             JSONObject json = jsonParser.makeHttpRequest(url_insert_new,
-                    "GET", params);
+                    "POST", params);
 
             // check log cat from response
             Log.d("Inserting", json.toString());
