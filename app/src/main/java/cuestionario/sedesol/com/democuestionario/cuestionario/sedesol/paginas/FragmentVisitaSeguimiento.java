@@ -4,6 +4,9 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -11,6 +14,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.content.FileProvider;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +39,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -84,13 +89,13 @@ public class FragmentVisitaSeguimiento extends Fragment {
     EditText edadBeneficiarioText;
     EditText sexoBeneficiarioText;
     EditText direccionBeneficiarioText;
-    String mCurrentPhotoPath;
     Button guardarInformacion;
 
     EncuestaSeguimiento beneficiario=null;
     MapView mMapView;
     private GoogleMap googleMap;
     Util util=new Util();
+    Context ctx;
 
     private FragmentVisitaSeguimiento.OnFragmentInteractionListener mListener;
 
@@ -103,6 +108,23 @@ public class FragmentVisitaSeguimiento extends Fragment {
     private static String url_insert_new = "http://www.dox.com.mx/sdsProject/insertnewfollow.php";
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
+    static final int REQUEST_TAKE_PHOTO = 1;
+////////////////////private static final int ACTION_TAKE_PHOTO_B = 1;
+private static final int ACTION_TAKE_PHOTO_S = 2;
+    private static final int ACTION_TAKE_VIDEO = 3;
+
+    private static final String BITMAP_STORAGE_KEY = "viewbitmap";
+    private static final String IMAGEVIEW_VISIBILITY_STORAGE_KEY = "imageviewvisibility";
+    private Bitmap mImageBitmap;
+
+    private static final String VIDEO_STORAGE_KEY = "viewvideo";
+    private static final String VIDEOVIEW_VISIBILITY_STORAGE_KEY = "videoviewvisibility";
+    private Uri mVideoUri;
+
+    private String mCurrentPhotoPath;
+
+    private static final String JPEG_FILE_PREFIX = "IMG_";
+    private static final String JPEG_FILE_SUFFIX = ".jpg";
 
 
     public FragmentVisitaSeguimiento() {
@@ -162,9 +184,9 @@ public class FragmentVisitaSeguimiento extends Fragment {
                     //call the InsertNewIdiom thread
                     new FragmentVisitaSeguimiento.InsertNewRecord().execute();
                     if (success==1){
-                        Toast.makeText(getActivity().getApplicationContext(), "New idiom saved...", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getActivity().getApplicationContext(), "New idiom saved...", Toast.LENGTH_LONG).show();
                     }else{
-                        Toast.makeText(getActivity().getApplicationContext(), "New idiom FAILED to saved...", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getActivity().getApplicationContext(), "New idiom FAILED to saved...", Toast.LENGTH_LONG).show();
                     }
                 }
 
@@ -190,8 +212,45 @@ public class FragmentVisitaSeguimiento extends Fragment {
         botonDurante1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                // Ensure that there's a camera activity to handle the intent
+//                if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+//                    // Create the File where the photo should go
+//                    File photoFile = null;
+//                    try {
+//                        photoFile = createImageFile();
+//                    } catch (IOException ex) {
+//                        // Error occurred while creating the File
+//                        ex.printStackTrace();
+//                    }
+//                    // Continue only if the File was successfully created
+//                    if (photoFile != null) {
+//                            Uri photoURI = FileProvider.getUriForFile(getActivity(),
+//                                    "cuestionario.sedesol.com.democuestionario",
+//                                    photoFile);
+//                            takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+//                            startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);
+//                    }
+//                }
+
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    File photoFile = null;
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException ex) {
+                        // Error occurred while creating the File
+                        ex.printStackTrace();
+                    }
+                    // Continue only if the File was successfully created
+                    if (photoFile != null) {
+                          //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
+                         //           "cuestionario.sedesol.com.democuestionario",
+                        //            photoFile);
+                        Uri photoURI  = Uri.parse("file:///sdcard/photo.jpg");
+                        //takePictureIntent.setData(photoURI);
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                    }
                     startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_D1);
                 }
             }
@@ -244,38 +303,40 @@ public class FragmentVisitaSeguimiento extends Fragment {
             }
         });
 
-        mMapView = (MapView) inflatedView.findViewById(R.id.mapView);
-        mMapView.onCreate(savedInstanceState);
 
-        mMapView.onResume(); // needed to get the map to display immediately
 
-        try {
-            MapsInitializer.initialize(getActivity().getApplicationContext());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        mMapView.getMapAsync(new OnMapReadyCallback() {
-            @Override
-            public void onMapReady(GoogleMap mMap) {
-                googleMap = mMap;
-
-                // For showing a move to my location button
-                try {
-                    googleMap.setMyLocationEnabled(true);
-                }catch(SecurityException e){
-                    e.printStackTrace();
-                }
-                // For dropping a marker at a point on the Map
-                LatLng sydney = new LatLng(-34, 151);
-                googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker Title").snippet("Marker Description"));
-
-                // For zooming automatically to the location of the marker
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(12).build();
-                googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-            }
-        });
-
+//        mMapView = (MapView) inflatedView.findViewById(R.id.mapView);
+//        mMapView.onCreate(savedInstanceState);
+//
+//        mMapView.onResume(); // needed to get the map to display immediately
+//
+//        try {
+//            MapsInitializer.initialize(getActivity().getApplicationContext());
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        mMapView.getMapAsync(new OnMapReadyCallback() {
+//            @Override
+//            public void onMapReady(GoogleMap mMap) {
+//                googleMap = mMap;
+//
+//                // For showing a move to my location button
+//                try {
+//                    googleMap.setMyLocationEnabled(true);
+//                }catch(SecurityException e){
+//                    e.printStackTrace();
+//                }
+//                // For dropping a marker at a point on the Map
+//                LatLng sydney = new LatLng(-34, 151);
+//                googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker Title").snippet("Marker Description"));
+//
+//                // For zooming automatically to the location of the marker
+//                CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(12).build();
+//                googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+//            }
+//        });
+        ctx=getActivity();
         return inflatedView;
     }
 
@@ -301,69 +362,105 @@ public class FragmentVisitaSeguimiento extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
     }
+    public static  Bitmap crupAndScale (Bitmap source,int scale){
+        int factor = source.getHeight() <= source.getWidth() ? source.getHeight(): source.getWidth();
+        int longer = source.getHeight() >= source.getWidth() ? source.getHeight(): source.getWidth();
+        int x = source.getHeight() >= source.getWidth() ?0:(longer-factor)/2;
+        int y = source.getHeight() <= source.getWidth() ?0:(longer-factor)/2;
+        source = Bitmap.createBitmap(source, x, y, factor, factor);
+        source = Bitmap.createScaledBitmap(source, scale, scale, false);
+        return source;
+    }
     ///sobreescribimos el metodo para obtener la imagen de la camara
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_IMAGE_CAPTURE_D1 && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            beneficiario.fotografiaDurante1=util.getImageBytes(imageBitmap);
-            try{
-                createImageFile();
-            }catch(Exception e){
-                e.printStackTrace();
+        //super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_TAKE_PHOTO) {
+            if (resultCode == getActivity().RESULT_OK) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo.jpg");
+                Uri uri = Uri.fromFile(file);
+                Bitmap bitmap;
+                try {
+                    bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    bitmap = crupAndScale(bitmap, 150); // if you mind scali;
+                    beneficiario.fotografiaDurante1=util.getImageBytes(bitmap);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
             }
         }
-        if (requestCode == REQUEST_IMAGE_CAPTURE_D2 && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            beneficiario.fotografiaDurante2 =util.getImageBytes(imageBitmap);
-            try{
-                createImageFile();
-            }catch(Exception e){
-                e.printStackTrace();
-            }
-        }
-        if (requestCode == REQUEST_IMAGE_CAPTURE_D3 && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            beneficiario.fotografiaDurante3 =util.getImageBytes(imageBitmap);
-            try{
-                createImageFile();
-            }catch(Exception e){
-                e.printStackTrace();
-            }
-        }
-        if (requestCode == REQUEST_IMAGE_CAPTURE_D4 && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            beneficiario.fotografiaDurante4 =util.getImageBytes(imageBitmap);
-            try{
-                createImageFile();
-            }catch(Exception e){
-                e.printStackTrace();
-            }
-        }
-        if (requestCode == REQUEST_IMAGE_CAPTURE_D5 && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            beneficiario.fotografiaDurante5 =util.getImageBytes(imageBitmap);
-            try{
-                createImageFile();
-            }catch(Exception e){
-                e.printStackTrace();
-            }
-        }
-        if (requestCode == REQUEST_IMAGE_CAPTURE_FIN && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            beneficiario.fotografiaFinal =util.getImageBytes(imageBitmap);
-            try{
-                createImageFile();
-            }catch(Exception e){
-                e.printStackTrace();
-            }
-        }
+
+//        if (requestCode == REQUEST_TAKE_PHOTO ) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            try{
+//                //File file=createImageFile();
+//                //BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+//                //Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath(),bmOptions);
+//                beneficiario.fotografiaDurante1=util.getImageBytes(imageBitmap);
+//                //createImageFile();
+//                //BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+//                //Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath(),bmOptions);
+//                //beneficiario.fotografiaDurante1=util.getImageBytes(bitmap);
+//            }catch(Exception e){
+//                e.printStackTrace();
+//            }
+//        }
+//        if (requestCode == REQUEST_IMAGE_CAPTURE_D2 && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            beneficiario.fotografiaDurante2 =util.getImageBytes(imageBitmap);
+//            try{
+//                createImageFile();
+//            }catch(Exception e){
+//                e.printStackTrace();
+//            }
+//        }
+//        if (requestCode == REQUEST_IMAGE_CAPTURE_D3 && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            beneficiario.fotografiaDurante3 =util.getImageBytes(imageBitmap);
+//            try{
+//                createImageFile();
+//            }catch(Exception e){
+//                e.printStackTrace();
+//            }
+//        }
+//        if (requestCode == REQUEST_IMAGE_CAPTURE_D4 && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            beneficiario.fotografiaDurante4 =util.getImageBytes(imageBitmap);
+//            try{
+//                createImageFile();
+//            }catch(Exception e){
+//                e.printStackTrace();
+//            }
+//        }
+//        if (requestCode == REQUEST_IMAGE_CAPTURE_D5 && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            beneficiario.fotografiaDurante5 =util.getImageBytes(imageBitmap);
+//            try{
+//                createImageFile();
+//            }catch(Exception e){
+//                e.printStackTrace();
+//            }
+//        }
+//        if (requestCode == REQUEST_IMAGE_CAPTURE_FIN && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            beneficiario.fotografiaFinal =util.getImageBytes(imageBitmap);
+//            try{
+//                createImageFile();
+//            }catch(Exception e){
+//                e.printStackTrace();
+//            }
+//        }
     }
     public File createImageFile() throws IOException {
         // Create an image file name
@@ -436,6 +533,19 @@ public class FragmentVisitaSeguimiento extends Fragment {
             pDialog.show();
         }
 
+        public boolean checkConn(Context ctx) {
+            ConnectivityManager conMgr = (ConnectivityManager) ctx
+                    .getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo i = conMgr.getActiveNetworkInfo();
+            if (i == null)
+                return false;
+            if (!i.isConnected())
+                return false;
+            if (!i.isAvailable())
+                return false;
+            return true;
+        }
+
         /**
          * Inserting the new idiom
          * */
@@ -468,30 +578,27 @@ public class FragmentVisitaSeguimiento extends Fragment {
             params.add(new BasicNameValuePair("fotografiaDurante5", util.imagenBinariaAJson(beneficiario.fotografiaDurante5)));
             params.add(new BasicNameValuePair("fotografiaFinal", util.imagenBinariaAJson(beneficiario.fotografiaFinal)));
 
+            if(checkConn(ctx)) {
+                // getting JSON Object
+                // Note that create product url accepts GET method
+                JSONObject json = jsonParser.makeHttpRequest(url_insert_new,
+                        "POST", params);
 
+                // check log cat from response
+                Log.d("Inserting", json.toString());
+                // check for success tag
+                try {
+                    success = json.getInt(TAG_SUCCESS);
 
-
-            // getting JSON Object
-            // Note that create product url accepts GET method
-            JSONObject json = jsonParser.makeHttpRequest(url_insert_new,
-                    "POST", params);
-
-            // check log cat from response
-            Log.d("Inserting", json.toString());
-
-            // check for success tag
-            try {
-                success = json.getInt(TAG_SUCCESS);
-
-                if (success == 1) {
-                    // successfully save new idiom
-                } else {
-                    // failed to add new idiom
+                    if (success == 1) {
+                        // successfully save new idiom
+                    } else {
+                        // failed to add new idiom
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
-            } catch (JSONException e) {
-                e.printStackTrace();
             }
-
             //return null;
             return null;
         }

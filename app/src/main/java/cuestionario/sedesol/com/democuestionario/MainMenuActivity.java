@@ -1,6 +1,7 @@
 package cuestionario.sedesol.com.democuestionario;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -115,6 +116,9 @@ public class MainMenuActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
 
+        }else if (id == R.id.nav_beneficiario_list) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://dox.com.mx/sdsProject/beneficiarios.php"));
+            startActivity(browserIntent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

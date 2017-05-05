@@ -18,6 +18,10 @@
             android:id="@+id/nav_config"
             android:icon="@drawable/ic_menu_manage"
             android:title="Configuración" />
+        <item
+            android:id="@+id/nav_beneficiario_list"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Seguimiento" />
     </group>
 
     <item android:title="Communicate">
