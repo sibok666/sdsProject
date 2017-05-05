@@ -39,7 +39,7 @@ public class CaptureSignatureActivity extends Activity {
                     Bundle bundle = data.getExtras();
                     String status  = bundle.getString("status");
                     if(status.equalsIgnoreCase("done")){
-                        Toast toast = Toast.makeText(this, "Signature capture successful!", Toast.LENGTH_SHORT);
+                        Toast toast = Toast.makeText(this, "OK!", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.TOP, 105, 50);
                         toast.show();
                     }

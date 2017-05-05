@@ -34,6 +34,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import cuestionario.sedesol.com.democuestionario.cuestionario.sedesol.paginas.TresAActivity;
+
 public class CaptureSignature extends Activity {
 
     LinearLayout mContent;
@@ -99,6 +101,7 @@ public class CaptureSignature extends Activity {
                     mSignature.save(mView);
                     Bundle b = new Bundle();
                     b.putString("status", "done");
+                    b.putSerializable("archivoFirma",mypath);
                     Intent intent = new Intent();
                     intent.putExtras(b);
                     setResult(RESULT_OK,intent);
@@ -132,19 +135,19 @@ public class CaptureSignature extends Activity {
     private boolean captureSignature() {
 
         boolean error = false;
-        String errorMessage = "";
+        //String errorMessage = "";
 
 
-        if(yourName.getText().toString().equalsIgnoreCase("")){
-            errorMessage = errorMessage + "Please enter your Name\n";
-            error = true;
-        }
-
-        if(error){
-            Toast toast = Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.TOP, 105, 50);
-            toast.show();
-        }
+//        if(yourName.getText().toString().equalsIgnoreCase("")){
+//            errorMessage = errorMessage + "Please enter your Name\n";
+//            error = true;
+//        }
+//
+//        if(error){
+//            Toast toast = Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT);
+//            toast.setGravity(Gravity.TOP, 105, 50);
+//            toast.show();
+//        }
 
         return error;
     }

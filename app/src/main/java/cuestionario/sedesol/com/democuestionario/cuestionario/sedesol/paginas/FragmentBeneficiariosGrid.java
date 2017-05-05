@@ -30,6 +30,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -74,10 +75,13 @@ public class FragmentBeneficiariosGrid extends Fragment {
     EditText direccionBeneficiarioText;
 
 
+
     Button botonGuardarInformacionBeneficiario;
     View inflatedView = null;
     Util util=new Util();
     String mCurrentPhotoPath;
+
+    String direccionPhoto;
 
     MapView mMapView;
     private GoogleMap googleMap;
@@ -89,7 +93,7 @@ public class FragmentBeneficiariosGrid extends Fragment {
     static final int REQUEST_TAKE_PHOTO=1;
     static final int REQUEST_TAKE_PHOTO2=2;
     static final int REQUEST_TAKE_PHOTO3=3;
-    static final int REQUEST_TAKE_PHOTO4=4;
+    static final int REQUEST_TAKE_PHOTOFIRMA=4;
 
     public FragmentBeneficiariosGrid() {
         // Required empty public constructor
@@ -136,6 +140,7 @@ public class FragmentBeneficiariosGrid extends Fragment {
         sexoBeneficiarioText.setText(beneficiario.sexo);
         direccionBeneficiarioText.setText(beneficiario.direccion);
 
+
         botonGuardarInformacionBeneficiario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -176,7 +181,9 @@ public class FragmentBeneficiariosGrid extends Fragment {
                         //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
                         //           "cuestionario.sedesol.com.democuestionario",
                         //            photoFile);
-                        Uri photoURI  = Uri.parse("file:///sdcard/photo1a.jpg");
+                        //Uri photoURI  = Uri.parse("file:///sdcard/photo1a.jpg");
+                        Uri photoURI  = Uri.fromFile(photoFile);
+
                         //takePictureIntent.setData(photoURI);
                         takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                     }
@@ -216,7 +223,8 @@ public class FragmentBeneficiariosGrid extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent capturarFirma = new Intent(getActivity(),CaptureSignature.class);
-                startActivity(capturarFirma);
+                startActivityForResult(capturarFirma,REQUEST_TAKE_PHOTOFIRMA);
+
             }
         });
         fotoInicioBeneficiarioButton.setOnClickListener(new View.OnClickListener() {
@@ -327,12 +335,31 @@ public class FragmentBeneficiariosGrid extends Fragment {
 //            }
 //            //mImageView.setImageBitmap(imageBitmap);
 //        }
+        if (requestCode == REQUEST_TAKE_PHOTOFIRMA) {
+            Bundle extras = data.getExtras();
+                if(extras!=null){
+                    File imagenFirma=(File)extras.getSerializable("archivoFirma");
+                    Bitmap bitmapFirma;
+                    Uri uri = Uri.fromFile(imagenFirma);
+                    try {
+                        bitmapFirma = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                        bitmapFirma = crupAndScale(bitmapFirma, 150); // if you mind scali;
+                        beneficiario.imagenFirma=util.getImageBytes(bitmapFirma);
+                    } catch (FileNotFoundException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+        }
         if (requestCode == REQUEST_TAKE_PHOTO) {
             if (resultCode == getActivity().RESULT_OK) {
-                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo1a.jpg");
-                Uri uri = Uri.fromFile(file);
-                Bitmap bitmap;
                 try {
+                //File file = createImageFile();//new File(Environment.getExternalStorageDirectory().getPath(), "photo1a.jpg");
+                Uri uri = Uri.parse(mCurrentPhotoPath);
+                Bitmap bitmap;
                     bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
                     bitmap = crupAndScale(bitmap, 150); // if you mind scali;
                     beneficiario.fotografiaBeneficiario=util.getImageBytes(bitmap);
