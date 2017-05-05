@@ -109,6 +109,11 @@ public class FragmentVisitaSeguimiento extends Fragment {
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
     static final int REQUEST_TAKE_PHOTO = 1;
+    static final int REQUEST_TAKE_PHOTO2 = 2;
+    static final int REQUEST_TAKE_PHOTO3 = 3;
+    static final int REQUEST_TAKE_PHOTO4 = 4;
+    static final int REQUEST_TAKE_PHOTO5 = 5;
+    static final int REQUEST_TAKE_PHOTO6 = 6;
 ////////////////////private static final int ACTION_TAKE_PHOTO_B = 1;
 private static final int ACTION_TAKE_PHOTO_S = 2;
     private static final int ACTION_TAKE_VIDEO = 3;
@@ -172,6 +177,9 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
         edadBeneficiarioText.setText(""+beneficiario.edad);
         sexoBeneficiarioText.setText(beneficiario.sexo);
         direccionBeneficiarioText.setText(beneficiario.direccion);
+        //edadBeneficiarioText.setVisibility(View.INVISIBLE);
+        //sexoBeneficiarioText.setVisibility(View.INVISIBLE);
+        //direccionBeneficiarioText.setVisibility(View.INVISIBLE);
 
         guardarInformacion=(Button) inflatedView.findViewById(R.id.botonActualizarDatosBeneficiario);
         guardarInformacion.setOnClickListener(new View.OnClickListener() {
@@ -233,8 +241,8 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
 //                    }
 //                }
 
-                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+                Intent takePictureIntent1 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                if (takePictureIntent1.resolveActivity(getActivity().getPackageManager()) != null) {
                     File photoFile = null;
                     try {
                         photoFile = createImageFile();
@@ -247,11 +255,11 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
                           //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
                          //           "cuestionario.sedesol.com.democuestionario",
                         //            photoFile);
-                        Uri photoURI  = Uri.parse("file:///sdcard/photo.jpg");
+                        Uri photoURI2  = Uri.parse("file:///sdcard/photo.jpg");
                         //takePictureIntent.setData(photoURI);
-                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                        takePictureIntent1.putExtra(MediaStore.EXTRA_OUTPUT, photoURI2);
                     }
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_D1);
+                    startActivityForResult(takePictureIntent1, REQUEST_IMAGE_CAPTURE_D1);
                 }
             }
         });
@@ -261,7 +269,23 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_D2);
+                    File photoFile = null;
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException ex) {
+                        // Error occurred while creating the File
+                        ex.printStackTrace();
+                    }
+                    // Continue only if the File was successfully created
+                    if (photoFile != null) {
+                        //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
+                        //           "cuestionario.sedesol.com.democuestionario",
+                        //            photoFile);
+                        Uri photoURI  = Uri.parse("file:///sdcard/photo2.jpg");
+                        //takePictureIntent.setData(photoURI);
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                    }
+                    startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO2);
                 }
             }
         });
@@ -271,8 +295,25 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_D2);
+                    File photoFile = null;
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException ex) {
+                        // Error occurred while creating the File
+                        ex.printStackTrace();
+                    }
+                    // Continue only if the File was successfully created
+                    if (photoFile != null) {
+                        //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
+                        //           "cuestionario.sedesol.com.democuestionario",
+                        //            photoFile);
+                        Uri photoURI  = Uri.parse("file:///sdcard/photo3.jpg");
+                        //takePictureIntent.setData(photoURI);
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                    }
+                    startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO3);
                 }
+
             }
         });
         botonDurante4.setOnClickListener(new View.OnClickListener() {
@@ -280,8 +321,25 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_D3);
+                    File photoFile = null;
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException ex) {
+                        // Error occurred while creating the File
+                        ex.printStackTrace();
+                    }
+                    // Continue only if the File was successfully created
+                    if (photoFile != null) {
+                        //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
+                        //           "cuestionario.sedesol.com.democuestionario",
+                        //            photoFile);
+                        Uri photoURI  = Uri.parse("file:///sdcard/photo4.jpg");
+                        //takePictureIntent.setData(photoURI);
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                    }
+                    startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO4);
                 }
+
             }
         });
         botonDurante5.setOnClickListener(new View.OnClickListener() {
@@ -289,8 +347,25 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_D4);
+                    File photoFile = null;
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException ex) {
+                        // Error occurred while creating the File
+                        ex.printStackTrace();
+                    }
+                    // Continue only if the File was successfully created
+                    if (photoFile != null) {
+                        //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
+                        //           "cuestionario.sedesol.com.democuestionario",
+                        //            photoFile);
+                        Uri photoURI  = Uri.parse("file:///sdcard/photo5.jpg");
+                        //takePictureIntent.setData(photoURI);
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                    }
+                    startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO5);
                 }
+
             }
         });
         botonFin.setOnClickListener(new View.OnClickListener() {
@@ -298,14 +373,32 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_FIN);
+                    File photoFile = null;
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException ex) {
+                        // Error occurred while creating the File
+                        ex.printStackTrace();
+                    }
+                    // Continue only if the File was successfully created
+                    if (photoFile != null) {
+                        //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
+                        //           "cuestionario.sedesol.com.democuestionario",
+                        //            photoFile);
+                        Uri photoURI  = Uri.parse("file:///sdcard/photo6.jpg");
+                        //takePictureIntent.setData(photoURI);
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                    }
+                    startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO6);
                 }
+
             }
         });
 
 
 
-//        mMapView = (MapView) inflatedView.findViewById(R.id.mapView);
+        mMapView = (MapView) inflatedView.findViewById(R.id.mapView);
+        //mMapView.setVisibility(View.INVISIBLE);
 //        mMapView.onCreate(savedInstanceState);
 //
 //        mMapView.onResume(); // needed to get the map to display immediately
@@ -395,6 +488,101 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
             }
         }
 
+        if (requestCode == REQUEST_TAKE_PHOTO2) {
+            if (resultCode == getActivity().RESULT_OK) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo2.jpg");
+                Uri uri = Uri.fromFile(file);
+                Bitmap bitmap;
+                try {
+                    bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    bitmap = crupAndScale(bitmap, 150); // if you mind scali;
+                    beneficiario.fotografiaDurante2=util.getImageBytes(bitmap);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+        }
+        if (requestCode == REQUEST_TAKE_PHOTO3) {
+            if (resultCode == getActivity().RESULT_OK) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo3.jpg");
+                Uri uri = Uri.fromFile(file);
+                Bitmap bitmap;
+                try {
+                    bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    bitmap = crupAndScale(bitmap, 150); // if you mind scali;
+                    beneficiario.fotografiaDurante3=util.getImageBytes(bitmap);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+        }
+        if (requestCode == REQUEST_TAKE_PHOTO4) {
+            if (resultCode == getActivity().RESULT_OK) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo4.jpg");
+                Uri uri = Uri.fromFile(file);
+                Bitmap bitmap;
+                try {
+                    bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    bitmap = crupAndScale(bitmap, 150); // if you mind scali;
+                    beneficiario.fotografiaDurante4=util.getImageBytes(bitmap);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+        }
+        if (requestCode == REQUEST_TAKE_PHOTO5) {
+            if (resultCode == getActivity().RESULT_OK) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo5.jpg");
+                Uri uri = Uri.fromFile(file);
+                Bitmap bitmap;
+                try {
+                    bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    bitmap = crupAndScale(bitmap, 150); // if you mind scali;
+                    beneficiario.fotografiaDurante5=util.getImageBytes(bitmap);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+        }
+        if (requestCode == REQUEST_TAKE_PHOTO6) {
+            if (resultCode == getActivity().RESULT_OK) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo6.jpg");
+                Uri uri = Uri.fromFile(file);
+                Bitmap bitmap;
+                try {
+                    bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    bitmap = crupAndScale(bitmap, 150); // if you mind scali;
+                    beneficiario.fotografiaFinal=util.getImageBytes(bitmap);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+        }
 //        if (requestCode == REQUEST_TAKE_PHOTO ) {
 //            Bundle extras = data.getExtras();
 //            Bitmap imageBitmap = (Bitmap) extras.get("data");
@@ -527,7 +715,7 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
         protected void onPreExecute() {
             super.onPreExecute();
             pDialog = new ProgressDialog(getActivity());
-            pDialog.setMessage("Saving the new IDIOM ()...");
+            pDialog.setMessage("Guardando...");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(true);
             pDialog.show();

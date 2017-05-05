@@ -81,14 +81,16 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <TextView
                     android:text="Edad:"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/edadBeneficiarioLabel"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:visibility="gone" />
 
                 <EditText
                     android:layout_width="wrap_content"
@@ -96,19 +98,22 @@
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/edadBeneficiarioText"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:visibility="gone" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <TextView
                     android:text="Sexo:"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/sexoBeneficiarioLabel"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:visibility="gone" />
 
                 <EditText
                     android:layout_width="wrap_content"
@@ -116,21 +121,24 @@
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/sexoBeneficiarioText"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:visibility="gone">
 
                 <TextView
                     android:text="Dirección:"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/direccionBeneficiarioLabel"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:visibility="gone" />
 
                 <EditText
                     android:layout_width="wrap_content"
@@ -138,7 +146,8 @@
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/direccionBeneficiarioText"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
@@ -258,11 +267,13 @@
                 android:text="Georeferencia:"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/textView117" />
+                android:id="@+id/textView117"
+                android:visibility="gone" />
             <com.google.android.gms.maps.MapView
                 android:id="@+id/mapView"
                 android:layout_width="match_parent"
-                android:layout_height="400dp" />
+                android:layout_height="400dp"
+                android:visibility="gone" />
             <Button
                 android:text="Guardar cambios"
                 android:layout_width="match_parent"

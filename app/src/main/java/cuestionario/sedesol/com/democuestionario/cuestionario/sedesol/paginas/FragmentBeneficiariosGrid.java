@@ -28,6 +28,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -84,6 +85,11 @@ public class FragmentBeneficiariosGrid extends Fragment {
     private OnFragmentInteractionListener mListener;
 
     EncuestaSeguimiento beneficiario=null;
+    static final int REQUEST_IMAGE_CAPTURE_D1 = 1;
+    static final int REQUEST_TAKE_PHOTO=1;
+    static final int REQUEST_TAKE_PHOTO2=2;
+    static final int REQUEST_TAKE_PHOTO3=3;
+    static final int REQUEST_TAKE_PHOTO4=4;
 
     public FragmentBeneficiariosGrid() {
         // Required empty public constructor
@@ -158,8 +164,25 @@ public class FragmentBeneficiariosGrid extends Fragment {
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                    File photoFile = null;
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException ex) {
+                        // Error occurred while creating the File
+                        ex.printStackTrace();
+                    }
+                    // Continue only if the File was successfully created
+                    if (photoFile != null) {
+                        //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
+                        //           "cuestionario.sedesol.com.democuestionario",
+                        //            photoFile);
+                        Uri photoURI  = Uri.parse("file:///sdcard/photo1a.jpg");
+                        //takePictureIntent.setData(photoURI);
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                    }
+                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_D1);
                 }
+
             }
         });
 
@@ -168,7 +191,23 @@ public class FragmentBeneficiariosGrid extends Fragment {
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_INE);
+                    File photoFile = null;
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException ex) {
+                        // Error occurred while creating the File
+                        ex.printStackTrace();
+                    }
+                    // Continue only if the File was successfully created
+                    if (photoFile != null) {
+                        //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
+                        //           "cuestionario.sedesol.com.democuestionario",
+                        //            photoFile);
+                        Uri photoURI  = Uri.parse("file:///sdcard/photo2a.jpg");
+                        //takePictureIntent.setData(photoURI);
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                    }
+                    startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO2);
                 }
             }
         });
@@ -185,7 +224,23 @@ public class FragmentBeneficiariosGrid extends Fragment {
             public void onClick(View v) {
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if (takePictureIntent.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE_INICIO);
+                    File photoFile = null;
+                    try {
+                        photoFile = createImageFile();
+                    } catch (IOException ex) {
+                        // Error occurred while creating the File
+                        ex.printStackTrace();
+                    }
+                    // Continue only if the File was successfully created
+                    if (photoFile != null) {
+                        //  Uri photoURI = FileProvider.getUriForFile(getActivity(),
+                        //           "cuestionario.sedesol.com.democuestionario",
+                        //            photoFile);
+                        Uri photoURI  = Uri.parse("file:///sdcard/photo3a.jpg");
+                        //takePictureIntent.setData(photoURI);
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                    }
+                    startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO3);
                 }
             }
         });
@@ -239,39 +294,105 @@ public class FragmentBeneficiariosGrid extends Fragment {
 ///sobreescribimos el metodo para obtener la imagen de la camara
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            beneficiario.fotografiaBeneficiario=util.getImageBytes(imageBitmap);
-           try{
-                createImageFile();
-           }catch(Exception e){
-               e.printStackTrace();
-           }
-            //mImageView.setImageBitmap(imageBitmap);
-        }
-        if (requestCode == REQUEST_IMAGE_CAPTURE_INE && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            beneficiario.fotografiaIne =util.getImageBytes(imageBitmap);
-            try{
-                createImageFile();
-            }catch(Exception e){
-                e.printStackTrace();
+//        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            beneficiario.fotografiaBeneficiario=util.getImageBytes(imageBitmap);
+//           try{
+//                createImageFile();
+//           }catch(Exception e){
+//               e.printStackTrace();
+//           }
+//            //mImageView.setImageBitmap(imageBitmap);
+//        }
+//        if (requestCode == REQUEST_IMAGE_CAPTURE_INE && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            beneficiario.fotografiaIne =util.getImageBytes(imageBitmap);
+//            try{
+//                createImageFile();
+//            }catch(Exception e){
+//                e.printStackTrace();
+//            }
+//            //mImageView.setImageBitmap(imageBitmap);
+//        }
+//        if (requestCode == REQUEST_IMAGE_CAPTURE_INICIO && resultCode == RESULT_OK) {
+//            Bundle extras = data.getExtras();
+//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+//            beneficiario.fotografiaInicio =util.getImageBytes(imageBitmap);
+//            try{
+//                createImageFile();
+//            }catch(Exception e){
+//                e.printStackTrace();
+//            }
+//            //mImageView.setImageBitmap(imageBitmap);
+//        }
+        if (requestCode == REQUEST_TAKE_PHOTO) {
+            if (resultCode == getActivity().RESULT_OK) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo1a.jpg");
+                Uri uri = Uri.fromFile(file);
+                Bitmap bitmap;
+                try {
+                    bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    bitmap = crupAndScale(bitmap, 150); // if you mind scali;
+                    beneficiario.fotografiaBeneficiario=util.getImageBytes(bitmap);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
             }
-            //mImageView.setImageBitmap(imageBitmap);
         }
-        if (requestCode == REQUEST_IMAGE_CAPTURE_INICIO && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            beneficiario.fotografiaInicio =util.getImageBytes(imageBitmap);
-            try{
-                createImageFile();
-            }catch(Exception e){
-                e.printStackTrace();
+        if (requestCode == REQUEST_TAKE_PHOTO2) {
+            if (resultCode == getActivity().RESULT_OK) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo2a.jpg");
+                Uri uri = Uri.fromFile(file);
+                Bitmap bitmap;
+                try {
+                    bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    bitmap = crupAndScale(bitmap, 150); // if you mind scali;
+                    beneficiario.fotografiaIne=util.getImageBytes(bitmap);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
             }
-            //mImageView.setImageBitmap(imageBitmap);
         }
+        if (requestCode == REQUEST_TAKE_PHOTO3) {
+            if (resultCode == getActivity().RESULT_OK) {
+                File file = new File(Environment.getExternalStorageDirectory().getPath(), "photo3a.jpg");
+                Uri uri = Uri.fromFile(file);
+                Bitmap bitmap;
+                try {
+                    bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    bitmap = crupAndScale(bitmap, 150); // if you mind scali;
+                    beneficiario.fotografiaInicio=util.getImageBytes(bitmap);
+                } catch (FileNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+            }
+        }
+    }
+    public static  Bitmap crupAndScale (Bitmap source,int scale){
+        int factor = source.getHeight() <= source.getWidth() ? source.getHeight(): source.getWidth();
+        int longer = source.getHeight() >= source.getWidth() ? source.getHeight(): source.getWidth();
+        int x = source.getHeight() >= source.getWidth() ?0:(longer-factor)/2;
+        int y = source.getHeight() <= source.getWidth() ?0:(longer-factor)/2;
+        source = Bitmap.createBitmap(source, x, y, factor, factor);
+        source = Bitmap.createScaledBitmap(source, scale, scale, false);
+        return source;
     }
     public File createImageFile() throws IOException {
         // Create an image file name
