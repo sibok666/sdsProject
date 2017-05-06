@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -47,6 +48,7 @@ import java.util.Date;
 import java.util.List;
 
 import cuestionario.entidades.EncuestaSeguimiento;
+import cuestionario.entidades.ImageStore;
 import cuestionario.sedesol.com.democuestionario.AddNewAnswer;
 import cuestionario.sedesol.com.democuestionario.CaptureSignature;
 import cuestionario.sedesol.com.democuestionario.CaptureSignatureActivity;
@@ -92,6 +94,7 @@ public class FragmentVisitaSeguimiento extends Fragment {
     Button guardarInformacion;
 
     EncuestaSeguimiento beneficiario=null;
+    static ImageStore imagenes=null;
     MapView mMapView;
     private GoogleMap googleMap;
     Util util=new Util();
@@ -440,6 +443,7 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
             beneficiario=(EncuestaSeguimiento) getArguments().getSerializable("beneficiario");
+            imagenes=(ImageStore) getArguments().getSerializable("imagenes");
 
         }
     }
@@ -477,6 +481,7 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
                     bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
                     bitmap = crupAndScale(bitmap, 150); // if you mind scali;
                     beneficiario.fotografiaDurante1=util.getImageBytes(bitmap);
+                    botonDurante1.setBackgroundColor(Color.BLUE);
                 } catch (FileNotFoundException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
@@ -497,6 +502,7 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
                     bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
                     bitmap = crupAndScale(bitmap, 150); // if you mind scali;
                     beneficiario.fotografiaDurante2=util.getImageBytes(bitmap);
+                    botonDurante2.setBackgroundColor(Color.BLUE);
                 } catch (FileNotFoundException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
@@ -516,6 +522,7 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
                     bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
                     bitmap = crupAndScale(bitmap, 150); // if you mind scali;
                     beneficiario.fotografiaDurante3=util.getImageBytes(bitmap);
+                    botonDurante3.setBackgroundColor(Color.BLUE);
                 } catch (FileNotFoundException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
@@ -535,6 +542,7 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
                     bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
                     bitmap = crupAndScale(bitmap, 150); // if you mind scali;
                     beneficiario.fotografiaDurante4=util.getImageBytes(bitmap);
+                    botonDurante4.setBackgroundColor(Color.BLUE);
                 } catch (FileNotFoundException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
@@ -554,6 +562,7 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
                     bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
                     bitmap = crupAndScale(bitmap, 150); // if you mind scali;
                     beneficiario.fotografiaDurante5=util.getImageBytes(bitmap);
+                    botonDurante5.setBackgroundColor(Color.BLUE);
                 } catch (FileNotFoundException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
@@ -573,6 +582,7 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
                     bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
                     bitmap = crupAndScale(bitmap, 150); // if you mind scali;
                     beneficiario.fotografiaFinal=util.getImageBytes(bitmap);
+                    botonFin.setBackgroundColor(Color.BLUE);
                 } catch (FileNotFoundException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
@@ -756,9 +766,10 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
             params.add(new BasicNameValuePair("vialidad", beneficiario.vialidad));
             params.add(new BasicNameValuePair("edad", ""+beneficiario.edad));
             params.add(new BasicNameValuePair("fechaRecepcion", util.dateAString(beneficiario.fecharecepcion)));
-            params.add(new BasicNameValuePair("fotografiaBeneficiario", util.imagenBinariaAJson(beneficiario.fotografiaBeneficiario)));
+            params.add(new BasicNameValuePair("fotografiaBeneficiario",util.imagenBinariaAJson(beneficiario.fotografiaBeneficiario)));
             params.add(new BasicNameValuePair("imagenFirma", util.imagenBinariaAJson(beneficiario.imagenFirma)));
             params.add(new BasicNameValuePair("fotografiaIne", util.imagenBinariaAJson(beneficiario.fotografiaIne)));
+            params.add(new BasicNameValuePair("fotografiaInicio", util.imagenBinariaAJson(beneficiario.fotografiaInicio)));
             params.add(new BasicNameValuePair("fotografiaDurante1", util.imagenBinariaAJson(beneficiario.fotografiaDurante1)));
             params.add(new BasicNameValuePair("fotografiaDurante2", util.imagenBinariaAJson(beneficiario.fotografiaDurante2)));
             params.add(new BasicNameValuePair("fotografiaDurante3", util.imagenBinariaAJson(beneficiario.fotografiaDurante3)));

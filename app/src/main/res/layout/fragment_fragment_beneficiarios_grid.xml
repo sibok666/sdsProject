@@ -228,7 +228,8 @@
                 android:text="Georeferencia:"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/textView117" />
+                android:id="@+id/textView117"
+                android:visibility="gone" />
 
             <com.google.android.gms.maps.MapView
                 android:id="@+id/mapView"
@@ -236,11 +237,42 @@
                 android:layout_height="400dp" />
 
             <Button
+                android:text="Obtener ubicacion offline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/botonFijarUbicacionActual"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="?android:attr/windowBackground"
+                android:id="@+id/imageViewBeneficiario" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="?android:attr/windowBackground"
+                android:id="@+id/imageViewIne" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="?android:attr/windowBackground"
+                android:id="@+id/imageViewFirma" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="?android:attr/windowBackground"
+                android:id="@+id/imageViewFotoInicio" />
+            <Button
                 android:text="Guardar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/botonActualizarDatosBeneficiario" />
-
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="?android:attr/windowBackground"
+                android:id="@+id/imageViewFotoTest" />
         </LinearLayout>
 
     </ScrollView>

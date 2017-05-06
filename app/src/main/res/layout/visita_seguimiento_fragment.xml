@@ -251,7 +251,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
-                    android:text="Foto durante 5:"
+                    android:text="Foto final:"
                     android:layout_height="wrap_content"
                     android:id="@+id/labelBotonFin"
                     android:layout_weight="1"
