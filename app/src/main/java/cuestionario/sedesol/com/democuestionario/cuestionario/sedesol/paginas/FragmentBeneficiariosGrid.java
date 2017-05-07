@@ -16,10 +16,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -86,6 +89,7 @@ public class FragmentBeneficiariosGrid extends Fragment {
     ImageView imageViewFotoInicio;
     ImageView imageViewFotoTest;
     Button botonObtenerUbicacion;
+    Spinner spinnerSexo;
 
     Button botonGuardarInformacionBeneficiario;
     View inflatedView = null;
@@ -148,6 +152,10 @@ public class FragmentBeneficiariosGrid extends Fragment {
         imageViewFirma=(ImageView) inflatedView.findViewById(R.id.imageViewFirma);
         imageViewFotoInicio=(ImageView) inflatedView.findViewById(R.id.imageViewFotoInicio);
         imageViewFotoTest=(ImageView) inflatedView.findViewById(R.id.imageViewFotoTest);
+        spinnerSexo=(Spinner)inflatedView.findViewById(R.id.spinnerSexo);
+        String [] arregloSexo={"Masculino","Femenino"};
+        ArrayAdapter adapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_dropdown_item,arregloSexo );
+        spinnerSexo.setAdapter(adapter);
 
         nombreBeneficiarioText.setText(beneficiario.nombre);
         apellidoPBeneficiarioText.setText(beneficiario.apellidoPaterno);
@@ -189,7 +197,7 @@ public class FragmentBeneficiariosGrid extends Fragment {
                 beneficiario.apellidoPaterno=apellidoPBeneficiarioText.getText().toString();
                 beneficiario.apellidoMaterno=apellidoMBeneficiarioText.getText().toString();
                 beneficiario.edad=Integer.parseInt(edadBeneficiarioText1.getText().toString());
-                beneficiario.sexo=sexoBeneficiarioText.getText().toString();
+                beneficiario.sexo=spinnerSexo.getSelectedItem().toString();
                 beneficiario.direccion=direccionBeneficiarioText.getText().toString();
                 EncuestaSeguimiento.save(beneficiario);
 

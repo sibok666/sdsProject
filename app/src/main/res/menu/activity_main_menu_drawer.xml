@@ -4,15 +4,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_account"
-            android:icon="@mipmap/ic_account"
+            android:icon="@drawable/ic_menu_cuenta"
             android:title="Cuenta" />
         <item
             android:id="@+id/nav_beneficiarios"
-            android:icon="@mipmap/ic_beneficiarios"
+            android:icon="@drawable/ic_menu_gallery"
             android:title="Beneficiarios" />
         <item
             android:id="@+id/nav_uploadchanges"
-            android:icon="@mipmap/ic_offline_upload"
+            android:icon="@drawable/ic_menu_subir_cambios"
             android:title="Subir cambios" />
         <item
             android:id="@+id/nav_config"
@@ -20,7 +20,7 @@
             android:title="Configuración" />
         <item
             android:id="@+id/nav_beneficiario_list"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_menu_beneficiario"
             android:title="Seguimiento" />
     </group>
 

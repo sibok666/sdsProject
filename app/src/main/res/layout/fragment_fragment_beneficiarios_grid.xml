@@ -111,13 +111,20 @@
                     android:id="@+id/sexoBeneficiarioLabel"
                     android:layout_weight="1" />
 
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerSexo"
+                    android:layout_weight="1" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/sexoBeneficiarioText"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
