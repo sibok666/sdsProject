@@ -189,6 +189,12 @@ private static final int ACTION_TAKE_PHOTO_S = 2;
             @Override
             public void onClick(View v) {
 
+                beneficiario.nombre=nombreBeneficiarioText.getText().toString();
+                beneficiario.apellidoPaterno=apellidoPBeneficiarioText.getText().toString();
+                beneficiario.apellidoMaterno=apellidoMBeneficiarioText.getText().toString();
+                beneficiario.edad=Integer.parseInt(edadBeneficiarioText.getText().toString());
+                beneficiario.sexo=sexoBeneficiarioText.getText().toString();
+                beneficiario.direccion=direccionBeneficiarioText.getText().toString();
                 EncuestaSeguimiento.save(beneficiario);
 
                 if (true/*v.getId()==R.id.btnsavenew*/){

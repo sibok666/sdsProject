@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">CUIS</string>
+    <string name="app_name">EUIS</string>
     <string name="title_activity_page_one">Datos INEGI</string>
     <string name="title_activity_page_two">Domicilio</string>
     <string name="title_activity_page_thre">Domicilio parte 2</string>
     <string name="title_activity_identificacion_del_hogar">IdentificacionDelHogar</string>
-    <string name="title_activity_main_menu">CUIS Seguimiento</string>
+    <string name="title_activity_main_menu">EUIS Seguimiento</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

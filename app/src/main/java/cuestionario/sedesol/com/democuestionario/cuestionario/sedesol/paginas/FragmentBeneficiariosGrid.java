@@ -185,12 +185,14 @@ public class FragmentBeneficiariosGrid extends Fragment {
             @Override
             public void onClick(View v) {
                 beneficiario.guardadoBdRemota=0;
+                beneficiario.nombre=nombreBeneficiarioText.getText().toString();
+                beneficiario.apellidoPaterno=apellidoPBeneficiarioText.getText().toString();
+                beneficiario.apellidoMaterno=apellidoMBeneficiarioText.getText().toString();
+                beneficiario.edad=Integer.parseInt(edadBeneficiarioText1.getText().toString());
+                beneficiario.sexo=sexoBeneficiarioText.getText().toString();
+                beneficiario.direccion=direccionBeneficiarioText.getText().toString();
                 EncuestaSeguimiento.save(beneficiario);
 
-                //beneficiario.fotografiaBeneficiario=util.getImageBytes(util.getBitmapFromImageView(imageViewBeneficiario));
-                //beneficiario.fotografiaIne=util.getImageBytes(util.getBitmapFromImageView(imageViewIne));
-                //beneficiario.imagenFirma=util.getImageBytes(util.getBitmapFromImageView(imageViewFirma));
-                //beneficiario.fotografiaInicio=util.getImageBytes(util.getBitmapFromImageView(imageViewFotoInicio));
                 Fragment fragment=new FragmentVisitaSeguimiento();
                 Bundle args = new Bundle();
                 args.putString(FragmentVisitaSeguimiento.KEY_TEXT, "Actualizacion Beneficiarios");
